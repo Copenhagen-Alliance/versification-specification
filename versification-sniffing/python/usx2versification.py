@@ -2,11 +2,14 @@ import os
 import re
 import argparse
 import xml.etree.ElementTree as ET
+from string import Template
 import json
 import canons
 
-ap = argparse.ArgumentParser(description='Create Versification File from Directory of USX 3.0 Files')
-ap.add_argument('directory')
+ap = argparse.ArgumentParser(description='Create Versification File from USX Files')
+ap.add_argument('-d', '--dir', help="directory containing USX 3.0 files", required=True)
+ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
+ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. ['-','a', 'b', 'c']", default=['-','a', 'b', 'c'])
 # TODO: Add
 # (1)  base versification (required?) and
 # (2) segment markers (defaults to -, a, b, c)
@@ -24,13 +27,26 @@ versification = {}
 def parse_books(directory):
 	for file in os.listdir(directory):
 		if file.endswith(".usx"):
-			root = ET.parse(args.directory+file)
+			root = ET.parse(directory+file)
 			for book in root.iter('book'):
 				book_identifier = book.get('code')
 				if book_identifier in canons.book_ids and not book_identifier in canons.non_canonical_ids:
 					books[book_identifier] = {}
 					books[book_identifier]["root"] = root
 					books[book_identifier]["file"] = file
+
+
+#   Look for partial verses and add to the appropriate place.
+
+def partial(book, chapter, verse):
+	markers = ''.join(args.partial.split(','))
+	partial_verses = re.findall(r'\d+'+markers, verse)
+	for pv in partial_verses:
+		t = Template('$book $chapter:$verse')
+		id = t.substitute(book=book, chapter=chapter, verse=str(re.findall(r'\d+',pv)[0]))
+		if not id in versification["partialVerses"]:
+			versification["partialVerses"][id]=[]
+		versification["partialVerses"][id].append(re.findall(r'\D+',pv)[0])
 
 # Not all dictionaries will maintain order, but we sort by canonical book
 # assuming that the order is stable.  If not, *shrug*, it's still usable.
@@ -58,19 +74,14 @@ def max_verses():
 				book, cv = sid.split()
 				chapter,verse = cv.split(":")
 				chapter = int(chapter)
-				partial = re.findall(r'\d+[a-z]', verse)
+				# see if there are partial verses
+				partial(book, chapter, verse)
 				# watch out for verses like "7-9" or "8,9" or "25a"
 				verse = max(map(int, re.findall(r'\d+', verse)))
 				if not chapter in max_verses:
 					max_verses[chapter] = verse
 				elif verse > max_verses[chapter]:
 					max_verses[chapter] = verse
-
-#				if partial:
-#					id = book + " " + str(chapter) + ":" + re.findall(r'\d+', partial)
-#					if not id in versification["partialVerses"]:
-#						versification["partialVerses"][id]=[]
-#					versification["partialVerses"][id].append(partial)
 
 			if not book in versification["maxVerses"]:
 				versification["maxVerses"][book] = []
@@ -80,7 +91,10 @@ def max_verses():
 def mapped_verses():
 	return
 
-parse_books(args.directory)
+if args.base:
+	versification['basedOn'] = args.base
+
+parse_books(args.dir)
 max_verses()
 mapped_verses()
 print(json.dumps(versification, indent=4))
