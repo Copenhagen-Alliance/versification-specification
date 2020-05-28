@@ -10,9 +10,6 @@ ap = argparse.ArgumentParser(description='Create Versification File from USX Fil
 ap.add_argument('-d', '--dir', help="directory containing USX 3.0 files", required=True)
 ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
 ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. ['-','a', 'b', 'c']", default=['-','a', 'b', 'c'])
-# TODO: Add
-# (1)  base versification (required?) and
-# (2) segment markers (defaults to -, a, b, c)
 args = ap.parse_args()
 
 books = {}
@@ -65,6 +62,7 @@ def max_verses():
 	versification["maxVerses"] = {}
 	versification["partialVerses"] = {}
 	versification["excludedVerses"] = {}
+	versification["addedVerses"] = {}
 	for book in canons.book_ids:
 		if book in books:
 			root = books[book]["root"]
