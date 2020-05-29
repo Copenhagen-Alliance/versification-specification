@@ -7,10 +7,11 @@ import json
 import canons
 
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
-ap.add_argument('-d', '--dir', help="directory containing USX 3.0 files", required=True)
-ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
+ap.add_argument('-usx', help="directory containing USX 3.0 files", default='./usx/')
+ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'", default='org')
 ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. [\-abc]", default=r'[\-abc]')
-ap.add_argument('-r', '--rules', help="rules file for mapping verses")
+ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
+ap.add_argument('-r', '--rules', help="rules file for mapping verses", default='./rules/rules.json')
 args = ap.parse_args()
 
 books = {}
@@ -92,7 +93,7 @@ def mapped_verses():
 if args.base:
 	versification['basedOn'] = args.base
 
-parse_books(args.dir)
+parse_books(args.usx)
 max_verses()
 mapped_verses()
 print(json.dumps(versification, indent=4))
