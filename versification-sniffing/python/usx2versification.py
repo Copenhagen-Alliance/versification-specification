@@ -6,9 +6,11 @@ from string import Template
 import json
 import canons
 
+# TODO: Enable unicode for output.  ñ.
+
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
-ap.add_argument('-usx', help="directory containing USX 3.0 files", default='./usx/')
-ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'", default='org')
+ap.add_argument('-usx', help="directory containing USX 3.0 files.  required.", required=True)
+ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
 ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. [\-abc]", default=r'[\-abc]')
 ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
 ap.add_argument('-r', '--rules', help="rules file for mapping verses", default='./rules/rules.json')
@@ -16,6 +18,21 @@ args = ap.parse_args()
 
 books = {}
 versification = {}
+
+if '\-' in args.partial:
+	segments = args.partial.replace("\-","")
+	bareOK = True
+else:
+	segments = args.partial
+	bareOK = False
+
+if args.base:
+	try:
+		base_versification_file = args.mappings + args.base + '.json'
+		base = open(base_versification_file,'r')
+	except:
+		print("Warning: Could not find "+base_versification_file)
+		base = None
 
 # Parse each USX file in the directory and put the document root into a dictionary, indexed
 # by the book identifier.
@@ -38,12 +55,16 @@ def parse_books(directory):
 #   Look for partial verses and add to the appropriate place.
 
 def partial(book, chapter, verse):
-	partial_verses = re.findall(r'\d+'+args.partial, verse)
+	partial_verses = re.findall(r'\d+'+segments, verse)
 	for pv in partial_verses:
 		t = Template('$book $chapter:$verse')
 		id = t.substitute(book=book, chapter=chapter, verse=str(re.findall(r'\d+',pv)[0]))
 		if not id in versification["partialVerses"]:
 			versification["partialVerses"][id]=[]
+			# TODO: Only do this if bare is actually present
+			if bareOK:
+				versification["partialVerses"][id].append('-')
+
 		versification["partialVerses"][id].append(re.findall(r'\D+',pv)[0])
 
 # Not all dictionaries will maintain order, but we sort by canonical book
