@@ -6,10 +6,11 @@ from string import Template
 import json
 import canons
 
-ap = argparse.ArgumentParser(description='Create Versification File from USX Files')
+ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 ap.add_argument('-d', '--dir', help="directory containing USX 3.0 files", required=True)
 ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
-ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. ['-','a', 'b', 'c']", default=['-','a', 'b', 'c'])
+ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. [\-abc]", default=r'[\-abc]')
+ap.add_argument('-r', '--rules', help="rules file for mapping verses")
 args = ap.parse_args()
 
 books = {}
@@ -36,8 +37,7 @@ def parse_books(directory):
 #   Look for partial verses and add to the appropriate place.
 
 def partial(book, chapter, verse):
-	markers = ''.join(args.partial.split(','))
-	partial_verses = re.findall(r'\d+'+markers, verse)
+	partial_verses = re.findall(r'\d+'+args.partial, verse)
 	for pv in partial_verses:
 		t = Template('$book $chapter:$verse')
 		id = t.substitute(book=book, chapter=chapter, verse=str(re.findall(r'\d+',pv)[0]))
