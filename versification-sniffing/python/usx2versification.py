@@ -9,7 +9,8 @@ import canons
 # TODO: Enable unicode for output.  ñ.
 
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
-ap.add_argument('-usx', help="directory containing USX 3.0 files.  required.", required=True)
+ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
+ap.add_argument('-usx', help="directory containing USX 3.0 files", default="./usx/")
 ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
 ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
 ap.add_argument('-r', '--rules', help="rules file for mapping verses", default='./rules/rules.json')
@@ -21,9 +22,10 @@ versification = {}
 if args.base:
 	try:
 		base_versification_file = args.mappings + args.base + '.json'
-		base = open(base_versification_file,'r')
-	except:
-		print("Warning: Could not find "+base_versification_file)
+		fp = open(base_versification_file, "r")
+		base = json.load(fp)
+	except Exception as exc:
+		print(exc)
 		base = None
 
 # Parse each USX file in the directory and put the document root into a dictionary, indexed
@@ -118,7 +120,7 @@ def mapped_verses():
 if args.base:
 	versification['basedOn'] = args.base
 
-parse_books(args.usx)
+parse_books(args.usx+args.name+"/")
 max_verses()
 mapped_verses()
-print(json.dumps(versification, indent=4))
+print(json.dumps(versification, indent=4, ensure_ascii=False))
