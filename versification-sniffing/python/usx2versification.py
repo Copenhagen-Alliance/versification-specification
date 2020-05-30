@@ -11,20 +11,12 @@ import canons
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 ap.add_argument('-usx', help="directory containing USX 3.0 files.  required.", required=True)
 ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
-ap.add_argument('-p', '--partial', help="markers for partial verses, e.g. [\-abc]", default=r'[\-abc]')
 ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
 ap.add_argument('-r', '--rules', help="rules file for mapping verses", default='./rules/rules.json')
 args = ap.parse_args()
 
 books = {}
 versification = {}
-
-if '\-' in args.partial:
-	segments = args.partial.replace("\-","")
-	bareOK = True
-else:
-	segments = args.partial
-	bareOK = False
 
 if args.base:
 	try:
@@ -51,21 +43,33 @@ def parse_books(directory):
 					books[book_identifier]["root"] = root
 					books[book_identifier]["file"] = file
 
+# Partial Verses (segments)
+#
+# Let's be descriptive, not prescriptive.
+# After splitting on "-", ",", anything non-numeric is a segment.
+# If there's a segment, check to see if the bare form is used too.
 
-#   Look for partial verses and add to the appropriate place.
+def verse_exists(book, chapter, verse):
+	t = Template(".//verse[@sid='$book $chapter:$verse']")
+	query = t.substitute(book=book, chapter=chapter, verse=verse)
+	return books[book]["root"].findall(query)
+
 
 def partial(book, chapter, verse):
-	partial_verses = re.findall(r'\d+'+segments, verse)
-	for pv in partial_verses:
-		t = Template('$book $chapter:$verse')
-		id = t.substitute(book=book, chapter=chapter, verse=str(re.findall(r'\d+',pv)[0]))
-		if not id in versification["partialVerses"]:
-			versification["partialVerses"][id]=[]
-			# TODO: Only do this if bare is actually present
-			if bareOK:
-				versification["partialVerses"][id].append('-')
+	verses = re.split(r'[\-,\,]',verse)
+	for pv in verses:
+		segment = re.findall(r'\D+',pv)
+		if segment:
+			numeric = re.findall(r'\d+',pv)[0]
+			t = Template('$book $chapter:$verse')
+			id = t.substitute(book=book, chapter=chapter, verse=numeric)
+			if not id in versification["partialVerses"]:
+				versification["partialVerses"][id]=[]
+				if verse_exists(book, chapter, numeric):
+					versification["partialVerses"][id].append('-')
+			if segment:
+					versification["partialVerses"][id].append(segment[0])
 
-		versification["partialVerses"][id].append(re.findall(r'\D+',pv)[0])
 
 # Not all dictionaries will maintain order, but we sort by canonical book
 # assuming that the order is stable.  If not, *shrug*, it's still usable.
