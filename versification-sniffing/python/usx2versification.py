@@ -115,8 +115,22 @@ def max_verses():
 				versification["maxVerses"][book].append(max_verses[i])
 
 def mapped_verses():
-	return
+	with open(args.rules) as r:
+		rules = json.load(r)
+		for rule in rules["rules"]:
+			if rule["action"] == "Keep verse":
+				continue
+			elif rule["action"] == "Merged with":
+				continue
+			elif rule["action"] == "Renumber verse":
+				continue
+			elif rule["action"] == "Empty verse":
+				continue
+			else:
+				print(rule["action"])
 
+
+versification["shortname"] = args.name
 if args.base:
 	versification['basedOn'] = args.base
 
