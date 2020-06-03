@@ -6,7 +6,8 @@ from string import Template
 import json
 import canons
 
-# TODO: Enable unicode for output.  ñ.
+import logging
+logging.basicConfig(filename='debug.log',level=logging.DEBUG, format='%(asctime)s\t%(message)s')
 
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
@@ -15,6 +16,9 @@ ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
 ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
 ap.add_argument('-r', '--rules', help="rules file for mapping verses", default='./rules/rules.json')
 args = ap.parse_args()
+
+logging.info("------------------------------------------")
+logging.info(args.name)
 
 books = {}
 versification = {}
@@ -114,25 +118,95 @@ def max_verses():
 			for i in sorted(max_verses):
 				versification["maxVerses"][book].append(max_verses[i])
 
+# TODO: Test assumption that tests are combined with an implicit AND
+# TODO: See if I can reconstruct nrsv.json mappings with NRSV and no base
+# TODO: See if I can create nrsv.json mappings with NRSV and eng.json as base
+
+def is_last_in_chapter(book, chapter, verse):
+	logging.info("is_last_in_chapter()")
+
+	if not book in books:
+		return False
+
+	t = Template('$book $chapter:$verse')
+	this_verse = t.substitute(book=book, chapter=chapter, verse=verse)
+	next_verse = t.substitute(book=book, chapter=chapter, verse=int(verse)+1)
+	logging.info("this, next = " + this_verse + "\t" + next_verse)
+
+	root = books[book]["root"]
+	this_found = root.findall(".//verse[@sid='"+this_verse+"']")
+	next_found = root.findall(".//verse[@sid='"+next_verse+"']")
+	if this_found and not next_found:
+			logging.info("Last in chapter")
+			return True
+	else:
+			logging.info("Not last in chapter")
+			return False
+
+
+def has_more_words():
+	pass
+
+def has_fewer_words():
+	pass
+
+def mappings(rule):
+	pass
+
+# Go through the tests.  If they all evaluate to true, execute the rule.
+# If any one evaluates to false or is not yet implemented, return None.
+# Else, return a dict with mappings for the rule.
+
+def do_rule(rule):
+	logging.info(rule)
+	mappings = {}
+	for test in rule["tests"]:
+		comparator = test["comparator"]
+		compare_type = test["compare_type"]
+		if comparator=="EqualTo" and compare_type == "Last":
+			base_reference = test["base_reference"]
+			if is_last_in_chapter(base_reference["book"], chapter=base_reference["chapter"], verse=base_reference["verse"]):
+				continue
+			else:
+				return None
+		else:
+			logging.info("Not implemented: " + comparator +"\t" + compare_type)
+			return None
+
 def mapped_verses():
+	actions = []
 	with open(args.rules) as r:
 		rules = json.load(r)
 		for rule in rules["rules"]:
+			mapping = {}
+			action = rule["action"]
+			if not action in actions:
+				actions.append(action)
+
 			if rule["action"] == "Keep verse":
+				# Just keep it.  Do nothing.
 				continue
 			elif rule["action"] == "Merged with":
+				mapping = do_rule(rule)
 				continue
 			elif rule["action"] == "Renumber verse":
+				# Also used for splitting or creating subverses
+				mapping = do_rule(rule)
 				continue
 			elif rule["action"] == "Empty verse":
+				# = Excluded verse.
 				continue
 			else:
-				print(rule["action"])
+				logging.warning("!!! Unexpected action in rule: " + rule["action"]+ " !!!")
 
+		logging.info("Actions found in " + args.rules)
+		for action in actions:
+			logging.info("\t"+action)
 
 versification["shortname"] = args.name
 if args.base:
 	versification['basedOn'] = args.base
+	logging.info('Base versification: '+ args.base)
 
 parse_books(args.usx+args.name+"/")
 max_verses()
