@@ -1,7 +1,7 @@
 import os
 import re
 import argparse
-import xml.etree.ElementTree as ET
+from lxml import etree
 from string import Template
 import json
 import canons
@@ -32,6 +32,33 @@ if args.base:
 		print(exc)
 		base = None
 
+# Helper functions
+
+def create_sid(book, chapter, verse):
+	sid_template = Template('$book $chapter:$verse')
+	return sid_template.substitute(book=book, chapter=chapter, verse=verse)
+
+# start_miletone is an element like <verse sid="Gen 1:1"/>
+# TODO: Make this work when a verse spans paragraph or other elements.
+
+def verse_to_string(book, chapter, v):
+	verse = find_verse(book, chapter, v)[0]
+	if verse is None:
+		return ""
+	s = verse.tail
+	e = verse
+	while True:
+		e = e.getnext()
+		if e is None:
+			break
+		if e.tag == "verse":
+			break
+		if e.text:
+			s = s + e.text
+		if e.tail:
+			s = s + e.tail
+	return " ".join(s.split())
+
 # Parse each USX file in the directory and put the document root into a dictionary, indexed
 # by the book identifier.
 #
@@ -41,7 +68,7 @@ if args.base:
 def parse_books(directory):
 	for file in os.listdir(directory):
 		if file.endswith(".usx"):
-			root = ET.parse(directory+file)
+			root = etree.parse(directory+file)
 			for book in root.iter('book'):
 				book_identifier = book.get('code')
 				if book_identifier in canons.book_ids and not book_identifier in canons.non_canonical_ids:
@@ -55,11 +82,11 @@ def parse_books(directory):
 # After splitting on "-", ",", anything non-numeric is a segment.
 # If there's a segment, check to see if the bare form is used too.
 
-def verse_exists(book, chapter, verse):
-	t = Template(".//verse[@sid='$book $chapter:$verse']")
-	query = t.substitute(book=book, chapter=chapter, verse=verse)
+def find_verse(book, chapter, verse):
+	t = Template(".//verse[@sid='$sid']")
+	query = t.substitute(sid=create_sid(book, chapter, verse))
+	logging.info(query)
 	return books[book]["root"].findall(query)
-
 
 def partial(book, chapter, verse):
 	verses = re.split(r'[\-,\,]',verse)
@@ -67,11 +94,10 @@ def partial(book, chapter, verse):
 		segment = re.findall(r'\D+',pv)
 		if segment:
 			numeric = re.findall(r'\d+',pv)[0]
-			t = Template('$book $chapter:$verse')
-			id = t.substitute(book=book, chapter=chapter, verse=numeric)
+			id = create_sid(book, chapter, numeric)
 			if not id in versification["partialVerses"]:
 				versification["partialVerses"][id]=[]
-				if verse_exists(book, chapter, numeric):
+				if find_verse(book, chapter, numeric):
 					versification["partialVerses"][id].append('-')
 			if segment:
 					versification["partialVerses"][id].append(segment[0])
@@ -118,9 +144,6 @@ def max_verses():
 			for i in sorted(max_verses):
 				versification["maxVerses"][book].append(max_verses[i])
 
-# TODO: Test assumption that tests are combined with an implicit AND
-# TODO: See if I can reconstruct nrsv.json mappings with NRSV and no base
-# TODO: See if I can create nrsv.json mappings with NRSV and eng.json as base
 
 def is_last_in_chapter(book, chapter, verse):
 	logging.info("is_last_in_chapter()")
@@ -128,15 +151,13 @@ def is_last_in_chapter(book, chapter, verse):
 	if not book in books:
 		return False
 
-	t = Template('$book $chapter:$verse')
-	this_verse = t.substitute(book=book, chapter=chapter, verse=verse)
-	next_verse = t.substitute(book=book, chapter=chapter, verse=int(verse)+1)
-	logging.info("this, next = " + this_verse + "\t" + next_verse)
+	this_verse = find_verse(book, chapter, verse)
+	next_verse = find_verse(book, chapter, int(verse)+1)
+	logging.info("this, next: " + create_sid(book,chapter,verse) + '\t' + create_sid(book,chapter,int(verse)+1))
+	logging.info(this_verse)
+	logging.info(next_verse)
 
-	root = books[book]["root"]
-	this_found = root.findall(".//verse[@sid='"+this_verse+"']")
-	next_found = root.findall(".//verse[@sid='"+next_verse+"']")
-	if this_found and not next_found:
+	if this_verse and not next_verse:
 			logging.info("Last in chapter")
 			return True
 	else:
@@ -144,11 +165,17 @@ def is_last_in_chapter(book, chapter, verse):
 			return False
 
 
-def has_more_words():
-	pass
+def has_more_words(ref, comparison):
+	ref_string = verse_to_string(ref["book"], ref["chapter"], ref["verse"])
+	comparison_string = verse_to_string(comparison["book"], comparison["chapter"], comparison["verse"])
+	logging.info("has_more_words()")
+	logging.info(ref_string)
+	logging.info(comparison_string)
+	logging.info(len(ref_string) > len(comparison_string))
+	return len(ref_string) > len(comparison_string)
 
-def has_fewer_words():
-	pass
+def has_fewer_words(ref, comparison):
+	has_more_words(comparison, ref)
 
 def mappings(rule):
 	pass
@@ -157,24 +184,43 @@ def mappings(rule):
 # If any one evaluates to false or is not yet implemented, return None.
 # Else, return a dict with mappings for the rule.
 
+def create_mapping(rule):
+	source = rule["source_reference"]
+	source_sid = create_sid(source["book"], source["chapter"], source["verse"])
+	standard = rule["standard_reference"]
+	standard_sid = create_sid(standard["book"], standard["chapter"], standard["verse"])
+
+	logging.info("create_mapping()")
+	logging.info({ source_sid : standard_sid })
+	return { source_sid : standard_sid }
+
 def do_rule(rule):
 	logging.info(rule)
 	mappings = {}
 	for test in rule["tests"]:
 		comparator = test["comparator"]
 		compare_type = test["compare_type"]
+		logging.info(comparator + compare_type)
+
+		ref = test["base_reference"]
+		compare = test["compare_reference"]
+
 		if comparator=="EqualTo" and compare_type == "Last":
-			base_reference = test["base_reference"]
-			if is_last_in_chapter(base_reference["book"], chapter=base_reference["chapter"], verse=base_reference["verse"]):
-				continue
-			else:
+			if not is_last_in_chapter(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
+				return None
+		elif comparator=="GreaterThan" and compare_type == "Reference":
+			if has_fewer_words(ref, compare):
 				return None
 		else:
 			logging.info("Not implemented: " + comparator +"\t" + compare_type)
 			return None
 
+	return create_mapping(rule)
+
+
 def mapped_verses():
 	actions = []
+	mapping = {}
 	with open(args.rules) as r:
 		rules = json.load(r)
 		for rule in rules["rules"]:
@@ -198,6 +244,10 @@ def mapped_verses():
 				continue
 			else:
 				logging.warning("!!! Unexpected action in rule: " + rule["action"]+ " !!!")
+
+		if mapping:
+			logging.info("Mapping:")
+			logging.info(mapping)
 
 		logging.info("Actions found in " + args.rules)
 		for action in actions:
