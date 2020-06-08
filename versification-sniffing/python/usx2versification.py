@@ -38,8 +38,10 @@ def create_sid(book, chapter, verse):
 	sid_template = Template('$book $chapter:$verse')
 	return sid_template.substitute(book=book, chapter=chapter, verse=verse)
 
-# start_miletone is an element like <verse sid="Gen 1:1"/>
-# TODO: Make this work when a verse spans paragraph or other elements.
+# verse_to_string() relies on lxml-specific properties that take the
+# place of text nodes in the DOM.
+#
+# TODO: Make this work when a verse spans paragraph or other elements boundaries.
 
 def verse_to_string(book, chapter, v):
 	verse = find_verse(book, chapter, v)[0]
@@ -119,6 +121,7 @@ def partial(book, chapter, verse):
 def max_verses():
 	versification["maxVerses"] = {}
 	versification["partialVerses"] = {}
+	versification["verseMappings"] = {}
 	versification["excludedVerses"] = {}
 	versification["addedVerses"] = {}
 	for book in canons.book_ids:
@@ -211,6 +214,15 @@ def do_rule(rule):
 		elif comparator=="GreaterThan" and compare_type == "Reference":
 			if has_fewer_words(ref, compare):
 				return None
+		elif comparator=="LessThan" and compare_type == "Reference":
+			if has_more_words(ref, compare):
+				return None
+		elif comparator=="EqualTo" and compare_type == "Exists":
+			if not find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
+				return None
+		elif comparator=="EqualTo" and compare_type == "NotExists":
+			if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
+				return None
 		else:
 			logging.info("Not implemented: " + comparator +"\t" + compare_type)
 			return None
@@ -234,20 +246,20 @@ def mapped_verses():
 				continue
 			elif rule["action"] == "Merged with":
 				mapping = do_rule(rule)
-				continue
 			elif rule["action"] == "Renumber verse":
 				# Also used for splitting or creating subverses
 				mapping = do_rule(rule)
-				continue
 			elif rule["action"] == "Empty verse":
 				# = Excluded verse.
 				continue
 			else:
 				logging.warning("!!! Unexpected action in rule: " + rule["action"]+ " !!!")
+				continue
 
-		if mapping:
-			logging.info("Mapping:")
-			logging.info(mapping)
+			if mapping is not None:
+				for k in mapping.keys():
+					versification["verseMappings"][k] = mapping[k]
+
 
 		logging.info("Actions found in " + args.rules)
 		for action in actions:
