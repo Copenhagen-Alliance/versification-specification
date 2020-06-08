@@ -22,6 +22,7 @@ logging.info(args.name)
 
 books = {}
 versification = {}
+verse_index = {}
 
 if args.base:
 	try:
@@ -44,7 +45,7 @@ def create_sid(book, chapter, verse):
 # TODO: Make this work when a verse spans paragraph or other elements boundaries.
 
 def verse_to_string(book, chapter, v):
-	verse = find_verse(book, chapter, v)[0]
+	verse = find_verse(book, chapter, v)
 	if verse is None:
 		return ""
 	s = verse.tail
@@ -77,7 +78,19 @@ def parse_books(directory):
 					books[book_identifier] = {}
 					books[book_identifier]["root"] = root
 					books[book_identifier]["file"] = file
-
+			logging.info("Indexing " + book_identifier)
+			for verse in root.iter('verse'):
+				attribs = verse.attrib
+				sid = attribs["sid"] if "sid" in attribs else None
+				eid = attribs["eid"] if "eid" in attribs else None
+				if sid is not None:
+					verse_index[sid] = {}
+					verse_index[sid]["start"] = verse
+				elif eid is not None:
+					if not eid in verse_index:
+						verse_index[eid] = {}
+					verse_index[eid]["end"] = verse
+			logging.info("Finished indexing " + book_identifier)
 # Partial Verses (segments)
 #
 # Let's be descriptive, not prescriptive.
@@ -85,10 +98,8 @@ def parse_books(directory):
 # If there's a segment, check to see if the bare form is used too.
 
 def find_verse(book, chapter, verse):
-	t = Template(".//verse[@sid='$sid']")
-	query = t.substitute(sid=create_sid(book, chapter, verse))
-	logging.info(query)
-	return books[book]["root"].findall(query)
+	sid=create_sid(book, chapter, verse)
+	return (verse_index[sid]["start"] if sid in verse_index else None)
 
 def partial(book, chapter, verse):
 	verses = re.split(r'[\-,\,]',verse)
@@ -160,7 +171,7 @@ def is_last_in_chapter(book, chapter, verse):
 	logging.info(this_verse)
 	logging.info(next_verse)
 
-	if this_verse and not next_verse:
+	if this_verse is not None and next_verse is None:
 			logging.info("Last in chapter")
 			return True
 	else:
@@ -218,10 +229,10 @@ def do_rule(rule):
 			if has_more_words(ref, compare):
 				return None
 		elif comparator=="EqualTo" and compare_type == "Exists":
-			if not find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
+			if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]) is None:
 				return None
 		elif comparator=="EqualTo" and compare_type == "NotExists":
-			if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
+			if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]) is not None:
 				return None
 		else:
 			logging.info("Not implemented: " + comparator +"\t" + compare_type)
