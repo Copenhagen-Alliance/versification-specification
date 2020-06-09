@@ -22,6 +22,8 @@ logging.info(args.name)
 
 books = {}
 versification = {}
+
+# XPath does not seem to index attributes in lxml and Etree, so let's create an index to use instead.
 verse_index = {}
 
 if args.base:
@@ -44,6 +46,27 @@ def create_sid(book, chapter, verse):
 #
 # TODO: Make this work when a verse spans paragraph or other elements boundaries.
 
+def get_rest_of_verse(start_verse):
+	# OK, you got to the end of the paragraph and didn't find the ending verse.
+	# A verse element is always the child of a para element, so keep looking at para
+	# elements until you find the end verse.
+
+	para = start_verse.getparent().getnext()
+	if para is None:
+		return ""
+
+	s = ""
+	while para is not None:
+		s = s + para.text
+		for child in para:
+			if child.tag == "verse":
+				return s
+			if child.text:
+				s = s + child.text
+			if child.tail:
+				s = s + child.tail
+		para = para.getnext()
+
 def verse_to_string(book, chapter, v):
 	verse = find_verse(book, chapter, v)
 	if verse is None:
@@ -53,6 +76,8 @@ def verse_to_string(book, chapter, v):
 	while True:
 		e = e.getnext()
 		if e is None:
+			s = s + get_rest_of_verse(verse)
+			logging.warning("Verse " + create_sid(book, chapter, v) + " spans paragraph boundaries - don't trust this result yet!")
 			break
 		if e.tag == "verse":
 			break
@@ -78,7 +103,7 @@ def parse_books(directory):
 					books[book_identifier] = {}
 					books[book_identifier]["root"] = root
 					books[book_identifier]["file"] = file
-			print("Indexing " + book_identifier)
+			logging.info("Indexing " + book_identifier)
 			for verse in root.iter('verse'):
 				attribs = verse.attrib
 				sid = attribs["sid"] if "sid" in attribs else None
@@ -90,7 +115,7 @@ def parse_books(directory):
 					if not eid in verse_index:
 						verse_index[eid] = {}
 					verse_index[eid]["end"] = verse
-			print("Finished indexing " + book_identifier)
+			logging.info("Finished indexing " + book_identifier)
 # Partial Verses (segments)
 #
 # Let's be descriptive, not prescriptive.
