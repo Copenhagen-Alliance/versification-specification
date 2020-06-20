@@ -7,12 +7,34 @@ with urllib.request.urlopen(tvtms_url) as response:
 	with open('tvtms.tsv', 'wb') as otf:
 		shutil.copyfileobj(response, otf)
 
-# Extract the condensed data
 
 def read_until_string(inf, s):
 	for line in inf:
 		if line.startswith(s):
 			return(line)
+
+# Return the lines found in the next rule
+# or None if there are no more
+
+def next_rule(inf):
+	rule_text = []
+	first = read_until_string(inf, '$')
+	if first is None:
+		return None
+	first = first.rstrip().lstrip('$')
+	rule_text.append(first.split('\t'))
+	for line in inf:
+		if line.startswith('\n'):
+			return rule_text
+		rule_text.append(line.rstrip().split('\t'))
+	
+
+# Convert rule to dict
+
+def convert_rule(rule):
+	return { "name" : rule[0][0], "columns" : rule[0][1:] }
+
+# Extract the condensed data
 
 with open('tvtms.tsv', 'r') as inf:
 	with open('condensed.tsv', 'w') as otf:
@@ -29,8 +51,14 @@ with open('tvtms.tsv', 'r') as inf:
 
 # convert to rules file
 
+rules = []
+
 with open('condensed.tsv', 'r') as inf:
 	with open('tvtms_rules.json','w') as otf:
-		first = read_until_string(inf, '$')
-		columns = first.lstrip('$').rstrip('\n').split('\t')
-		print(columns)
+		while True:
+			rule = next_rule(inf)
+			if rule is None:
+				break
+			rules.append(convert_rule(rule))
+
+print(rules)
