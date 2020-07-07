@@ -25,7 +25,8 @@ def next_rule(inf) -> list:
         for line in inf:
                 if line.startswith('\n'):
                         return rule_text
-                rule_text.append(line.rstrip().split('\t'))
+                if line.strip() != "":
+                        rule_text.append(line.rstrip().split('\t'))
 
 def transpose(rows: list) -> list:
         """ Converts columns to rows. Removes empty strings. """
@@ -135,6 +136,4 @@ with open('condensed_rules.json','w') as otf:
 
 with open('merged_rules.json','w') as otf:
     json.dump(merged_rules, otf, ensure_ascii=False, indent=4)
-
-
 
