@@ -142,7 +142,7 @@ def partial(book, chapter, verse):
                         id = create_sid(book, chapter, numeric)
                         if not id in versification["partialVerses"]:
                                 versification["partialVerses"][id]=[]
-                                if find_verse(book, chapter, numeric):
+                                if find_verse(book, chapter,numeric) is not None:
                                         versification["partialVerses"][id].append('-')
                         if segment:
                                         versification["partialVerses"][id].append(segment[0])
@@ -206,75 +206,68 @@ def is_last_in_chapter(book, chapter, verse):
         logging.info(create_sid(book,chapter,verse) + " => " + str(versification["maxVerses"][book][chapter-1]))
 
         if verse == versification["maxVerses"][book][chapter-1]:
-                        logging.info("Last in chapter")
-                        return True
+                logging.info("Last in chapter")
+                return True
         else:
-                        logging.info("Not last in chapter")
-                        return False
+                logging.info("Not last in chapter")
+                return False
 
 
-def has_more_words(ref, comparison, multiplier=1):
+def has_more_words(ref, comparison):
         ref_string = verse_to_string(ref["book"], ref["chapter"], ref["verse"])
         comparison_string = verse_to_string(comparison["book"], comparison["chapter"], comparison["verse"])
         logging.info("has_more_words()")
+        logging.info(ref)
+        logging.info(comparison)
         logging.info(ref_string)
         logging.info(comparison_string)
         logging.info(len(ref_string) > len(comparison_string))
-        return len(ref_string) > len(comparison_string)
+        ref_factor = ref["factor"] if "factor" in ref else 1
+        comparison_factor = comparison["factor"] if "factor" in comparison else 1
+        return len(ref_string)*ref_factor > len(comparison_string)*comparison_factor
 
-def has_fewer_words(ref, comparison, multiplier=1):
+def has_fewer_words(ref, comparison):
         has_more_words(comparison, ref)
 
-def mappings(rule):
-        pass
-
-def create_mapping(rule):
-        """
-        Go through the tests.  If they all evaluate to true, execute the rule.
-        If any one evaluates to false or is not yet implemented, return None.
-        Else, return a dict with mappings for the rule.
-        """
+def do_test(parsed_test) -> bool:
+        logging.info(parsed_test)
         
-        source = rule["source_reference"]
-        source_sid = create_sid(source["book"], source["chapter"], source["verse"])
-        standard = rule["standard_reference"]
-        standard_sid = create_sid(standard["book"], standard["chapter"], standard["verse"])
+        left = parsed_test['left']['parsed']
+        right = parsed_test['right']['parsed']
+        op = parsed_test['op']
 
-        logging.info("create_mapping()")
-        logging.info({ source_sid : standard_sid })
-        return { source_sid : standard_sid }
 
-def do_rule(rule):
-        logging.info(rule)
-        mappings = {}
-        for test in rule["tests"]:
-                comparator = test["comparator"]
-                compare_type = test["compare_type"]
-                logging.info(comparator + compare_type)
+        if "keyword" in right:
+                keyword = right["keyword"]
+        else:
+                keyword = None
 
-                ref = test["base_reference"]
-                compare = test["compare_reference"]
+        logging.info(left)
+        logging.info(op)
+        logging.info(right)
+                
+        if op == "=" and keyword == "Last":
+                if not is_last_in_chapter(left["book"], left["chapter"], left["verse"]):
+                        return False
+        elif op == "=" and keyword == "Exist":
+                if find_verse(left["book"], left["chapter"], left["verse"]) is None:
+                        return False
+        elif op == "=" and keyword == "NotExist":
+                if find_verse(left["book"], left["chapter"], left["verse"]) is not None:
+                        return False
 
-                if comparator=="EqualTo" and compare_type == "Last":
-                        if not is_last_in_chapter(ref["book"], chapter=ref["chapter"], verse=ref["verse"]):
-                                return None
-                elif comparator=="GreaterThan" and compare_type == "Reference":
-                        if has_fewer_words(ref, compare):
-                                return None
-                elif comparator=="LessThan" and compare_type == "Reference":
-                        if has_more_words(ref, compare):
-                                return None
-                elif comparator=="EqualTo" and compare_type == "Exists":
-                        if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]) is None:
-                                return None
-                elif comparator=="EqualTo" and compare_type == "NotExists":
-                        if find_verse(ref["book"], chapter=ref["chapter"], verse=ref["verse"]) is not None:
-                                return None
-                else:
-                        logging.info("Not implemented: " + comparator +"\t" + compare_type)
-                        return None
+        elif op == "<" and 'chapter' in right:
+                if has_more_words(left, right):
+                        return False
+        elif op == ">"  and 'chapter' in right:
+                if has_fewer_words(left, right):
+                        return False
+        else:
+                logging.info("Error in test!  (not implemented?)")
+                return False
 
-        return create_mapping(rule)
+        return True
+
 
 bcv_pattern = r'((\w+)\.(\d+)\:(\d+)\.?(\d+)?\*?(\d+)?)'
 factor_pattern = r'\*?(\d+)'
@@ -286,13 +279,13 @@ def parse_ref(ref):
         """
         m = re.search(bcv_pattern, ref)
         if m is None:
-                return { 'keyword': ref }
+                return { 'keyword': ref.strip() }
         else:
-                d = { 'book': m[2].upper(), 'chapter': m[3], 'verse': m[4]  } 
+                d = { 'book': m[2].upper(), 'chapter': int(m[3]), 'verse': int(m[4]) } 
                 if m[5] is not None:
-                        d['words'] = m[5]
+                        d['words'] = int(m[5])
                 if m[6] is not None:
-                        d['factor'] = m[6]
+                        d['factor'] = int(m[6])
                 if d['book'] not in canons.book_ids:
                         logging.info('ERROR: '+d['book'] + " is not a valid USFM book name")
 
@@ -313,7 +306,7 @@ def parse_test(test) -> dict:
                 d['right'] = {}
                 d['right']['text'] = triple[2]
                 d['right']['parsed'] = parse_ref(triple[2])
-                logging.info(d)
+                return d
 
 
 def map_from(rule) -> int:
@@ -324,12 +317,19 @@ def map_from(rule) -> int:
         None - no column passed all of the tests 
         """
         tests = rule["tests"]
-        for i in range(0, len(tests)):
-                for test in tests[i]:
+        for c in range(0, len(tests)):
+                for test in tests[c]:
                         pt = parse_test(test)
+                        if do_test(pt) is False:
+                                continue
+
+                return c
+                        
+        logging.info("map_from(): no set of tests matches!")
+        return None
 
 
-def map_to(rule) -> int:
+def map_to(rule:dict) -> int:
         """
         Which column should we map to?
 
@@ -350,6 +350,15 @@ def map_to(rule) -> int:
 
         return to
 
+def create_mappings(rule:dict, from_column:int, to_column:int) -> None:
+        logging.info("Map from column " + str(from_column) + " to column " + str(to_column))
+        for r in rule["ranges"]:
+                for k in r.keys():
+                        logging.info(r[k][from_column] + " : " + r[k][to_column])
+                        frum = r[k][from_column]
+                        to = r[k][to_column]
+                        if frum != to:
+                                versification["verseMappings"][frum] = to
 
 def mapped_verses():
         """
@@ -361,15 +370,20 @@ def mapped_verses():
         careful handling. 
         https://ubsicap.github.io/usx/vocabularies.html#usx-vocab-bookcode
         """
-
-        actions = []
-        mapping = {}
         with open(args.rules) as r:
                 rules = json.load(r)
                 for rule in rules:
-                        mapping = {}
-                        map_from(rule)
+                        logging.info("-------------------------")
                         logging.info("Rule: " + rule["name"])
+                        from_column = map_from(rule)
+                        if from_column is None:
+                                continue
+                        else:
+                                to_column = map_to(rule)
+                                if from_column != to_column:
+                                        create_mappings(rule, from_column, to_column)
+                                
+                                # TODO - check to see if base mapping exists
 
 
 versification["shortname"] = args.name
