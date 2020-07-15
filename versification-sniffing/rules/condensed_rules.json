@@ -27,12 +27,21 @@
         ],
         "ranges": [
             {
-                "SubdividedVerse": [
+                "MergedVerses": [
+                    "Gen.2:25",
+                    "Gen.2:25",
+                    "Gen.2:25",
+                    "Gen.2:25",
+                    "Gen.3:1.1"
+                ]
+            },
+            {
+                "MergedVerses": [
                     "Gen.3:1",
                     "Gen.3:1",
                     "Gen.3:1",
                     "Gen.3:1",
-                    "Gen.2:25--3:1"
+                    "Gen.3:1.2"
                 ]
             }
         ]
@@ -4687,6 +4696,7 @@
                     "Est.4:17",
                     "Est.4:17.0",
                     "Est.4:17 [=+Est.13:8-18; 14:1-19 (C:1-30)]",
+                    "Est.4:17",
                     "Est.4:17"
                 ]
             },
@@ -4735,7 +4745,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Est.4:17.12-13",
                     "NoVerse",
                     "Est.C:12-13",
@@ -4746,7 +4756,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Est.4:17.14-15",
                     "NoVerse",
                     "Est.C:14-15",
@@ -4757,7 +4767,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Est.4:17.16-17",
                     "NoVerse",
                     "Est.C:16-17",
@@ -4779,7 +4789,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Est.4:17.22-23",
                     "NoVerse",
                     "Est.C:22-23",
@@ -5501,7 +5511,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Esg.14:1-2",
                     "NoVerse",
                     "Esg.C:12-13",
@@ -5512,7 +5522,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Esg.14:3-4",
                     "NoVerse",
                     "Esg.C:14-15",
@@ -5523,7 +5533,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Esg.14:5-6",
                     "NoVerse",
                     "Esg.C:16-17",
@@ -5545,7 +5555,7 @@
                 ]
             },
             {
-                "+MergedVerses": [
+                "MergedVerses": [
                     "Esg.14:11-12",
                     "NoVerse",
                     "Esg.C:22-23",
@@ -7744,7 +7754,7 @@
                 "Psa.32:1.1=NotExist"
             ],
             [
-                "32",
+                "Psa.32:11=Last",
                 "Psa.32:1.1=Exist"
             ]
         ],
@@ -15950,9 +15960,6 @@
                     "Bar.3:36-38",
                     "Bar.3:36-38"
                 ]
-            },
-            {
-                "": []
             }
         ]
     },
@@ -23362,13 +23369,13 @@
         ],
         "tests": [
             [
-                "1Jh.5:7<1Jh.1Jh.5:19"
+                "1Jn.5:7<1Jn.5:19"
             ],
             [
-                "1Jh.5:7<1Jh.1Jh.5:19"
+                "1Jn.5:7<1Jn.5:19"
             ],
             [
-                "1Jh.5:7>1Jh.1Jh.5:19"
+                "1Jn.5:7>1Jn.5:19"
             ]
         ],
         "ranges": [
@@ -23419,7 +23426,9 @@
     {
         "name": "Rev.12:17-13.1a",
         "columns": [
-            "English",
+            "English (NRSV)",
+            "Eng2 (eg NIV, KJV)",
+            "Eng3 (eg ESV)",
             "Greek",
             "Greek2"
         ],
@@ -23434,28 +23443,41 @@
             [
                 "Rev.12:17=Last",
                 "Rev.12:17<Rev.13:1"
+            ],
+            [
+                "Rev.12:18=Last"
+            ],
+            [
+                "Rev.12:17=Last",
+                "Rev.12:17<Rev.13:1"
             ]
         ],
         "ranges": [
             {
                 "OneToOne": [
                     "Rev.12:17",
-                    "12:17a",
-                    "12:17"
+                    "Rev.12:17",
+                    "Rev.12:17a",
+                    "Rev.12:17",
+                    "Rev.12:17"
                 ]
             },
             {
                 "OneToOne": [
                     "Rev.12:18",
-                    "12:17b",
-                    "13:1a"
+                    "Rev.13:1a",
+                    "Rev.12:17b",
+                    "Rev.12:18",
+                    "Rev.13:1a"
                 ]
             },
             {
                 "OneToOne": [
                     "Rev.13:1",
-                    "13:1",
-                    "13:1b"
+                    "Rev.13:1b",
+                    "Rev.13:1",
+                    "Rev.13:1",
+                    "Rev.13:1b"
                 ]
             }
         ]
