@@ -60,7 +60,8 @@ def get_rest_of_verse(start_verse):
 
         s = ""
         while para is not None:
-                s = s + para.text
+                if para.text is not None:
+                    s = s + para.text
                 for child in para:
                         if child.tag == "verse":
                                 return s
@@ -76,25 +77,28 @@ def verse_to_string(book, chapter, v):
                 return ""
         s = verse.tail
         e = verse
-        while True:
-                e = e.getnext()
-                if e is None:
-                        s = s + get_rest_of_verse(verse)
-                        logging.warning("Verse " + create_sid(book, chapter, v) + " spans paragraph boundaries - don't trust this result yet!")
-                        break
-                if e.tag == "verse":
-                        break
-                if e.text:
-                        s = s + e.text
-                if e.tail:
-                        s = s + e.tail
-        return " ".join(s.split())
+        if s is not None:
+            while True:
+                    e = e.getnext()
+                    if e is None:
+                            s = s + get_rest_of_verse(verse)
+                            logging.warning("Verse " + create_sid(book, chapter, v) + " spans paragraph boundaries - don't trust this result yet!")
+                            break
+                    if e.tag == "verse":
+                            break
+                    if e.text:
+                            s = s + e.text
+                    if e.tail:
+                            s = s + e.tail
+            return " ".join(s.split())
+        else:
+            return None
 
 def parse_books(directory):
         """
         Parse each USX file in the directory and put the document root into a dictionary, indexed
         by the book identifier.
-        
+
         Each USX file should contain a book.  Can there be more than one? Each book should have a @code attribute
         that contains a Book Identifier (https://ubsicap.github.io/usfm/identification/books.html).
         """
@@ -231,7 +235,7 @@ def has_fewer_words(ref, comparison):
 
 def do_test(parsed_test) -> bool:
         logging.info(parsed_test)
-        
+
         left = parsed_test['left']['parsed']
         right = parsed_test['right']['parsed']
         op = parsed_test['op']
@@ -245,7 +249,7 @@ def do_test(parsed_test) -> bool:
         logging.info(left)
         logging.info(op)
         logging.info(right)
-                
+
         if op == "=" and keyword == "Last":
                 if not is_last_in_chapter(left["book"], left["chapter"], left["verse"]):
                         return False
@@ -281,7 +285,7 @@ def parse_ref(ref):
         if m is None:
                 return { 'keyword': ref.strip() }
         else:
-                d = { 'book': m[2].upper(), 'chapter': int(m[3]), 'verse': int(m[4]) } 
+                d = { 'book': m[2].upper(), 'chapter': int(m[3]), 'verse': int(m[4]) }
                 if m[5] is not None:
                         d['words'] = int(m[5])
                 if m[6] is not None:
@@ -293,7 +297,7 @@ def parse_ref(ref):
 
 def parse_test(test) -> dict:
         d = {}
-        
+
         t = re.compile('([<=>])')
         triple = t.split(test)
         if len(triple) != 3:
@@ -314,7 +318,7 @@ def map_from(rule) -> int:
         Which column are we mapping from?
 
         c - the column that passes all of the tests
-        None - no column passed all of the tests 
+        None - no column passed all of the tests
         """
         tests = rule["tests"]
         for c in range(0, len(tests)):
@@ -324,7 +328,7 @@ def map_from(rule) -> int:
                                 continue
 
                 return c
-                        
+
         logging.info("map_from(): no set of tests matches!")
         return None
 
@@ -354,10 +358,10 @@ def create_mappings(rule:dict, from_column:int, to_column:int) -> None:
         logging.info("Map from column " + str(from_column) + " to column " + str(to_column))
         for r in rule["ranges"]:
                 for k in r.keys():
-                        logging.info(r[k][from_column] + " : " + r[k][to_column])
-                        frum = r[k][from_column]
-                        to = r[k][to_column]
-                        if frum != to:
+                        frum = r[k][from_column].upper().replace("."," ", 1)
+                        to = r[k][to_column].upper().replace("."," ", 1)
+                        logging.info(frum + " : " + to)
+                        if frum != to and to != "NOVERSE":
                                 versification["verseMappings"][frum] = to
 
 def mapped_verses():
@@ -367,7 +371,7 @@ def mapped_verses():
         (2) Greek, if there is no Hebrew
 
         TODO: DAG, ESG, etc. are not separate books in this scheme.  Requires
-        careful handling. 
+        careful handling.
         https://ubsicap.github.io/usx/vocabularies.html#usx-vocab-bookcode
         """
         with open(args.rules) as r:
@@ -382,7 +386,7 @@ def mapped_verses():
                                 to_column = map_to(rule)
                                 if from_column != to_column:
                                         create_mappings(rule, from_column, to_column)
-                                
+
                                 # TODO - check to see if base mapping exists
 
 
