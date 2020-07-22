@@ -74,25 +74,26 @@ def get_rest_of_verse(start_verse):
 def verse_to_string(book, chapter, v):
         verse = find_verse(book, chapter, v)
         if verse is None:
-                return ""
+            return ""
         s = verse.tail
+        if s is None:
+            return ""
         e = verse
-        if s is not None:
-            while True:
-                    e = e.getnext()
-                    if e is None:
-                            s = s + get_rest_of_verse(verse)
-                            logging.warning("Verse " + create_sid(book, chapter, v) + " spans paragraph boundaries - don't trust this result yet!")
-                            break
-                    if e.tag == "verse":
-                            break
-                    if e.text:
-                            s = s + e.text
-                    if e.tail:
-                            s = s + e.tail
-            return " ".join(s.split())
-        else:
-            return None
+
+        while True:
+            e = e.getnext()
+            if e is None:
+                    s = s + get_rest_of_verse(verse)
+                    logging.warning("Verse " + create_sid(book, chapter, v) + " spans paragraph boundaries - don't trust this result yet!")
+                    break
+            if e.tag == "verse":
+                    break
+            if e.text:
+                    s = s + e.text
+            if e.tail:
+                    s = s + e.tail
+        return " ".join(s.split())
+
 
 def parse_books(directory):
         """
