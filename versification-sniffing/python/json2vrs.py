@@ -21,6 +21,9 @@ if args.json:
         print(exc)
         base = None
 
+print("# Versification for " + base["shortname"])
+print("#")
+
 print("# Maximum Verses per Chapter")
 for key in base["maxVerses"].keys():
 	print(key, end=" ")
