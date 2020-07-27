@@ -28,8 +28,8 @@ print("# Maximum Verses per Chapter")
 for key in base["maxVerses"].keys():
 	print(key, end=" ")
 	pairs = zip (
-		range(1,len(base["maxVerses"][key])),
-		base["maxVerses"][key]
+		range(1,len(base["maxVerses"][key])+1),
+                base["maxVerses"][key]
 	)
 	for p in pairs:
 		print(str(p[0])+":"+str(p[1]), end=" ")
@@ -41,7 +41,7 @@ for key in base["excludedVerses"].keys():
 
 print("# Verse Segments (aka Partial Verses)")
 for key in base["partialVerses"].keys():
-	print("#! *"+",".join([key]+base["partialVerses"][key]))
+	print("*"+",".join([key]+base["partialVerses"][key]))
 
 print("# Verse Mappings")
 for key in base["verseMappings"].keys():
