@@ -27,13 +27,13 @@ print("#")
 print("# Maximum Verses per Chapter")
 for key in base["maxVerses"].keys():
 	print(key, end=" ")
-	pairs = zip (
-		range(1,len(base["maxVerses"][key])+1),
-                base["maxVerses"][key]
-	)
-	for p in pairs:
-		print(str(p[0])+":"+str(p[1]), end=" ")
-	print()
+	i=1
+	chapter_lengths = base["maxVerses"][key]
+	for i in range(0, len(chapter_lengths)):
+		if i < len(chapter_lengths) - 1:
+			print(str(i+1)+":"+str(chapter_lengths[i]), end=" ")
+		else:
+			print(str(i+1)+":"+str(chapter_lengths[i]))
 
 print("# Excluded Verses")
 for key in base["excludedVerses"].keys():
