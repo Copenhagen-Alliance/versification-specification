@@ -67,11 +67,6 @@ def merge_columns(rule: dict) -> dict:
                 for k in r.keys():
                         d = {}
                         d[k] = [ r[k][i] for i in range(0, len(r[k])) if i in column_numbers]
-                        """
-                        for i in column_numbers:
-                                if i in r[k]:
-                                        d[k].append(r[k][i])
-                        """
                         ranges.append(d)
                                         
                                 
@@ -83,12 +78,16 @@ def merge_columns(rule: dict) -> dict:
         }
         return d
 
+
+def first_tokens_only(reflist):
+        return [r.split()[0] for r in reflist]
+
 def convert_rule(rule: list) -> dict:
         d = {   
                 "name" : rule[0][0].replace("--", "-"), 
                 "columns" : rule[0][1:],
                 "tests" : transpose([row[1:] for row in rule if row[0].startswith("TEST")]),
-                "ranges" : [ { row[0]: row[1:] } for row in rule if row[0] != rule[0][0] if not row[0].startswith("TEST") ]
+                "ranges" : [ { row[0]: first_tokens_only(row[1:]) } for row in rule if row[0] != rule[0][0] if not row[0].startswith("TEST") ]
         }
         return d
 
