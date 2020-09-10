@@ -85,7 +85,7 @@ def merge_columns(rule: dict) -> dict:
 
 def convert_rule(rule: list) -> dict:
         d = {   
-                "name" : rule[0][0], 
+                "name" : rule[0][0].replace("--", "-"), 
                 "columns" : rule[0][1:],
                 "tests" : transpose([row[1:] for row in rule if row[0].startswith("TEST")]),
                 "ranges" : [ { row[0]: row[1:] } for row in rule if row[0] != rule[0][0] if not row[0].startswith("TEST") ]
