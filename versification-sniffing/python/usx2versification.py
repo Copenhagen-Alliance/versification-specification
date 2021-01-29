@@ -13,7 +13,6 @@ logging.basicConfig(filename='debug.log',level=logging.DEBUG, format='%(asctime)
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
 ap.add_argument('-usx', help="directory containing USX 3.0 files", default="./usx/")
-ap.add_argument('-b', '--base', help="base versification, e.g. 'lxx'")
 ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
 ap.add_argument('-r', '--rules', help="merged rules file for mapping verses", default='./rules/merged_rules.json')
 args = ap.parse_args()
@@ -26,15 +25,6 @@ versification = {}
 
 # XPath does not seem to index attributes in lxml and Etree, so let's create an index to use instead.
 verse_index = {}
-
-if args.base:
-    try:
-        base_versification_file = args.mappings + args.base + '.json'
-        fp = open(base_versification_file, "r")
-        base = json.load(fp)
-    except Exception as exc:
-        print(exc)
-        base = None
 
 # Helper functions
 
@@ -398,13 +388,9 @@ def mapped_verses():
                 if from_column != to_column:
                     create_mappings(rule, from_column, to_column)
 
-                            # TODO - check to see if base mapping exists
 
 
 versification["shortname"] = args.name
-if args.base:
-	versification['basedOn'] = args.base
-	logging.info('Base versification: '+ args.base)
 
 parse_books(args.usx+args.name+"/")
 max_verses()
