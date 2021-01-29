@@ -12,13 +12,17 @@ logging.basicConfig(filename='debug.log',level=logging.DEBUG, format='%(asctime)
 
 ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
-ap.add_argument('-usx', help="directory containing USX 3.0 files", default="./usx/")
-ap.add_argument('-m', '--mappings', help="directory containing versification mappings.", default='./mappings/')
-ap.add_argument('-r', '--rules', help="merged rules file for mapping verses", default='./rules/merged_rules.json')
+ap.add_argument('-o', '--outdir', help="Directory for output", default='./output/')
+ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
+ap.add_argument('-usx', help="Directory containing USX 3.0 files", default="./usx/")
+ap.add_argument('-m', '--mappings', help="Directory containing versification mappings.", default='./mappings/')
+ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='./rules/merged_rules.json')
 args = ap.parse_args()
 
 logging.info("------------------------------------------")
 logging.info("Directory: " + args.name)
+
+outfile = args.outdir+args.name+".json"
 
 books = {}
 versification = {}
@@ -402,4 +406,6 @@ Sort verse segments - alphabetical order, not order of first encounter.
 for key in versification["partialVerses"].keys():
     versification["partialVerses"][key].sort()
 
-print(json.dumps(versification, indent=4, ensure_ascii=False))
+# print(json.dumps(versification, indent=4, ensure_ascii=False))
+with open(outfile, 'w') as otf:
+    json.dump(versification, otf, indent=4, ensure_ascii=False)
