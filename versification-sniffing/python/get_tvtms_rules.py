@@ -4,9 +4,14 @@ import urllib.request
 
 
 """
-    Best visual representation of the TVTMS data is in this spreadsheet:
+Best visual representation of the TVTMS data is in this spreadsheet:
 
     https://docs.google.com/spreadsheets/d/1mxUu7HJ5DScA7wOQLd-qFUMuG_MHnWjM6KxJ79qQs9Q/edit#gid=1869211794
+
+URL for text is here:
+
+https://raw.githubusercontent.com/tyndale/STEPBible-Data/master/TVTMS%20-%20Tyndale%20Versification%20Traditions%20with%20Methodology%20for%20Standardisation%20for%20Eng%2BHeb%2BLat%2BGrk%2BOthers%20-%20STEPBible.org%20CC%20BY.txt
+
 """
 
 def read_until_string(inf, s):
@@ -21,11 +26,12 @@ def next_rule(inf) -> list:
         if first is None:
                 return None
         first = first.rstrip().lstrip('$')
+        print(first)
         rule_text.append(first.split('\t'))
         for line in inf:
-                if line.startswith('\n'):
+                if line.isspace():
                         return rule_text
-                if line.strip() != "":
+                else:
                         rule_text.append(line.rstrip().split('\t'))
 
 def transpose(rows: list) -> list:
@@ -47,7 +53,7 @@ def merge_columns(rule: dict) -> dict:
         merged = []
         tests = []
         ranges = []
-        
+
         for i in range(0, ncols):
                 """ If this column has not been categorized yet, create a column for it """
                 if rule["columns"][i] not in categorized:
@@ -68,8 +74,8 @@ def merge_columns(rule: dict) -> dict:
                         d = {}
                         d[k] = [ r[k][i] for i in range(0, len(r[k])) if i in column_numbers]
                         ranges.append(d)
-                                        
-                                
+
+
         d = {
                 "name": rule["name"],
                 "columns": merged,
@@ -83,8 +89,12 @@ def first_tokens_only(reflist):
         return [r.split()[0] for r in reflist]
 
 def convert_rule(rule: list) -> dict:
-        d = {   
-                "name" : rule[0][0].replace("--", "-"), 
+        """
+          ### TODO: Defensive programming - make sure that we have the same number of columns for each test
+              or range.  Is this the right place to do that? #####
+        """
+        d = {
+                "name" : rule[0][0].replace("--", "-"),
                 "columns" : rule[0][1:],
                 "tests" : transpose([row[1:] for row in rule if row[0].startswith("TEST")]),
                 "ranges" : [ { row[0]: first_tokens_only(row[1:]) } for row in rule if row[0] != rule[0][0] if not row[0].startswith("TEST") ]
@@ -94,7 +104,7 @@ def convert_rule(rule: list) -> dict:
 
 """ Get the TVTMS file in TSV format  """
 
-tvtms_url = "https://raw.githubusercontent.com/tyndale/STEPBible-Data/master/TVTMS%20-%20Tyndale%20Versification%20Traditions%20with%20Methodology%20for%20Standardisation%20for%20Eng%2BHeb%2BLat%2BGrk%2BOthers%20-%20TyndaleHouse.com%20STEPBible.org%20CC%20BY-NC.txt"
+tvtms_url = "https://raw.githubusercontent.com/tyndale/STEPBible-Data/master/TVTMS%20-%20Tyndale%20Versification%20Traditions%20with%20Methodology%20for%20Standardisation%20for%20Eng%2BHeb%2BLat%2BGrk%2BOthers%20-%20STEPBible.org%20CC%20BY.txt"
 
 with urllib.request.urlopen(tvtms_url) as response:
         with open('tvtms.tsv', 'wb') as otf:
@@ -126,13 +136,13 @@ with open('condensed.tsv', 'r') as inf:
                 if rule is None:
                         break
                 condensed = convert_rule(rule)
+                print(condensed)  # convert to debug or drop
                 merged = merge_columns(condensed)
                 condensed_rules.append(condensed)
                 merged_rules.append(merged)
 
-with open('condensed_rules.json','w') as otf:
+with open('condensed_rules.json','w', newline='\n') as otf:
     json.dump(condensed_rules, otf, ensure_ascii=False, indent=4)
 
-with open('merged_rules.json','w') as otf:
+with open('merged_rules.json','w', newline='\n') as otf:
     json.dump(merged_rules, otf, ensure_ascii=False, indent=4)
-
