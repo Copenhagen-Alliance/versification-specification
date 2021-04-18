@@ -3,6 +3,7 @@ import os
 import re
 import logging
 import subprocess
+import csv
 from lxml import etree
 from string import Template
 import json
@@ -452,6 +453,33 @@ class USFM_parser(InputParser):
 				logging.info("Processed file:%s", file)
 		self.books = self.verse_list2dict()
 
+
+class CSV_parser(InputParser):
+	"""docstring for USFM_parser"""
+	def __init__(self):
+		super(CSV_parser, self).__init__()
+		self.input_path = None
+		self.bookpattern = re.compile(r"[\w\d]\w\w")
+		self.chapterPattern = re.compile(r"\d+")
+
+	def read_files(self, input_path):
+		if not input_path.endswith("/"):
+			input_path += "/"
+		self.input_path = input_path
+		for file in sorted(os.listdir(input_path)):
+			if file.endswith(".csv") or file.endswith('.tsv'):
+				with open(input_path+file, newline='') as csvfile:
+					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'])
+					next(reader, None)  # skip the headers
+					for row in reader:
+						if not re.match(self.bookpattern, row['Book']):
+							raise Exception("Not the expected pattern for value 'Book' in row:%s",row)
+						if not re.match(self.chapterPattern, row['Chapter']):
+							raise Exception("Not the expected pattern for value 'Chapter' in row:%s",row)
+						self.verse_list.append((row['Book'].upper(), row['Chapter'], row['Verse'], row['Text']))
+				logging.info("Processed file:%s", file)
+		self.books = self.verse_list2dict()
+
 input1 = [
 	{"book":"GEN", "chapter":1, "verse_num":1, "verse_text":"Sample text"},
 	{"book":"GEN", "chapter":1, "verse_num":2, "verse_text":"Sample text"},
@@ -510,8 +538,15 @@ input2 = [
 # sniffer_obj = Sniffer(books)
 # sniffer_obj.sniff("MAL10RO-usx-modified")
 
-parser3 = USFM_parser()
-parser3.read_files(input_path="../../data/Eng-ULB-usfm")
-books = parser3.books
+# parser3 = USFM_parser()
+# parser3.read_files(input_path="../../data/Eng-ULB-usfm")
+# books = parser3.books
+# sniffer_obj = Sniffer(books)
+# sniffer_obj.sniff("Eng-ULB-usfm")
+
+parser4 = CSV_parser()
+parser4.read_files(input_path="../../data/Eng-ULB-csv")
+books = parser4.books
 sniffer_obj = Sniffer(books)
-sniffer_obj.sniff("Eng-ULB-usfm")
+sniffer_obj.sniff("Eng-ULB-csv")
+
