@@ -2,6 +2,7 @@
 import os
 import re
 import logging
+import subprocess
 from lxml import etree
 from string import Template
 import json
@@ -419,6 +420,38 @@ class USX_parser(InputParser):
 		return path.split('/')[-2]
 
 
+
+class USFM_parser(InputParser):
+	"""docstring for USFM_parser"""
+	def __init__(self):
+		super(USFM_parser, self).__init__()
+		self.input_path = None
+
+	def read_files(self, input_path):
+		if not input_path.endswith("/"):
+			input_path += "/"
+		self.input_path = input_path
+		for file in sorted(os.listdir(input_path)):
+			if file.endswith(".usfm"):
+				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
+									 stdout=subprocess.PIPE,
+									 stderr=subprocess.PIPE,
+									 shell=True)
+				stdout, stderr = process.communicate()
+				if stderr:
+					raise Exception(stderr.decode('utf-8'))
+				usfm_json = json.loads(stdout.decode('utf-8'))
+				book_code = usfm_json['book']['bookCode']
+				for chap in usfm_json['chapters']:
+					chapter_num = chap['chapterNumber']
+					for content in chap['contents']:
+						if "verseNumber" in content:
+							verse_num = content['verseNumber']
+							verse_text = content['verseText']
+							self.verse_list.append((book_code, chapter_num, verse_num, verse_text))
+				logging.info("Processed file:%s", file)
+		self.books = self.verse_list2dict()
+
 input1 = [
 	{"book":"GEN", "chapter":1, "verse_num":1, "verse_text":"Sample text"},
 	{"book":"GEN", "chapter":1, "verse_num":2, "verse_text":"Sample text"},
@@ -471,11 +504,14 @@ input2 = [
 # sniffer_obj = Sniffer(books)
 # sniffer_obj.sniff(name="custom_versification")
 
-parser2 = USX_parser()
-parser2.read_files(input_path="../../data/MAL10RO-usx")
-books = parser2.books
-# with open("test_books_modifed", 'w') as otf:
-# 	json.dump(books, otf, indent=4, ensure_ascii=False)
-sniffer_obj = Sniffer(books)
-sniffer_obj.sniff("MAL10RO-usx-modified")
+# parser2 = USX_parser()
+# parser2.read_files(input_path="../../data/MAL10RO-usx")
+# books = parser2.books
+# sniffer_obj = Sniffer(books)
+# sniffer_obj.sniff("MAL10RO-usx-modified")
 
+parser3 = USFM_parser()
+parser3.read_files(input_path="../../data/Eng-ULB-usfm")
+books = parser3.books
+sniffer_obj = Sniffer(books)
+sniffer_obj.sniff("Eng-ULB-usfm")
