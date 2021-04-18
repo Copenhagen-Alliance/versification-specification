@@ -4,6 +4,7 @@ import re
 import logging
 import subprocess
 import csv
+import argparse
 from lxml import etree
 from string import Template
 import json
@@ -14,7 +15,7 @@ logging.basicConfig(filename='debug2.log',level=logging.DEBUG, format='%(asctime
 logging.info("------------------------------------------")
 
 class Sniffer(object):
-	"""docstring for Sniffer"""
+	'''Versification identification logics irrespective of input format'''
 	def __init__(self, books, outdir='../../data/output/', vrs=False,
 		mappings='../../versification-mappings/standard-mappings',
 		rules='../rules/merged_rules.json'):
@@ -34,9 +35,13 @@ class Sniffer(object):
 				self.books[b][int(c)] = {}
 				for v in books[b][c]:
 					self.books[b][int(c)][str(v)] = books[b][c][v] 
+		#make sure output path is present
+		if not os.path.isdir(outdir):
+			os.mrdir(outdir)
 
 
 	def sniff(self, name=None):
+		'''Takes the book dictionary and applies versification mappings and rules to create a versifcation json output'''
 		if name is None:
 			name = "custom_versification"
 		self.versification['shortname'] = name
@@ -282,13 +287,14 @@ class Sniffer(object):
 
 
 class InputParser(object):
-	"""docstring for InputParser"""
+	"""Base class InputParser"""
 	def __init__(self):
 		super(InputParser, self).__init__()
 		self.verse_list = []
 		self.books = {}
 
 	def read_files():
+		'''to be implemented in child classes'''
 		pass
 
 	def verse_list2dict(self, verses=None):
@@ -318,7 +324,7 @@ class InputParser(object):
 
 
 class USX_parser(InputParser):
-	"""docstring for USX_parser"""
+	"""Logics related to converting USX files to a verse_list/book dictionary, required by Sniffer"""
 	def __init__(self):
 		super(USX_parser, self).__init__()
 		self.input_path = None
@@ -423,7 +429,8 @@ class USX_parser(InputParser):
 
 
 class USFM_parser(InputParser):
-	"""docstring for USFM_parser"""
+	"""Logics related to converting USFM files to a verse_list/book dictionary, required by Sniffer
+	Requires node library usfm-grammar installed"""
 	def __init__(self):
 		super(USFM_parser, self).__init__()
 		self.input_path = None
@@ -455,7 +462,8 @@ class USFM_parser(InputParser):
 
 
 class CSV_parser(InputParser):
-	"""docstring for USFM_parser"""
+	"""Logics related to converting CSV files to a verse_list/book dictionary, required by Sniffer.
+	CSV files expected with a header and following fields:'Book', 'Chapter', 'Verse', 'Text'"""
 	def __init__(self):
 		super(CSV_parser, self).__init__()
 		self.input_path = None
@@ -524,29 +532,35 @@ input2 = [
 	["REV", 1, "18-20", "Sample text"]
 ]
 
-
-
 # parser = InputParser()
 # books = parser.verse_list2dict(input2)
 # print(books)
 # sniffer_obj = Sniffer(books)
 # sniffer_obj.sniff(name="custom_versification")
 
-# parser2 = USX_parser()
-# parser2.read_files(input_path="../../data/MAL10RO-usx")
-# books = parser2.books
-# sniffer_obj = Sniffer(books)
-# sniffer_obj.sniff("MAL10RO-usx-modified")
+if __name__ == '__main__':
+	ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
+	ap.add_argument('-n', '--name', help="Short name of the text e.g. 'NRSVUK' or 'ESV', should be same as input directory name", required=True)
+	ap.add_argument('-f','--format', help="Input file format. Any one of usx, usfm, csv", required=True)
+	ap.add_argument('-i', '--indir', help="path containing input files directory", default="../../data/")
+	ap.add_argument('-o', '--outdir', help="Directory for output", default='../../data/output/')
+	ap.add_argument('-m', '--mappings', help="Directory containing versification mappings.", default='../../versification-mappings/standard-mappings')
+	ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='../rules/merged_rules.json')
+	ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
+	args = ap.parse_args()
 
-# parser3 = USFM_parser()
-# parser3.read_files(input_path="../../data/Eng-ULB-usfm")
-# books = parser3.books
-# sniffer_obj = Sniffer(books)
-# sniffer_obj.sniff("Eng-ULB-usfm")
+	if args.format.lower() == 'usx':
+	 	parser = USX_parser()
+	elif args.format.lower() == 'usfm':
+	 	parser = USFM_parser()
+	elif args.format.lower() == 'csv':
+		parser = CSV_parser()
+	else:
+		raise Exception("Unsupported format:%s", args.format)
 
-parser4 = CSV_parser()
-parser4.read_files(input_path="../../data/Eng-ULB-csv")
-books = parser4.books
-sniffer_obj = Sniffer(books)
-sniffer_obj.sniff("Eng-ULB-csv")
+	input_path = args.indir + args.name
+	parser.read_files(input_path=input_path)
+	books = parser.books
+	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
+	sniffer_obj.sniff(args.name)
 
