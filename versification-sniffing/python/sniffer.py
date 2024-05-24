@@ -188,7 +188,7 @@ class Sniffer(object):
 		return len(ref_string)*ref_factor > len(comparison_string)*comparison_factor
 
 	def has_fewer_words(self, ref, comparison):
-		self.has_more_words(comparison, ref)
+		return self.has_more_words(comparison, ref)
 
 	def book_exists(self, book):
 		return book in self.versification["maxVerses"]
