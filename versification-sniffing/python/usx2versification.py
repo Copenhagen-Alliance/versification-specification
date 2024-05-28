@@ -166,8 +166,8 @@ def max_verses():
     versification["maxVerses"] = {}
     versification["partialVerses"] = {}
     versification["verseMappings"] = {}
-    versification["excludedVerses"] = {}
-    versification["unexcludedVerses"] = {}
+    versification["excludedVerses"] = []
+    versification["unexcludedVerses"] = []
     for book in canons.book_ids:
         if book in books:
             root = books[book]["root"]
