@@ -37,7 +37,7 @@ class Sniffer(object):
 					self.books[b][int(c)][str(v)] = books[b][c][v] 
 		#make sure output path is present
 		if not os.path.isdir(outdir):
-			os.mrdir(outdir)
+			os.mkdir(outdir)
 
 
 	def sniff(self, name=None):
@@ -440,7 +440,7 @@ class USFM_parser(InputParser):
 			input_path += "/"
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
-			if file.endswith(".usfm"):
+			if file.endswith(".SFM"):
 				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
 									 stdout=subprocess.PIPE,
 									 stderr=subprocess.PIPE,
@@ -476,8 +476,8 @@ class CSV_parser(InputParser):
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
 			if file.endswith(".csv") or file.endswith('.tsv'):
-				with open(input_path+file, newline='') as csvfile:
-					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'])
+				with open(input_path+file, newline='', encoding='utf-8') as csvfile:
+					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter="\t")
 					next(reader, None)  # skip the headers
 					for row in reader:
 						if not re.match(self.bookpattern, row['Book']):
@@ -539,7 +539,8 @@ input2 = [
 # sniffer_obj.sniff(name="custom_versification")
 
 if __name__ == '__main__':
-	ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
+	'''
+ 	ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 	ap.add_argument('-n', '--name', help="Short name of the text e.g. 'NRSVUK' or 'ESV', should be same as input directory name", required=True)
 	ap.add_argument('-f','--format', help="Input file format. Any one of usx, usfm, csv", required=True)
 	ap.add_argument('-i', '--indir', help="path containing input files directory", default="../../data/")
@@ -548,19 +549,27 @@ if __name__ == '__main__':
 	ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='../rules/merged_rules.json')
 	ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
 	args = ap.parse_args()
+ 	'''
+	name = "BSB"
+	format = "csv"
+	indir = "data/input/"
+	outdir = "data/output/"
+	mappings = "versification-mappings/standard-mappings/"
+	rules = "versification-sniffing/rules/merged_rules.json"
+	vrs = True
 
-	if args.format.lower() == 'usx':
-	 	parser = USX_parser()
-	elif args.format.lower() == 'usfm':
-	 	parser = USFM_parser()
-	elif args.format.lower() == 'csv':
+	if format.lower() == 'usx':
+		parser = USX_parser()
+	elif format.lower() == 'usfm':
+		parser = USFM_parser()
+	elif format.lower() == 'csv':
 		parser = CSV_parser()
 	else:
-		raise Exception("Unsupported format:%s", args.format)
+		raise Exception("Unsupported format:%s", format)
 
-	input_path = args.indir + args.name
+	input_path = indir + name
 	parser.read_files(input_path=input_path)
 	books = parser.books
-	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
-	sniffer_obj.sniff(args.name)
+	sniffer_obj = Sniffer(books, outdir=outdir, vrs=vrs, mappings=mappings, rules=rules)
+	sniffer_obj.sniff(name)
 
