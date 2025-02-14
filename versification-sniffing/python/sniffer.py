@@ -56,7 +56,7 @@ class Sniffer(object):
 	def max_verses(self):
 		self.versification["maxVerses"] = {}
 		self.versification["partialVerses"] = {}
-		self.versification["verseMappings"] = {}
+		self.versification["verseMappings"] = []
 		self.versification["excludedVerses"] = {}
 		self.versification["unexcludedVerses"] = {}
 		for book in canons.book_ids:
@@ -281,7 +281,7 @@ class Sniffer(object):
 					to = r[k][to_column].upper().replace("."," ", 1)
 					logging.info(frum + " : " + to)
 					if frum != to and to != "NOVERSE":
-						self.versification["verseMappings"][frum] = to
+						self.versification["verseMappings"].append({frum:to})
 				else:
 					logging.info("### Error: missing column in mapping")
 
