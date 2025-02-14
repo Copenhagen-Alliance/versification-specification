@@ -6613,7 +6613,8 @@
     "tests": [["Isa.64:12=Last"], ["Isa.64:11=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Isa.63:19-64:1", "Isa.63:19"]
+        "MergedVerses": ["Isa.63:19", "Isa.63:19"],
+        "MergedVerses2": ["Isa.64:1", "Isa.63:19"]
       },
       {
         "OneToOne": ["Isa.64:2-12", "Isa.64:1-11"]
