@@ -280,7 +280,7 @@ class Sniffer(object):
 					frum = r[k][from_column].upper().replace("."," ", 1)
 					to = r[k][to_column].upper().replace("."," ", 1)
 					logging.info(frum + " : " + to)
-					if frum != to and to != "NOVERSE":
+					if to != "NOVERSE" and to != "ABSENT":
 						self.versification["verseMappings"].append({frum:to})
 				else:
 					logging.info("### Error: missing column in mapping")
