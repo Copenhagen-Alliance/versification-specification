@@ -10198,7 +10198,8 @@
     "tests": [["Act.19:41=Last"], ["Act.19:40=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Act.19:40-41", "Act.19:40"]
+        "MergedVerses": ["Act.19:40", "Act.19:40"],
+        "MergedVerses2": ["Act.19:41", "Act.19:40"]
       }
     ]
   },
@@ -10283,6 +10284,16 @@
     "ranges": [
       {
         "MergedVerses": ["2Co.13:12-13", "2Co.13:12"]
+      }
+    ]
+  },
+  {
+    "name": "2Co.13:13-14",
+    "columns": [["English"], ["Greek"]],
+    "tests": [["2Co.13:14=Last"], ["2Co.13:13=Last"]],
+    "ranges": [
+      {
+        "MergedVerses": ["2Co.13:13-14", "2Co.13:12-13"]
       }
     ]
   },
