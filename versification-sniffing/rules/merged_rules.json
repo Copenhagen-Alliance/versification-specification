@@ -10318,7 +10318,8 @@
     "tests": [["3Jn.1:14=Last"], ["3Jn.1:15=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["3Jn.1:14-15", "3Jn.1:14-15"]
+        "MergedVerses": ["3Jn.1:14", "3Jn.1:14"],
+        "MergedVerses2": ["3Jn.1:14", "3Jn.1:15"]
       }
     ]
   },
