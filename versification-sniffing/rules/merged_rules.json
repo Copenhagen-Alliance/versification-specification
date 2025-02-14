@@ -10336,13 +10336,13 @@
     ],
     "ranges": [
       {
-        "OneToOne": ["Rev.12:17", "Rev.12:17", "Rev.12:17a"]
+        "OneToOne": ["Rev.12:17", "Rev.12:17", "Rev.12:17"]
       },
       {
-        "OneToOne": ["Rev.12:18", "Rev.13:1a", "Rev.12:17b"]
+        "OneToOne": ["Rev.12:18", "Rev.13:1", "Rev.12:17"]
       },
       {
-        "OneToOne": ["Rev.13:1", "Rev.13:1b", "Rev.13:1"]
+        "OneToOne": ["Rev.13:1", "Rev.13:1", "Rev.13:1"]
       }
     ]
   }
