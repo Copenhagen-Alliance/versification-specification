@@ -664,7 +664,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Num.26:1", "Num.25:19", "Num.26:1"]
+        "SubdividedVerse": ["Num.26:1", "Num.25:19", "Num.26:1"],
+        "SubdividedVerse2": ["Num.26:1", "Num.26:1", "Num.26:1"]
       },
       {
         "OneToOne": ["Num.26:15-18", "Num.26:15-18", "Num.26:24-27"]
@@ -900,7 +901,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["1Sa.20:42", "1Sa.20:42", "1Sa.20:42-43"]
+        "SubdividedVerse": ["1Sa.20:42", "1Sa.20:42", "1Sa.20:42-43"],
+        "SubdividedVerse2": ["1Sa.20:42", "1SA 21:1", "1Sa.20:42-43"]
       },
       {
         "OneToOne": ["1Sa.21:1-15", "1Sa.21:2-16", "1Sa.21:1-15"]
