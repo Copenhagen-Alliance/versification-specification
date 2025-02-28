@@ -300,7 +300,7 @@ class InputParser(object):
 	def verse_list2dict(self, verses=None):
 		'''input: a list of <book, chapter, verse_number, verse_text> dicts or tuples'''
 		if verses is None:
-			 verses = self.verse_list
+			verses = self.verse_list
 		books = {}
 		for row in verses:
 			if isinstance(row, list) or isinstance(row, tuple):
@@ -550,9 +550,9 @@ if __name__ == '__main__':
 	args = ap.parse_args()
 
 	if args.format.lower() == 'usx':
-	 	parser = USX_parser()
+		parser = USX_parser()
 	elif args.format.lower() == 'usfm':
-	 	parser = USFM_parser()
+		parser = USFM_parser()
 	elif args.format.lower() == 'csv':
 		parser = CSV_parser()
 	else:
