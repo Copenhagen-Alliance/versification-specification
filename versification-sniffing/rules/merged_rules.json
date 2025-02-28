@@ -947,7 +947,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.4:34=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
+      ["1Ki.4:34=Last"],
       ["1Ki.4:20=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=Exist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=NotExist"]
@@ -1046,6 +1046,12 @@
       },
       {
         "MergedVerses": ["1Ki.5:16", "1Ki.5:30", "1Ki.5:30-32", "1Ki.5:30-32"]
+      },
+      {
+        "MergedVerses": ["1Ki.5:17", "1Ki.5:31", "1Ki.5:30-32", "1Ki.5:30-32"]
+      },
+      {
+        "MergedVerses": ["1Ki.5:18", "1Ki.5:32", "1Ki.5:30-32", "1Ki.5:30-32"]
       },
       {
         "LongVerseDuplicated": ["1Ki.7:23", "1Ki.7:23", "1Ki.7:10", "1Ki.7:10"]
