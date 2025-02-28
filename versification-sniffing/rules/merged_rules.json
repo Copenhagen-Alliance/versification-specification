@@ -664,7 +664,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Num.26:1", "Num.25:19;", "Num.26:1"]
+        "SubdividedVerse": ["Num.26:1", "Num.25:19", "Num.26:1"]
       },
       {
         "OneToOne": ["Num.26:15-18", "Num.26:15-18", "Num.26:24-27"]
