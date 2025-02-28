@@ -5496,12 +5496,20 @@
     "name": "Psa.98:1-9",
     "columns": [
       ["English", "Hebrew"],
-      ["Latin", "Greek"]
+      ["Latin", "Greek"],
+      ["EngTitleSeparate"]
     ],
-    "tests": [["Psa.99:9=Last"], ["Psa.99:5=Last"]],
+    "tests": [
+      ["Psa.99:9=Last", "Psa.98:1.1=NotExist"],
+      ["Psa.99:5=Last", "Psa.98:1.1=NotExist"],
+      ["Psa.99:9=Last", "Psa.98:1.1=Exist"]
+    ],
     "ranges": [
       {
-        "OneToOne": ["Psa.98:1-9", "Psa.97:1-9"]
+        "Superscription": ["Psa.98:1", "Psa.97:1", "Psa.98:0"]
+      },
+      {
+        "OneToOne": ["Psa.98:1-9", "Psa.97:1-9", "Psa.98:1-9"]
       }
     ]
   },
