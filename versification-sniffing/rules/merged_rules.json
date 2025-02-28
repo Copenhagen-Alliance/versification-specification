@@ -664,8 +664,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Num.26:1", "Num.25:19", "Num.26:1"],
-        "SubdividedVerse2": ["Num.26:1", "Num.26:1", "Num.26:1"]
+        "SubdividedVerseA": ["Num.26:1", "Num.25:19", "Num.26:1"],
+        "SubdividedVerseB": ["Num.26:1", "Num.26:1", "Num.26:1"]
       },
       {
         "OneToOne": ["Num.26:15-18", "Num.26:15-18", "Num.26:24-27"]
@@ -901,8 +901,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["1Sa.20:42", "1Sa.20:42", "1Sa.20:42-43"],
-        "SubdividedVerse2": ["1Sa.20:42", "1SA 21:1", "1Sa.20:42-43"]
+        "SubdividedVerseA": ["1Sa.20:42", "1Sa.20:42", "1Sa.20:42-43"],
+        "SubdividedVerseB": ["1Sa.20:42", "1SA 21:1", "1Sa.20:42-43"]
       },
       {
         "OneToOne": ["1Sa.21:1-15", "1Sa.21:2-16", "1Sa.21:1-15"]
@@ -947,7 +947,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.4:34=Last"],
+      ["1Ki.4:34=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=Exist"],
       ["1Ki.4:20=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=Exist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=NotExist"]
@@ -1045,13 +1045,13 @@
         "LongVerseDuplicated": ["1Ki.5:15", "1Ki.5:29", "1Ki.5:29", "1Ki.5:29"]
       },
       {
-        "MergedVerses": ["1Ki.5:16", "1Ki.5:30", "1Ki.5:30-32", "1Ki.5:30-32"]
+        "MergedVerses": ["1Ki.5:16", "1Ki.5:30", "1Ki.5:30", "1Ki.5:30"]
       },
       {
-        "MergedVerses": ["1Ki.5:17", "1Ki.5:31", "1Ki.5:30-32", "1Ki.5:30-32"]
+        "MergedVerses": ["1Ki.5:17", "1Ki.5:31", "1Ki.5:31", "1Ki.5:31"]
       },
       {
-        "MergedVerses": ["1Ki.5:18", "1Ki.5:32", "1Ki.5:30-32", "1Ki.5:30-32"]
+        "MergedVerses": ["1Ki.5:18", "1Ki.5:32", "1Ki.5:32", "1Ki.5:32"]
       },
       {
         "LongVerseDuplicated": ["1Ki.7:23", "1Ki.7:23", "1Ki.7:10", "1Ki.7:10"]
@@ -1387,7 +1387,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.22:53=Last"],
+      ["1Ki.22:53=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=Exist"],
       ["1Ki.22:54=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=NotExist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=Exist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=NotExist"]
@@ -1418,10 +1418,13 @@
         ]
       },
       {
-        "SubdividedVerse": ["1Ki.22:43", "1Ki.22:43", "1Ki.22:43", "1Ki.22:43"]
-      },
-      {
-        "SubdividedVerse": ["1Ki.22:43", "1Ki.22:44", "1Ki.22:44", "1Ki.22:44"]
+        "SubdividedVerseA": [
+          "1Ki.22:43",
+          "1Ki.22:43",
+          "1Ki.22:43",
+          "1Ki.22:43"
+        ],
+        "SubdividedVerseB": ["1Ki.22:43", "1Ki.22:44", "1Ki.22:44", "1Ki.22:44"]
       },
       {
         "OneToOne": ["1Ki.22:44", "1Ki.22:45", "1Ki.22:45", "1Ki.22:45"]
@@ -1511,10 +1514,8 @@
     "tests": [["1Ch.12:40=Last"], ["1Ch.12:41=Last"]],
     "ranges": [
       {
-        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:4"]
-      },
-      {
-        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:5"]
+        "SubdividedVerseA": ["1Ch.12:4", "1Ch.12:4"],
+        "SubdividedVerseB": ["1Ch.12:4", "1Ch.12:5"]
       },
       {
         "OneToOne": ["1Ch.12:5-40", "1Ch.12:6-41"]
@@ -3356,17 +3357,15 @@
         ]
       },
       {
-        "MergedVerses": [
-          "Psa.13:5-6",
+        "SubdividedVerseA": [
+          "Psa.13:5",
           "Psa.13:6",
           "Psa.12:6",
           "Psa.12:6",
           "Psa.13:5"
-        ]
-      },
-      {
-        "MergedVerses": [
-          "Psa.13:5-6",
+        ],
+        "SubdividedVerseB": [
+          "Psa.13:6",
           "Psa.13:6",
           "Psa.12:6",
           "Psa.12:6",
@@ -4328,10 +4327,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.51:1", "Psa.51:1", "Psa.50:1", "Psa.51:0"]
-      },
-      {
-        "SubdividedVerse": ["Psa.51:1", "Psa.51:2", "Psa.50:2", "Psa.51:0"]
+        "SubdividedVerseA": ["Psa.51:1", "Psa.51:1", "Psa.50:1", "Psa.51:0"],
+        "SubdividedVerseB": ["Psa.51:1", "Psa.51:2", "Psa.50:2", "Psa.51:0"]
       },
       {
         "OneToOne": ["Psa.51:1-19", "Psa.51:3-21", "Psa.50:3-21", "Psa.51:1-19"]
@@ -4354,10 +4351,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.52:1", "Psa.52:1", "Psa.51:1", "Psa.52:0"]
-      },
-      {
-        "SubdividedVerse": ["Psa.52:1", "Psa.52:2", "Psa.51:2", "Psa.52:0"]
+        "SubdividedVerseA": ["Psa.52:1", "Psa.52:1", "Psa.51:1", "Psa.52:0"],
+        "SubdividedVerseB": ["Psa.52:1", "Psa.52:2", "Psa.51:2", "Psa.52:0"]
       },
       {
         "OneToOne": ["Psa.52:1-9", "Psa.52:3-11", "Psa.51:3-11", "Psa.52:1-9"]
@@ -4408,11 +4403,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.54:1", "Psa.54:1", "Psa.53:1", "Psa.54:0"]
-      },
-
-      {
-        "SubdividedVerse": ["Psa.54:1", "Psa.54:2", "Psa.53:2", "Psa.54:0"]
+        "SubdividedVerseA": ["Psa.54:1", "Psa.54:1", "Psa.53:1", "Psa.54:0"],
+        "SubdividedVerseB": ["Psa.54:1", "Psa.54:2", "Psa.53:2", "Psa.54:0"]
       },
       {
         "OneToOne": ["Psa.54:1-7", "Psa.54:3-9", "Psa.53:3-9", "Psa.54:1-7"]
@@ -4620,11 +4612,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.60:1", "Psa.60:1", "Psa.59:1", "Psa.60:0"]
-      },
-
-      {
-        "SubdividedVerse": ["Psa.60:1", "Psa.60:2", "Psa.59:2", "Psa.60:0"]
+        "SubdividedVerseA": ["Psa.60:1", "Psa.60:1", "Psa.59:1", "Psa.60:0"],
+        "SubdividedVerseB": ["Psa.60:1", "Psa.60:2", "Psa.59:2", "Psa.60:0"]
       },
       {
         "OneToOne": ["Psa.60:1-12", "Psa.60:3-14", "Psa.59:3-14", "Psa.60:1-12"]
@@ -6633,8 +6622,8 @@
     "tests": [["Isa.64:12=Last"], ["Isa.64:11=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Isa.63:19", "Isa.63:19"],
-        "MergedVersesContinued": ["Isa.64:1", "Isa.63:19"]
+        "MergedVersesA": ["Isa.63:19", "Isa.63:19"],
+        "MergedVersesB": ["Isa.64:1", "Isa.63:19"]
       },
       {
         "OneToOne": ["Isa.64:2-12", "Isa.64:1-11"]
@@ -10216,8 +10205,8 @@
     "tests": [["Act.19:41=Last"], ["Act.19:40=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Act.19:40", "Act.19:40"],
-        "MergedVerses2": ["Act.19:41", "Act.19:40"]
+        "MergedVersesA": ["Act.19:40", "Act.19:40"],
+        "MergedVersesB": ["Act.19:41", "Act.19:40"]
       }
     ]
   },
@@ -10347,8 +10336,8 @@
     "tests": [["3Jn.1:14=Last"], ["3Jn.1:15=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["3Jn.1:14", "3Jn.1:14"],
-        "MergedVerses2": ["3Jn.1:14", "3Jn.1:15"]
+        "MergedVersesA": ["3Jn.1:14", "3Jn.1:14"],
+        "MergedVersesB": ["3Jn.1:14", "3Jn.1:15"]
       }
     ]
   },
