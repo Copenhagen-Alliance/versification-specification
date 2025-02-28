@@ -4328,15 +4328,13 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.51:1",
-          "Psa.51:1-3",
-          "Psa.50:1-3",
-          "Psa.51:0-1"
-        ]
+        "SubdividedVerse": ["Psa.51:1", "Psa.51:1", "Psa.50:1", "Psa.51:0"]
       },
       {
-        "OneToOne": ["Psa.51:2-19", "Psa.51:4-21", "Psa.50:4-21", "Psa.51:2-19"]
+        "SubdividedVerse": ["Psa.51:1", "Psa.51:2", "Psa.50:2", "Psa.51:0"]
+      },
+      {
+        "OneToOne": ["Psa.51:1-19", "Psa.51:3-21", "Psa.50:3-21", "Psa.51:1-19"]
       }
     ]
   },
@@ -4356,15 +4354,13 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.52:1",
-          "Psa.52:1-3",
-          "Psa.51:1-3",
-          "Psa.52:0-1"
-        ]
+        "SubdividedVerse": ["Psa.52:1", "Psa.52:1", "Psa.51:1", "Psa.52:0"]
       },
       {
-        "OneToOne": ["Psa.52:2-9", "Psa.52:4-11", "Psa.51:4-11", "Psa.52:2-9"]
+        "SubdividedVerse": ["Psa.52:1", "Psa.52:2", "Psa.51:2", "Psa.52:0"]
+      },
+      {
+        "OneToOne": ["Psa.52:1-9", "Psa.52:3-11", "Psa.51:3-11", "Psa.52:1-9"]
       }
     ]
   },
@@ -4412,15 +4408,14 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.54:1",
-          "Psa.54:1-3",
-          "Psa.53:1-3",
-          "Psa.54:0-1"
-        ]
+        "SubdividedVerse": ["Psa.54:1", "Psa.54:1", "Psa.53:1", "Psa.54:0"]
+      },
+
+      {
+        "SubdividedVerse": ["Psa.54:1", "Psa.54:2", "Psa.53:2", "Psa.54:0"]
       },
       {
-        "OneToOne": ["Psa.54:2-7", "Psa.54:4-9", "Psa.53:4-9", "Psa.54:2-7"]
+        "OneToOne": ["Psa.54:1-7", "Psa.54:3-9", "Psa.53:3-9", "Psa.54:1-7"]
       }
     ]
   },
@@ -4625,15 +4620,14 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.60:1",
-          "Psa.60:1-3",
-          "Psa.59:1-3",
-          "Psa.60:0-1"
-        ]
+        "SubdividedVerse": ["Psa.60:1", "Psa.60:1", "Psa.59:1", "Psa.60:0"]
+      },
+
+      {
+        "SubdividedVerse": ["Psa.60:1", "Psa.60:2", "Psa.59:2", "Psa.60:0"]
       },
       {
-        "OneToOne": ["Psa.60:2-12", "Psa.60:4-14", "Psa.59:4-14", "Psa.60:2-12"]
+        "OneToOne": ["Psa.60:1-12", "Psa.60:3-14", "Psa.59:3-14", "Psa.60:1-12"]
       }
     ]
   },
