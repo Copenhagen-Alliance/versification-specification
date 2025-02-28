@@ -10127,7 +10127,7 @@
     "tests": [["Mrk.16:8=Last"], ["Mrk.16:20=Last"]],
     "ranges": [
       {
-        "PassageMissing": ["Mrk.16:8", "Mrk.16:9"]
+        "PassageMissing": ["Mrk.16:8", "Mrk.16:8"]
       }
     ]
   },
