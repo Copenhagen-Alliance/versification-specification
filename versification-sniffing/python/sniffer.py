@@ -280,7 +280,7 @@ class Sniffer(object):
 					frum = r[k][from_column].upper().replace("."," ", 1)
 					to = r[k][to_column].upper().replace("."," ", 1)
 					logging.info(frum + " : " + to)
-					if to != "NOVERSE" and to != "ABSENT":
+					if to != "ABSENT" and to != "NOVERSE":
 						self.versification["verseMappings"].append({frum:to})
 				else:
 					logging.info("### Error: missing column in mapping")
@@ -440,7 +440,7 @@ class USFM_parser(InputParser):
 			input_path += "/"
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
-			if file.endswith(".SFM"):
+			if file.endswith(".usfm"):
 				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
 									 stdout=subprocess.PIPE,
 									 stderr=subprocess.PIPE,
@@ -464,11 +464,12 @@ class USFM_parser(InputParser):
 class CSV_parser(InputParser):
 	"""Logics related to converting CSV files to a verse_list/book dictionary, required by Sniffer.
 	CSV files expected with a header and following fields:'Book', 'Chapter', 'Verse', 'Text'"""
-	def __init__(self):
+	def __init__(self, delimiter):
 		super(CSV_parser, self).__init__()
 		self.input_path = None
 		self.bookpattern = re.compile(r"[\w\d]\w\w")
 		self.chapterPattern = re.compile(r"\d+")
+		self.delimiter = delimiter
 
 	def read_files(self, input_path):
 		if not input_path.endswith("/"):
@@ -477,7 +478,7 @@ class CSV_parser(InputParser):
 		for file in sorted(os.listdir(input_path)):
 			if file.endswith(".csv") or file.endswith('.tsv'):
 				with open(input_path+file, newline='', encoding='utf-8') as csvfile:
-					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter="\t")
+					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter=self.delimiter)
 					next(reader, None)  # skip the headers
 					for row in reader:
 						if not re.match(self.bookpattern, row['Book']):
@@ -555,6 +556,8 @@ if __name__ == '__main__':
 		parser = USFM_parser()
 	elif args.format.lower() == 'csv':
 		parser = CSV_parser()
+	elif args.format.lower() == 'tsv':
+		parser = CSV_parser('\t')
 	else:
 		raise Exception("Unsupported format:%s", args.format)
 
@@ -563,3 +566,4 @@ if __name__ == '__main__':
 	books = parser.books
 	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
 	sniffer_obj.sniff(args.name)
+ 
