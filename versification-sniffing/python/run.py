@@ -11,11 +11,11 @@ if __name__ == '__main__':
 	args = ap.parse_args()
  	'''
 
-    python script_name.py -n "ESV" -f "usx" -i "../../data/input/" -o "../../data/output/" -m "../../versification-mappings/standard-mappings" -r "../rules/merged_rules.json" -v True
+    #python script_name.py -n "ESV" -f "usx" -i "../../data/input/" -o "../../data/output/" -m "../../versification-mappings/standard-mappings" -r "../rules/merged_rules.json" -v True
  
     
     name = "BSB"
-	format = "csv"
+	format = "tsv"
 	indir = "data/input/"
 	outdir = "data/output/"
 	mappings = "versification-mappings/standard-mappings/"

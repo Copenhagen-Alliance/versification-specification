@@ -280,7 +280,7 @@ class Sniffer(object):
 					frum = r[k][from_column].upper().replace("."," ", 1)
 					to = r[k][to_column].upper().replace("."," ", 1)
 					logging.info(frum + " : " + to)
-					if to != "NOVERSE" and to != "ABSENT":
+					if to != "ABSENT" and to != "NOVERSE":
 						self.versification["verseMappings"].append({frum:to})
 				else:
 					logging.info("### Error: missing column in mapping")
@@ -300,7 +300,7 @@ class InputParser(object):
 	def verse_list2dict(self, verses=None):
 		'''input: a list of <book, chapter, verse_number, verse_text> dicts or tuples'''
 		if verses is None:
-			 verses = self.verse_list
+			verses = self.verse_list
 		books = {}
 		for row in verses:
 			if isinstance(row, list) or isinstance(row, tuple):
@@ -440,7 +440,7 @@ class USFM_parser(InputParser):
 			input_path += "/"
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
-			if file.endswith(".SFM"):
+			if file.endswith(".usfm"):
 				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
 									 stdout=subprocess.PIPE,
 									 stderr=subprocess.PIPE,
@@ -464,11 +464,12 @@ class USFM_parser(InputParser):
 class CSV_parser(InputParser):
 	"""Logics related to converting CSV files to a verse_list/book dictionary, required by Sniffer.
 	CSV files expected with a header and following fields:'Book', 'Chapter', 'Verse', 'Text'"""
-	def __init__(self):
+	def __init__(self, delimiter):
 		super(CSV_parser, self).__init__()
 		self.input_path = None
 		self.bookpattern = re.compile(r"[\w\d]\w\w")
 		self.chapterPattern = re.compile(r"\d+")
+		self.delimiter = delimiter
 
 	def read_files(self, input_path):
 		if not input_path.endswith("/"):
@@ -477,7 +478,7 @@ class CSV_parser(InputParser):
 		for file in sorted(os.listdir(input_path)):
 			if file.endswith(".csv") or file.endswith('.tsv'):
 				with open(input_path+file, newline='', encoding='utf-8') as csvfile:
-					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter="\t")
+					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter=self.delimiter)
 					next(reader, None)  # skip the headers
 					for row in reader:
 						if not re.match(self.bookpattern, row['Book']):
@@ -539,7 +540,8 @@ input2 = [
 # sniffer_obj.sniff(name="custom_versification")
 
 if __name__ == '__main__':
-	ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
+	'''
+ 	ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
 	ap.add_argument('-n', '--name', help="Short name of the text e.g. 'NRSVUK' or 'ESV', should be same as input directory name", required=True)
 	ap.add_argument('-f','--format', help="Input file format. Any one of usx, usfm, csv", required=True)
 	ap.add_argument('-i', '--indir', help="path containing input files directory", default="../../data/")
@@ -548,18 +550,32 @@ if __name__ == '__main__':
 	ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='../rules/merged_rules.json')
 	ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
 	args = ap.parse_args()
+ 	'''
 
-	if args.format.lower() == 'usx':
+    #python script_name.py -n "ESV" -f "usx" -i "../../data/input/" -o "../../data/output/" -m "../../versification-mappings/standard-mappings" -r "../rules/merged_rules.json" -v True
+ 
+	name = "BSB"
+	format = "tsv"
+	indir = "data/input/"
+	outdir = "data/output/"
+	mappings = "versification-mappings/standard-mappings/"
+	rules = "versification-sniffing/rules/merged_rules.json"
+	vrs = True
+
+	if format.lower() == 'usx':
 		parser = USX_parser()
-	elif args.format.lower() == 'usfm':
+	elif format.lower() == 'usfm':
 		parser = USFM_parser()
-	elif args.format.lower() == 'csv':
+	elif format.lower() == 'csv':
 		parser = CSV_parser()
+	elif format.lower() == 'tsv':
+		parser = CSV_parser('\t')
 	else:
-		raise Exception("Unsupported format:%s", args.format)
+		raise Exception("Unsupported format:%s", format)
 
-	input_path = args.indir + args.name
+	input_path = indir + name
 	parser.read_files(input_path=input_path)
 	books = parser.books
-	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
-	sniffer_obj.sniff(args.name)
+	sniffer_obj = Sniffer(books, outdir=outdir, vrs=vrs, mappings=mappings, rules=rules)
+	sniffer_obj.sniff(name)
+ 
