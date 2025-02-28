@@ -366,10 +366,10 @@
         "OneToOne": ["Exo.38:9-18", "Exo.37:7-16"]
       },
       {
-        "SubdividedVerse": ["Exo.38:19", "Exo.37:17;"]
+        "SubdividedVerse": ["Exo.38:19", "Exo.37:17"]
       },
       {
-        "SubdividedVerse": ["Exo.38:20", "Exo.37:18;"]
+        "SubdividedVerse": ["Exo.38:20", "Exo.37:18"]
       },
       {
         "OneToOne": ["Exo.38:21-23", "Exo.37:19-21"]
@@ -401,7 +401,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Exo.39:1", "Exo.39:1", "Exo.36:8;", "Exo.36:8;"]
+        "SubdividedVerse": ["Exo.39:1", "Exo.39:1", "Exo.36:8", "Exo.36:8"]
       },
       {
         "OneToOne": ["Exo.39:2-15", "Exo.39:2-15", "Exo.36:9-22", "Exo.36:9-22"]
@@ -664,7 +664,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Num.26:1", "Num.25:19;", "Num.26:1"]
+        "SubdividedVerse": ["Num.26:1", "Num.25:19", "Num.26:1"],
+        "SubdividedVerse2": ["Num.26:1", "Num.26:1", "Num.26:1"]
       },
       {
         "OneToOne": ["Num.26:15-18", "Num.26:15-18", "Num.26:24-27"]
@@ -900,7 +901,8 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["1Sa.20:42", "1Sa.20:42;", "1Sa.20:42-43"]
+        "SubdividedVerse": ["1Sa.20:42", "1Sa.20:42", "1Sa.20:42-43"],
+        "SubdividedVerse2": ["1Sa.20:42", "1SA 21:1", "1Sa.20:42-43"]
       },
       {
         "OneToOne": ["1Sa.21:1-15", "1Sa.21:2-16", "1Sa.21:1-15"]
@@ -945,7 +947,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.4:34=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
+      ["1Ki.4:34=Last"],
       ["1Ki.4:20=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=Exist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=NotExist"]
@@ -1044,6 +1046,12 @@
       },
       {
         "MergedVerses": ["1Ki.5:16", "1Ki.5:30", "1Ki.5:30-32", "1Ki.5:30-32"]
+      },
+      {
+        "MergedVerses": ["1Ki.5:17", "1Ki.5:31", "1Ki.5:30-32", "1Ki.5:30-32"]
+      },
+      {
+        "MergedVerses": ["1Ki.5:18", "1Ki.5:32", "1Ki.5:30-32", "1Ki.5:30-32"]
       },
       {
         "LongVerseDuplicated": ["1Ki.7:23", "1Ki.7:23", "1Ki.7:10", "1Ki.7:10"]
@@ -1379,7 +1387,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.22:53=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=NotExist"],
+      ["1Ki.22:53=Last"],
       ["1Ki.22:54=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=NotExist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=Exist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=NotExist"]
@@ -1410,12 +1418,10 @@
         ]
       },
       {
-        "SubdividedVerse": [
-          "1Ki.22:43",
-          "1Ki.22:43-44",
-          "1Ki.22:43-44",
-          "1Ki.22:43-44"
-        ]
+        "SubdividedVerse": ["1Ki.22:43", "1Ki.22:43", "1Ki.22:43", "1Ki.22:43"]
+      },
+      {
+        "SubdividedVerse": ["1Ki.22:43", "1Ki.22:44", "1Ki.22:44", "1Ki.22:44"]
       },
       {
         "OneToOne": ["1Ki.22:44", "1Ki.22:45", "1Ki.22:45", "1Ki.22:45"]
@@ -1505,7 +1511,10 @@
     "tests": [["1Ch.12:40=Last"], ["1Ch.12:41=Last"]],
     "ranges": [
       {
-        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:4-5"]
+        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:4"]
+      },
+      {
+        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:5"]
       },
       {
         "OneToOne": ["1Ch.12:5-40", "1Ch.12:6-41"]
@@ -1758,7 +1767,7 @@
           "Est.1:1.1-16",
           "NoVerse",
           "NoVerse",
-          "Est.11:2-12;",
+          "Est.11:2-12",
           "Est.1:2-16"
         ]
       },
@@ -3099,7 +3108,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.3:1", "Psa.3:1-2", "Psa.3:1.0-1"]
+        "SubdividedVerse": ["Psa.3:1", "Psa.3:1-2", "Psa.3:0-1"]
       },
       {
         "OneToOne": ["Psa.3:2-8", "Psa.3:3-9", "Psa.3:2-8"]
@@ -3122,7 +3131,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.4:1", "Psa.4:1-2", "Psa.4:1-2", "Psa.4:1.0-1"]
+        "SubdividedVerse": ["Psa.4:1", "Psa.4:1-2", "Psa.4:1-2", "Psa.4:0-1"]
       },
       {
         "OneToOne": ["Psa.4:2-4", "Psa.4:3-5", "Psa.4:3-5", "Psa.4:2-4"]
@@ -3155,7 +3164,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.5:1", "Psa.5:1-2", "Psa.5:1.0-1"]
+        "SubdividedVerse": ["Psa.5:1", "Psa.5:1-2", "Psa.5:0-1"]
       },
       {
         "OneToOne": ["Psa.5:2-12", "Psa.5:3-13", "Psa.5:2-12"]
@@ -3176,7 +3185,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.6:1", "Psa.6:1-2", "Psa.6:1.0-1"]
+        "SubdividedVerse": ["Psa.6:1", "Psa.6:1-2", "Psa.6:0-1"]
       },
       {
         "OneToOne": ["Psa.6:2-10", "Psa.6:3-11", "Psa.6:2-10"]
@@ -3197,7 +3206,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.7:1", "Psa.7:1-2", "Psa.7:1.0-1"]
+        "SubdividedVerse": ["Psa.7:1", "Psa.7:1-2", "Psa.7:0-1"]
       },
       {
         "OneToOne": ["Psa.7:2-17", "Psa.7:3-18", "Psa.7:2-17"]
@@ -3218,7 +3227,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.8:1", "Psa.8:1-2", "Psa.8:1.0-1"]
+        "SubdividedVerse": ["Psa.8:1", "Psa.8:1-2", "Psa.8:0-1"]
       },
       {
         "OneToOne": ["Psa.8:2-9", "Psa.8:3-10", "Psa.8:2-9"]
@@ -3241,7 +3250,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.9:1", "Psa.9:1-2", "Psa.9:1-2", "Psa.9:1.0-1"]
+        "SubdividedVerse": ["Psa.9:1", "Psa.9:1-2", "Psa.9:1-2", "Psa.9:0-1"]
       },
       {
         "OneToOne": ["Psa.9:2-20", "Psa.9:3-21", "Psa.9:3-21", "Psa.9:2-20"]
@@ -3267,12 +3276,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.11:1",
-          "Psa.10:1-2",
-          "Psa.10:1",
-          "Psa.11:1.0-1"
-        ]
+        "SubdividedVerse": ["Psa.11:1", "Psa.10:1-2", "Psa.10:1", "Psa.11:0-1"]
       },
       {
         "OneToOne": ["Psa.11:2-7", "Psa.10:3-8", "Psa.10:2-7", "Psa.11:2-7"]
@@ -3299,7 +3303,7 @@
           "Psa.12:1",
           "Psa.12:1-2",
           "Psa.11:1-2",
-          "Psa.12:1.0-1"
+          "Psa.12:0-1"
         ]
       },
       {
@@ -3330,7 +3334,7 @@
           "Psa.13:1-2",
           "Psa.12:1",
           "Psa.12:1-2",
-          "Psa.13:1.0-1"
+          "Psa.13:0-1"
         ]
       },
       {
@@ -3357,7 +3361,16 @@
           "Psa.13:6",
           "Psa.12:6",
           "Psa.12:6",
-          "Psa.13:5-6"
+          "Psa.13:5"
+        ]
+      },
+      {
+        "MergedVerses": [
+          "Psa.13:5-6",
+          "Psa.13:6",
+          "Psa.12:6",
+          "Psa.12:6",
+          "Psa.13:6"
         ]
       }
     ]
@@ -3376,7 +3389,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.14:1", "Psa.13:1", "Psa.14:1.0-1"]
+        "SubdividedVerse": ["Psa.14:1", "Psa.13:1", "Psa.14:0-1"]
       },
       {
         "OneToOne": ["Psa.14:2-7", "Psa.13:2-7", "Psa.14:2-7"]
@@ -3397,7 +3410,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.15:1", "Psa.14:1", "Psa.15:1.0-1"]
+        "SubdividedVerse": ["Psa.15:1", "Psa.14:1", "Psa.15:0-1"]
       },
       {
         "OneToOne": ["Psa.15:2-5", "Psa.14:2-5", "Psa.15:2-5"]
@@ -3418,7 +3431,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.16:1", "Psa.15:1", "Psa.16:1.0-1"]
+        "SubdividedVerse": ["Psa.16:1", "Psa.15:1", "Psa.16:0-1"]
       },
       {
         "OneToOne": ["Psa.16:2-11", "Psa.15:2-11", "Psa.16:2-11"]
@@ -3439,7 +3452,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.17:1", "Psa.16:1", "Psa.17:1.0-1"]
+        "SubdividedVerse": ["Psa.17:1", "Psa.16:1", "Psa.17:0-1"]
       },
       {
         "OneToOne": ["Psa.17:2-15", "Psa.16:2-15", "Psa.17:2-15"]
@@ -3466,7 +3479,7 @@
           "Psa.18:1",
           "Psa.18:1-2",
           "Psa.17:1-2",
-          "Psa.18:1.0-1"
+          "Psa.18:0-1"
         ]
       },
       {
@@ -3494,7 +3507,7 @@
           "Psa.19:1",
           "Psa.19:1-2",
           "Psa.18:1-2",
-          "Psa.19:1.0-1"
+          "Psa.19:0-1"
         ]
       },
       {
@@ -3522,7 +3535,7 @@
           "Psa.20:1",
           "Psa.20:1-2",
           "Psa.19:1-2",
-          "Psa.20:1.0-1"
+          "Psa.20:0-1"
         ]
       },
       {
@@ -3550,7 +3563,7 @@
           "Psa.21:1",
           "Psa.21:1-2",
           "Psa.20:1-2",
-          "Psa.21:1.0-1"
+          "Psa.21:0-1"
         ]
       },
       {
@@ -3578,7 +3591,7 @@
           "Psa.22:1",
           "Psa.22:1-2",
           "Psa.21:1-2",
-          "Psa.22:1.0-1"
+          "Psa.22:0-1"
         ]
       },
       {
@@ -3600,7 +3613,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.23:1", "Psa.22:1", "Psa.23:1.0-1"]
+        "SubdividedVerse": ["Psa.23:1", "Psa.22:1", "Psa.23:0-1"]
       },
       {
         "OneToOne": ["Psa.23:2-6", "Psa.22:2-6", "Psa.23:2-6"]
@@ -3621,7 +3634,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.24:1", "Psa.23:1", "Psa.24:1.0-1"]
+        "SubdividedVerse": ["Psa.24:1", "Psa.23:1", "Psa.24:0-1"]
       },
       {
         "OneToOne": ["Psa.24:2-10", "Psa.23:2-10", "Psa.24:2-10"]
@@ -3642,7 +3655,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.25:1", "Psa.24:1", "Psa.25:1.0-1"]
+        "SubdividedVerse": ["Psa.25:1", "Psa.24:1", "Psa.25:0-1"]
       },
       {
         "OneToOne": ["Psa.25:2-22", "Psa.24:2-22", "Psa.25:2-22"]
@@ -3663,7 +3676,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.26:1", "Psa.25:1", "Psa.26:1.0-1"]
+        "SubdividedVerse": ["Psa.26:1", "Psa.25:1", "Psa.26:0-1"]
       },
       {
         "OneToOne": ["Psa.26:2-12", "Psa.25:2-12", "Psa.26:2-12"]
@@ -3684,7 +3697,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.27:1", "Psa.26:1", "Psa.27:1.0-1"]
+        "SubdividedVerse": ["Psa.27:1", "Psa.26:1", "Psa.27:0-1"]
       },
       {
         "OneToOne": ["Psa.27:2-14", "Psa.26:2-14", "Psa.27:2-14"]
@@ -3705,7 +3718,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.28:1", "Psa.27:1", "Psa.28:1.0-1"]
+        "SubdividedVerse": ["Psa.28:1", "Psa.27:1", "Psa.28:0-1"]
       },
       {
         "OneToOne": ["Psa.28:2-9", "Psa.27:2-9", "Psa.28:2-9"]
@@ -3726,7 +3739,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.29:1", "Psa.28:1", "Psa.29:1.0-1"]
+        "SubdividedVerse": ["Psa.29:1", "Psa.28:1", "Psa.29:0-1"]
       },
       {
         "OneToOne": ["Psa.29:2-11", "Psa.28:2-11", "Psa.29:2-11"]
@@ -3753,7 +3766,7 @@
           "Psa.30:1",
           "Psa.30:1-2",
           "Psa.29:1-2",
-          "Psa.30:1.0-1"
+          "Psa.30:0-1"
         ]
       },
       {
@@ -3781,7 +3794,7 @@
           "Psa.31:1",
           "Psa.31:1-2",
           "Psa.30:1-2",
-          "Psa.31:1.0-1"
+          "Psa.31:0-1"
         ]
       },
       {
@@ -3803,7 +3816,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.32:1", "Psa.31:1", "Psa.32:1.0-1"]
+        "SubdividedVerse": ["Psa.32:1", "Psa.31:1", "Psa.32:0-1"]
       },
       {
         "OneToOne": ["Psa.32:2-11", "Psa.31:2-11", "Psa.32:2-11"]
@@ -3843,7 +3856,7 @@
           "Psa.34:1",
           "Psa.34:1-2",
           "Psa.33:1-2",
-          "Psa.34:1.0-1"
+          "Psa.34:0-1"
         ]
       },
       {
@@ -3865,7 +3878,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.35:1", "Psa.34:1", "Psa.35:1.0-1"]
+        "SubdividedVerse": ["Psa.35:1", "Psa.34:1", "Psa.35:0-1"]
       },
       {
         "OneToOne": ["Psa.35:2-28", "Psa.34:2-28", "Psa.35:2-28"]
@@ -3892,7 +3905,7 @@
           "Psa.36:1",
           "Psa.36:1-2",
           "Psa.35:1-2",
-          "Psa.36:1.0-1"
+          "Psa.36:0-1"
         ]
       },
       {
@@ -3914,7 +3927,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.37:1", "Psa.36:1", "Psa.37:1.0-1"]
+        "SubdividedVerse": ["Psa.37:1", "Psa.36:1", "Psa.37:0-1"]
       },
       {
         "OneToOne": ["Psa.37:2-40", "Psa.36:2-40", "Psa.37:2-40"]
@@ -3941,7 +3954,7 @@
           "Psa.38:1",
           "Psa.38:1-2",
           "Psa.37:1-2",
-          "Psa.38:1.0-1"
+          "Psa.38:0-1"
         ]
       },
       {
@@ -3969,7 +3982,7 @@
           "Psa.39:1",
           "Psa.39:1-2",
           "Psa.38:1-2",
-          "Psa.39:1.0-1"
+          "Psa.39:0-1"
         ]
       },
       {
@@ -3997,7 +4010,7 @@
           "Psa.40:1",
           "Psa.40:1-2",
           "Psa.39:1-2",
-          "Psa.40:1.0-1"
+          "Psa.40:0-1"
         ]
       },
       {
@@ -4025,7 +4038,7 @@
           "Psa.41:1",
           "Psa.41:1-2",
           "Psa.40:1-2",
-          "Psa.41:1.0-1"
+          "Psa.41:0-1"
         ]
       },
       {
@@ -4056,7 +4069,7 @@
           "Psa.42:1-2",
           "Psa.41:1-2",
           "Psa.41:1-2",
-          "Psa.42:1.0-1"
+          "Psa.42:0-1"
         ]
       },
       {
@@ -4106,7 +4119,7 @@
           "Psa.44:1-2",
           "Psa.43:1-2",
           "Psa.43:1-2",
-          "Psa.44:1.0-1"
+          "Psa.44:0-1"
         ]
       },
       {
@@ -4158,7 +4171,7 @@
           "Psa.45:1",
           "Psa.45:1-2",
           "Psa.44:1-2",
-          "Psa.45:1.0-1"
+          "Psa.45:0-1"
         ]
       },
       {
@@ -4186,7 +4199,7 @@
           "Psa.46:1",
           "Psa.46:1-2",
           "Psa.45:1-2",
-          "Psa.46:1.0-1"
+          "Psa.46:0-1"
         ]
       },
       {
@@ -4214,7 +4227,7 @@
           "Psa.47:1",
           "Psa.47:1-2",
           "Psa.46:1-2",
-          "Psa.47:1.0-1"
+          "Psa.47:0-1"
         ]
       },
       {
@@ -4242,7 +4255,7 @@
           "Psa.48:1",
           "Psa.48:1-2",
           "Psa.47:1-2",
-          "Psa.48:1.0-1"
+          "Psa.48:0-1"
         ]
       },
       {
@@ -4270,7 +4283,7 @@
           "Psa.49:1",
           "Psa.49:1-2",
           "Psa.48:1-2",
-          "Psa.49:1.0-1"
+          "Psa.49:0-1"
         ]
       },
       {
@@ -4292,7 +4305,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.50:1", "Psa.49:1", "Psa.50:1.0-1"]
+        "SubdividedVerse": ["Psa.50:1", "Psa.49:1", "Psa.50:0-1"]
       },
       {
         "OneToOne": ["Psa.50:2-23", "Psa.49:2-23", "Psa.50:2-23"]
@@ -4315,15 +4328,13 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.51:1",
-          "Psa.51:1-3",
-          "Psa.50:1-3",
-          "Psa.51:1.0-1"
-        ]
+        "SubdividedVerse": ["Psa.51:1", "Psa.51:1", "Psa.50:1", "Psa.51:0"]
       },
       {
-        "OneToOne": ["Psa.51:2-19", "Psa.51:4-21", "Psa.50:4-21", "Psa.51:2-19"]
+        "SubdividedVerse": ["Psa.51:1", "Psa.51:2", "Psa.50:2", "Psa.51:0"]
+      },
+      {
+        "OneToOne": ["Psa.51:1-19", "Psa.51:3-21", "Psa.50:3-21", "Psa.51:1-19"]
       }
     ]
   },
@@ -4343,15 +4354,13 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.52:1",
-          "Psa.52:1-3",
-          "Psa.51:1-3",
-          "Psa.52:1.0-1"
-        ]
+        "SubdividedVerse": ["Psa.52:1", "Psa.52:1", "Psa.51:1", "Psa.52:0"]
       },
       {
-        "OneToOne": ["Psa.52:2-9", "Psa.52:4-11", "Psa.51:4-11", "Psa.52:2-9"]
+        "SubdividedVerse": ["Psa.52:1", "Psa.52:2", "Psa.51:2", "Psa.52:0"]
+      },
+      {
+        "OneToOne": ["Psa.52:1-9", "Psa.52:3-11", "Psa.51:3-11", "Psa.52:1-9"]
       }
     ]
   },
@@ -4375,7 +4384,7 @@
           "Psa.53:1",
           "Psa.53:1-2",
           "Psa.52:1-2",
-          "Psa.53:1.0-1"
+          "Psa.53:0-1"
         ]
       },
       {
@@ -4399,15 +4408,14 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.54:1",
-          "Psa.54:1-3",
-          "Psa.53:1-3",
-          "Psa.54:1.0-1"
-        ]
+        "SubdividedVerse": ["Psa.54:1", "Psa.54:1", "Psa.53:1", "Psa.54:0"]
+      },
+
+      {
+        "SubdividedVerse": ["Psa.54:1", "Psa.54:2", "Psa.53:2", "Psa.54:0"]
       },
       {
-        "OneToOne": ["Psa.54:2-7", "Psa.54:4-9", "Psa.53:4-9", "Psa.54:2-7"]
+        "OneToOne": ["Psa.54:1-7", "Psa.54:3-9", "Psa.53:3-9", "Psa.54:1-7"]
       }
     ]
   },
@@ -4434,7 +4442,7 @@
           "Psa.55:1-2",
           "Psa.54:1-2",
           "Psa.54:1-2",
-          "Psa.55:1.0-1"
+          "Psa.55:0-1"
         ]
       },
       {
@@ -4471,7 +4479,7 @@
           "Psa.56:1-2",
           "Psa.55:1-2",
           "Psa.55:1-2",
-          "Psa.56:1.0-1"
+          "Psa.56:0-1"
         ]
       },
       {
@@ -4532,7 +4540,7 @@
           "Psa.57:1",
           "Psa.57:1-2",
           "Psa.56:1-2",
-          "Psa.57:1.0-1"
+          "Psa.57:0-1"
         ]
       },
       {
@@ -4560,7 +4568,7 @@
           "Psa.58:1",
           "Psa.58:1-2",
           "Psa.57:1-2",
-          "Psa.58:1.0-1"
+          "Psa.58:0-1"
         ]
       },
       {
@@ -4588,7 +4596,7 @@
           "Psa.59:1",
           "Psa.59:1-2",
           "Psa.58:1-2",
-          "Psa.59:1.0-1"
+          "Psa.59:0-1"
         ]
       },
       {
@@ -4612,15 +4620,14 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": [
-          "Psa.60:1",
-          "Psa.60:1-3",
-          "Psa.59:1-3",
-          "Psa.60:1.0-1"
-        ]
+        "SubdividedVerse": ["Psa.60:1", "Psa.60:1", "Psa.59:1", "Psa.60:0"]
+      },
+
+      {
+        "SubdividedVerse": ["Psa.60:1", "Psa.60:2", "Psa.59:2", "Psa.60:0"]
       },
       {
-        "OneToOne": ["Psa.60:2-12", "Psa.60:4-14", "Psa.59:4-14", "Psa.60:2-12"]
+        "OneToOne": ["Psa.60:1-12", "Psa.60:3-14", "Psa.59:3-14", "Psa.60:1-12"]
       }
     ]
   },
@@ -4644,7 +4651,7 @@
           "Psa.61:1",
           "Psa.61:1-2",
           "Psa.60:1-2",
-          "Psa.61:1.0-1"
+          "Psa.61:0-1"
         ]
       },
       {
@@ -4672,7 +4679,7 @@
           "Psa.62:1",
           "Psa.62:1-2",
           "Psa.61:1-2",
-          "Psa.62:1.0-1"
+          "Psa.62:0-1"
         ]
       },
       {
@@ -4700,7 +4707,7 @@
           "Psa.63:1",
           "Psa.63:1-2",
           "Psa.62:1-2",
-          "Psa.63:1.0-1"
+          "Psa.63:0-1"
         ]
       },
       {
@@ -4728,7 +4735,7 @@
           "Psa.64:1",
           "Psa.64:1-2",
           "Psa.63:1-2",
-          "Psa.64:1.0-1"
+          "Psa.64:0-1"
         ]
       },
       {
@@ -4756,7 +4763,7 @@
           "Psa.65:1",
           "Psa.65:1-2",
           "Psa.64:1-2",
-          "Psa.65:1.0-1"
+          "Psa.65:0-1"
         ]
       },
       {
@@ -4778,7 +4785,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.66:1", "Psa.65:1", "Psa.66:1.0-1"]
+        "SubdividedVerse": ["Psa.66:1", "Psa.65:1", "Psa.66:0-1"]
       },
       {
         "OneToOne": ["Psa.66:2-20", "Psa.65:2-20", "Psa.66:2-20"]
@@ -4805,7 +4812,7 @@
           "Psa.67:1",
           "Psa.67:1-2",
           "Psa.66:1-2",
-          "Psa.67:1.0-1"
+          "Psa.67:0-1"
         ]
       },
       {
@@ -4833,7 +4840,7 @@
           "Psa.68:1",
           "Psa.68:1-2",
           "Psa.67:1-2",
-          "Psa.68:1.0-1"
+          "Psa.68:0-1"
         ]
       },
       {
@@ -4861,7 +4868,7 @@
           "Psa.69:1",
           "Psa.69:1-2",
           "Psa.68:1-2",
-          "Psa.69:1.0-1"
+          "Psa.69:0-1"
         ]
       },
       {
@@ -4889,7 +4896,7 @@
           "Psa.70:1",
           "Psa.70:1-2",
           "Psa.69:1-2",
-          "Psa.70:1.0-1"
+          "Psa.70:0-1"
         ]
       },
       {
@@ -4924,7 +4931,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.72:1", "Psa.71:1", "Psa.72:1.0-1"]
+        "SubdividedVerse": ["Psa.72:1", "Psa.71:1", "Psa.72:0-1"]
       },
       {
         "OneToOne": ["Psa.72:2-20", "Psa.71:2-20", "Psa.72:2-20"]
@@ -4945,7 +4952,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.73:1", "Psa.72:1", "Psa.73:1.0-1"]
+        "SubdividedVerse": ["Psa.73:1", "Psa.72:1", "Psa.73:0-1"]
       },
       {
         "OneToOne": ["Psa.73:2-28", "Psa.72:2-28", "Psa.73:2-28"]
@@ -4966,7 +4973,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.74:1", "Psa.73:1", "Psa.74:1.0-1"]
+        "SubdividedVerse": ["Psa.74:1", "Psa.73:1", "Psa.74:0-1"]
       },
       {
         "OneToOne": ["Psa.74:2-23", "Psa.73:2-23", "Psa.74:2-23"]
@@ -4993,7 +5000,7 @@
           "Psa.75:1",
           "Psa.75:1-2",
           "Psa.74:1-2",
-          "Psa.75:1.0-1"
+          "Psa.75:0-1"
         ]
       },
       {
@@ -5021,7 +5028,7 @@
           "Psa.76:1",
           "Psa.76:1-2",
           "Psa.75:1-2",
-          "Psa.76:1.0-1"
+          "Psa.76:0-1"
         ]
       },
       {
@@ -5049,7 +5056,7 @@
           "Psa.77:1",
           "Psa.77:1-2",
           "Psa.76:1-2",
-          "Psa.77:1.0-1"
+          "Psa.77:0-1"
         ]
       },
       {
@@ -5071,7 +5078,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.78:1", "Psa.77:1", "Psa.78:1.0-1"]
+        "SubdividedVerse": ["Psa.78:1", "Psa.77:1", "Psa.78:0-1"]
       },
       {
         "OneToOne": ["Psa.78:2-72", "Psa.77:2-72", "Psa.78:2-72"]
@@ -5092,7 +5099,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.79:1", "Psa.78:1", "Psa.79:1.0-1"]
+        "SubdividedVerse": ["Psa.79:1", "Psa.78:1", "Psa.79:0-1"]
       },
       {
         "OneToOne": ["Psa.79:2-13", "Psa.78:2-13", "Psa.79:2-13"]
@@ -5119,7 +5126,7 @@
           "Psa.80:1",
           "Psa.80:1-2",
           "Psa.79:1-2",
-          "Psa.80:1.0-1"
+          "Psa.80:0-1"
         ]
       },
       {
@@ -5147,7 +5154,7 @@
           "Psa.81:1",
           "Psa.81:1-2",
           "Psa.80:1-2",
-          "Psa.81:1.0-1"
+          "Psa.81:0-1"
         ]
       },
       {
@@ -5169,7 +5176,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.82:1", "Psa.81:1", "Psa.82:1.0-1"]
+        "SubdividedVerse": ["Psa.82:1", "Psa.81:1", "Psa.82:0-1"]
       },
       {
         "OneToOne": ["Psa.82:2-8", "Psa.81:2-8", "Psa.82:2-8"]
@@ -5196,7 +5203,7 @@
           "Psa.83:1",
           "Psa.83:1-2",
           "Psa.82:1-2",
-          "Psa.83:1.0-1"
+          "Psa.83:0-1"
         ]
       },
       {
@@ -5224,7 +5231,7 @@
           "Psa.84:1",
           "Psa.84:1-2",
           "Psa.83:1-2",
-          "Psa.84:1.0-1"
+          "Psa.84:0-1"
         ]
       },
       {
@@ -5252,7 +5259,7 @@
           "Psa.85:1",
           "Psa.85:1-2",
           "Psa.84:1-2",
-          "Psa.85:1.0-1"
+          "Psa.85:0-1"
         ]
       },
       {
@@ -5274,7 +5281,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.86:1", "Psa.85:1", "Psa.86:1.0-1"]
+        "SubdividedVerse": ["Psa.86:1", "Psa.85:1", "Psa.86:0-1"]
       },
       {
         "OneToOne": ["Psa.86:2-17", "Psa.85:2-17", "Psa.86:2-17"]
@@ -5295,7 +5302,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.87:1", "Psa.86:1", "Psa.87:1.0-1"]
+        "SubdividedVerse": ["Psa.87:1", "Psa.86:1", "Psa.87:0-1"]
       },
       {
         "OneToOne": ["Psa.87:2-7", "Psa.86:2-7", "Psa.87:2-7"]
@@ -5322,7 +5329,7 @@
           "Psa.88:1",
           "Psa.88:1-2",
           "Psa.87:1-2",
-          "Psa.88:1.0-1"
+          "Psa.88:0-1"
         ]
       },
       {
@@ -5350,7 +5357,7 @@
           "Psa.89:1",
           "Psa.89:1-2",
           "Psa.88:1-2",
-          "Psa.89:1.0-1"
+          "Psa.89:0-1"
         ]
       },
       {
@@ -5372,7 +5379,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.90:1", "Psa.89:1", "Psa.90:1.0-1"]
+        "SubdividedVerse": ["Psa.90:1", "Psa.89:1", "Psa.90:0-1"]
       },
       {
         "OneToOne": ["Psa.90:2-17", "Psa.89:2-17", "Psa.90:2-17"]
@@ -5412,7 +5419,7 @@
           "Psa.92:1",
           "Psa.92:1-2",
           "Psa.91:1-2",
-          "Psa.92:1.0-1"
+          "Psa.92:0-1"
         ]
       },
       {
@@ -5489,12 +5496,20 @@
     "name": "Psa.98:1-9",
     "columns": [
       ["English", "Hebrew"],
-      ["Latin", "Greek"]
+      ["Latin", "Greek"],
+      ["EngTitleSeparate"]
     ],
-    "tests": [["Psa.99:9=Last"], ["Psa.99:5=Last"]],
+    "tests": [
+      ["Psa.99:9=Last", "Psa.98:1.1=NotExist"],
+      ["Psa.99:5=Last", "Psa.98:1.1=NotExist"],
+      ["Psa.99:9=Last", "Psa.98:1.1=Exist"]
+    ],
     "ranges": [
       {
-        "OneToOne": ["Psa.98:1-9", "Psa.97:1-9"]
+        "Superscription": ["Psa.98:1", "Psa.97:1", "Psa.98:0"]
+      },
+      {
+        "OneToOne": ["Psa.98:1-9", "Psa.97:1-9", "Psa.98:1-9"]
       }
     ]
   },
@@ -5525,7 +5540,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.100:1", "Psa.99:1", "Psa.100:1.0-1"]
+        "SubdividedVerse": ["Psa.100:1", "Psa.99:1", "Psa.100:0-1"]
       },
       {
         "OneToOne": ["Psa.100:2-5", "Psa.99:2-5", "Psa.100:2-5"]
@@ -5546,7 +5561,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.101:1", "Psa.100:1", "Psa.101:1.0-1"]
+        "SubdividedVerse": ["Psa.101:1", "Psa.100:1", "Psa.101:0-1"]
       },
       {
         "OneToOne": ["Psa.101:2-8", "Psa.100:2-8", "Psa.101:2-8"]
@@ -5573,7 +5588,7 @@
           "Psa.102:1",
           "Psa.102:1-2",
           "Psa.101:1-2",
-          "Psa.102:1.0-1"
+          "Psa.102:0-1"
         ]
       },
       {
@@ -5600,7 +5615,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.103:1", "Psa.102:1", "Psa.103:1.0-1"]
+        "SubdividedVerse": ["Psa.103:1", "Psa.102:1", "Psa.103:0-1"]
       },
       {
         "OneToOne": ["Psa.103:2-22", "Psa.102:2-22", "Psa.103:2-22"]
@@ -5679,7 +5694,7 @@
           "Psa.108:1",
           "Psa.108:1-2",
           "Psa.107:1-2",
-          "Psa.108:1.0-1"
+          "Psa.108:0-1"
         ]
       },
       {
@@ -5706,7 +5721,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.109:1", "Psa.108:1", "Psa.109:1.0-1"]
+        "SubdividedVerse": ["Psa.109:1", "Psa.108:1", "Psa.109:0-1"]
       },
       {
         "OneToOne": ["Psa.109:2-31", "Psa.108:2-31", "Psa.109:2-31"]
@@ -5727,7 +5742,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.110:1", "Psa.109:1", "Psa.110:1.0-1"]
+        "SubdividedVerse": ["Psa.110:1", "Psa.109:1", "Psa.110:0-1"]
       },
       {
         "OneToOne": ["Psa.110:2-7", "Psa.109:2-7", "Psa.110:2-7"]
@@ -5868,7 +5883,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.120:1", "Psa.119:1", "Psa.120:1.0-1"]
+        "SubdividedVerse": ["Psa.120:1", "Psa.119:1", "Psa.120:0-1"]
       },
       {
         "OneToOne": ["Psa.120:2-7", "Psa.119:2-7", "Psa.120:2-7"]
@@ -5889,7 +5904,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.121:1", "Psa.120:1", "Psa.121:1.0-1"]
+        "SubdividedVerse": ["Psa.121:1", "Psa.120:1", "Psa.121:0-1"]
       },
       {
         "OneToOne": ["Psa.121:2-8", "Psa.120:2-8", "Psa.121:2-8"]
@@ -5910,7 +5925,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.122:1", "Psa.121:1", "Psa.122:1.0-1"]
+        "SubdividedVerse": ["Psa.122:1", "Psa.121:1", "Psa.122:0-1"]
       },
       {
         "OneToOne": ["Psa.122:2-9", "Psa.121:2-9", "Psa.122:2-9"]
@@ -5931,7 +5946,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.123:1", "Psa.122:1", "Psa.123:1.0-1"]
+        "SubdividedVerse": ["Psa.123:1", "Psa.122:1", "Psa.123:0-1"]
       },
       {
         "OneToOne": ["Psa.123:2-4", "Psa.122:2-4", "Psa.123:2-4"]
@@ -5952,7 +5967,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.124:1", "Psa.123:1", "Psa.124:1.0-1"]
+        "SubdividedVerse": ["Psa.124:1", "Psa.123:1", "Psa.124:0-1"]
       },
       {
         "OneToOne": ["Psa.124:2-8", "Psa.123:2-8", "Psa.124:2-8"]
@@ -5979,7 +5994,7 @@
           "Psa.125:1",
           "Psa.124:1",
           "Psa.124:1",
-          "Psa.125:1.0-1"
+          "Psa.125:0-1"
         ]
       },
       {
@@ -6007,7 +6022,7 @@
           "Psa.126:1",
           "Psa.125:1",
           "Psa.125:1",
-          "Psa.126:1.0-1"
+          "Psa.126:0-1"
         ]
       },
       {
@@ -6037,7 +6052,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.127:1", "Psa.126:1", "Psa.127:1.0-1"]
+        "SubdividedVerse": ["Psa.127:1", "Psa.126:1", "Psa.127:0-1"]
       },
       {
         "OneToOne": ["Psa.127:2-5", "Psa.126:2-5", "Psa.127:2-5"]
@@ -6058,7 +6073,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.128:1", "Psa.127:1", "Psa.128:1.0-1"]
+        "SubdividedVerse": ["Psa.128:1", "Psa.127:1", "Psa.128:0-1"]
       },
       {
         "OneToOne": ["Psa.128:2-6", "Psa.127:2-6", "Psa.128:2-6"]
@@ -6079,7 +6094,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.129:1", "Psa.128:1", "Psa.129:1.0-1"]
+        "SubdividedVerse": ["Psa.129:1", "Psa.128:1", "Psa.129:0-1"]
       },
       {
         "OneToOne": ["Psa.129:2-8", "Psa.128:2-8", "Psa.129:2-8"]
@@ -6100,7 +6115,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.130:1", "Psa.129:1", "Psa.130:1.0-1"]
+        "SubdividedVerse": ["Psa.130:1", "Psa.129:1", "Psa.130:0-1"]
       },
       {
         "OneToOne": ["Psa.130:2-8", "Psa.129:2-8", "Psa.130:2-8"]
@@ -6121,7 +6136,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.131:1", "Psa.130:1", "Psa.131:1.0-1"]
+        "SubdividedVerse": ["Psa.131:1", "Psa.130:1", "Psa.131:0-1"]
       },
       {
         "OneToOne": ["Psa.131:2-3", "Psa.130:2-3", "Psa.131:2-3"]
@@ -6142,7 +6157,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.132:1", "Psa.131:1", "Psa.132:1.0-1"]
+        "SubdividedVerse": ["Psa.132:1", "Psa.131:1", "Psa.132:0-1"]
       },
       {
         "OneToOne": ["Psa.132:2-18", "Psa.131:2-18", "Psa.132:2-18"]
@@ -6163,7 +6178,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.133:1", "Psa.132:1", "Psa.133:1.0-1"]
+        "SubdividedVerse": ["Psa.133:1", "Psa.132:1", "Psa.133:0-1"]
       },
       {
         "OneToOne": ["Psa.133:2-3", "Psa.132:2-3", "Psa.133:2-3"]
@@ -6184,7 +6199,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.134:1", "Psa.133:1", "Psa.134:1.0-1"]
+        "SubdividedVerse": ["Psa.134:1", "Psa.133:1", "Psa.134:0-1"]
       },
       {
         "OneToOne": ["Psa.134:2-3", "Psa.133:2-3", "Psa.134:2-3"]
@@ -6241,7 +6256,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.138:1", "Psa.137:1", "Psa.138:1.0-1"]
+        "SubdividedVerse": ["Psa.138:1", "Psa.137:1", "Psa.138:0-1"]
       },
       {
         "OneToOne": ["Psa.138:2-8", "Psa.137:2-8", "Psa.138:2-8"]
@@ -6262,7 +6277,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.139:1", "Psa.138:1", "Psa.139:1.0-1"]
+        "SubdividedVerse": ["Psa.139:1", "Psa.138:1", "Psa.139:0-1"]
       },
       {
         "OneToOne": ["Psa.139:2-24", "Psa.138:2-24", "Psa.139:2-24"]
@@ -6289,7 +6304,7 @@
           "Psa.140:1",
           "Psa.140:1-2",
           "Psa.139:1-2",
-          "Psa.140:1.0-1"
+          "Psa.140:0-1"
         ]
       },
       {
@@ -6316,7 +6331,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.141:1", "Psa.140:1", "Psa.141:1.0-1"]
+        "SubdividedVerse": ["Psa.141:1", "Psa.140:1", "Psa.141:0-1"]
       },
       {
         "OneToOne": ["Psa.141:2-10", "Psa.140:2-10", "Psa.141:2-10"]
@@ -6343,7 +6358,7 @@
           "Psa.142:1",
           "Psa.142:1-2",
           "Psa.141:1-2",
-          "Psa.142:1.0-1"
+          "Psa.142:0-1"
         ]
       },
       {
@@ -6365,7 +6380,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.143:1", "Psa.142:1", "Psa.143:1.0-1"]
+        "SubdividedVerse": ["Psa.143:1", "Psa.142:1", "Psa.143:0-1"]
       },
       {
         "OneToOne": ["Psa.143:2-12", "Psa.142:2-12", "Psa.143:2-12"]
@@ -6386,7 +6401,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.144:1", "Psa.143:1", "Psa.144:1.0-1"]
+        "SubdividedVerse": ["Psa.144:1", "Psa.143:1", "Psa.144:0-1"]
       },
       {
         "OneToOne": ["Psa.144:2-15", "Psa.143:2-15", "Psa.144:2-15"]
@@ -6407,7 +6422,7 @@
     ],
     "ranges": [
       {
-        "SubdividedVerse": ["Psa.145:1", "Psa.144:1", "Psa.145:1.0-1"]
+        "SubdividedVerse": ["Psa.145:1", "Psa.144:1", "Psa.145:0-1"]
       },
       {
         "OneToOne": ["Psa.145:2-21", "Psa.144:2-21", "Psa.145:2-21"]
@@ -6618,7 +6633,8 @@
     "tests": [["Isa.64:12=Last"], ["Isa.64:11=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Isa.63:19-64:1", "Isa.63:19"]
+        "MergedVerses": ["Isa.63:19", "Isa.63:19"],
+        "MergedVersesContinued": ["Isa.64:1", "Isa.63:19"]
       },
       {
         "OneToOne": ["Isa.64:2-12", "Isa.64:1-11"]
@@ -10111,7 +10127,7 @@
     "tests": [["Mrk.16:8=Last"], ["Mrk.16:20=Last"]],
     "ranges": [
       {
-        "PassageMissing": ["Mrk.16:8", "Mrk.16:9"]
+        "PassageMissing": ["Mrk.16:8", "Mrk.16:8"]
       }
     ]
   },
@@ -10200,7 +10216,8 @@
     "tests": [["Act.19:41=Last"], ["Act.19:40=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["Act.19:40-41", "Act.19:40"]
+        "MergedVerses": ["Act.19:40", "Act.19:40"],
+        "MergedVerses2": ["Act.19:41", "Act.19:40"]
       }
     ]
   },
@@ -10289,6 +10306,16 @@
     ]
   },
   {
+    "name": "2Co.13:13-14",
+    "columns": [["English"], ["Greek"]],
+    "tests": [["2Co.13:14=Last"], ["2Co.13:13=Last"]],
+    "ranges": [
+      {
+        "MergedVerses": ["2Co.13:13-14", "2Co.13:12-13"]
+      }
+    ]
+  },
+  {
     "name": "Php.1:16-17",
     "columns": [["English", "Greek"], ["Greek2"]],
     "tests": [["Php.1:16<Php.1:17"], ["Php.1:16>Php.1:17"]],
@@ -10320,7 +10347,8 @@
     "tests": [["3Jn.1:14=Last"], ["3Jn.1:15=Last"]],
     "ranges": [
       {
-        "MergedVerses": ["3Jn.1:14-15", "3Jn.1:14-15"]
+        "MergedVerses": ["3Jn.1:14", "3Jn.1:14"],
+        "MergedVerses2": ["3Jn.1:14", "3Jn.1:15"]
       }
     ]
   },
@@ -10338,13 +10366,13 @@
     ],
     "ranges": [
       {
-        "OneToOne": ["Rev.12:17", "Rev.12:17", "Rev.12:17a"]
+        "OneToOne": ["Rev.12:17", "Rev.12:17", "Rev.12:17"]
       },
       {
-        "OneToOne": ["Rev.12:18", "Rev.13:1a", "Rev.12:17b"]
+        "OneToOne": ["Rev.12:18", "Rev.13:1", "Rev.12:17"]
       },
       {
-        "OneToOne": ["Rev.13:1", "Rev.13:1b", "Rev.13:1"]
+        "OneToOne": ["Rev.13:1", "Rev.13:1", "Rev.13:1"]
       }
     ]
   }
