@@ -37,7 +37,7 @@ class Sniffer(object):
 					self.books[b][int(c)][str(v)] = books[b][c][v] 
 		#make sure output path is present
 		if not os.path.isdir(outdir):
-			os.mrdir(outdir)
+			os.mkdir(outdir)
 
 
 	def sniff(self, name=None):
@@ -56,7 +56,7 @@ class Sniffer(object):
 	def max_verses(self):
 		self.versification["maxVerses"] = {}
 		self.versification["partialVerses"] = {}
-		self.versification["verseMappings"] = {}
+		self.versification["verseMappings"] = []
 		self.versification["excludedVerses"] = {}
 		self.versification["unexcludedVerses"] = {}
 		for book in canons.book_ids:
@@ -280,8 +280,8 @@ class Sniffer(object):
 					frum = r[k][from_column].upper().replace("."," ", 1)
 					to = r[k][to_column].upper().replace("."," ", 1)
 					logging.info(frum + " : " + to)
-					if frum != to and to != "NOVERSE":
-						self.versification["verseMappings"][frum] = to
+					if to != "NOVERSE" and to != "ABSENT":
+						self.versification["verseMappings"].append({frum:to})
 				else:
 					logging.info("### Error: missing column in mapping")
 
@@ -440,7 +440,7 @@ class USFM_parser(InputParser):
 			input_path += "/"
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
-			if file.endswith(".usfm"):
+			if file.endswith(".SFM"):
 				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
 									 stdout=subprocess.PIPE,
 									 stderr=subprocess.PIPE,
@@ -476,8 +476,8 @@ class CSV_parser(InputParser):
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
 			if file.endswith(".csv") or file.endswith('.tsv'):
-				with open(input_path+file, newline='') as csvfile:
-					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'])
+				with open(input_path+file, newline='', encoding='utf-8') as csvfile:
+					reader = csv.DictReader(csvfile, fieldnames=['Book', 'Chapter', 'Verse', 'Text'], delimiter="\t")
 					next(reader, None)  # skip the headers
 					for row in reader:
 						if not re.match(self.bookpattern, row['Book']):
@@ -563,4 +563,3 @@ if __name__ == '__main__':
 	books = parser.books
 	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
 	sniffer_obj.sniff(args.name)
-
