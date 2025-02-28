@@ -1511,7 +1511,10 @@
     "tests": [["1Ch.12:40=Last"], ["1Ch.12:41=Last"]],
     "ranges": [
       {
-        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:4-5"]
+        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:4"]
+      },
+      {
+        "SubdividedVerse": ["1Ch.12:4", "1Ch.12:5"]
       },
       {
         "OneToOne": ["1Ch.12:5-40", "1Ch.12:6-41"]
