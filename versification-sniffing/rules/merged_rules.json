@@ -10113,10 +10113,10 @@
   {
     "name": "Mrk.16:9-20",
     "columns": [["English", "Greek"], ["Greek2"]],
-    "tests": [["Mrk.16:8=Last"], ["Mrk.16:20=Last"]],
+    "tests": [["Mrk.16:8=Last"]],
     "ranges": [
       {
-        "PassageMissing": ["Mrk.16:8", "Mrk.16:8"]
+        "PassageMissing": ["Mrk.16:8", "Mrk.16:9"]
       }
     ]
   },
