@@ -947,7 +947,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.4:34=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=Exist"],
+      ["1Ki.4:34=Last", "1Ki.2:33>1Ki.2:35"],
       ["1Ki.4:20=Last", "1Ki.2:33>1Ki.2:35", "1Ki.2:35.1=NotExist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=Exist"],
       ["1Ki.4:19=Last", "1Ki.2:33<1Ki.2:35", "1Ki.2:35.1=NotExist"]
@@ -1387,7 +1387,7 @@
       ["GreekUndivided*"]
     ],
     "tests": [
-      ["1Ki.22:53=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=Exist"],
+      ["1Ki.22:53=Last", "1Ki.16:28<1Ki.16:34"],
       ["1Ki.22:54=Last", "1Ki.16:28<1Ki.16:34", "1Ki.16:28.1=NotExist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=Exist"],
       ["1Ki.22:54=Last", "1Ki.16:28>1Ki.16:34", "1Ki.16:28.1=NotExist"]
