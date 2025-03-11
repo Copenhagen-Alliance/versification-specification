@@ -165,7 +165,7 @@ def max_verses():
     """
     versification["maxVerses"] = {}
     versification["partialVerses"] = {}
-    versification["verseMappings"] = {}
+    versification["mappedVerses"] = {}
     versification["excludedVerses"] = {}
     versification["unexcludedVerses"] = {}
     for book in canons.book_ids:
@@ -367,7 +367,7 @@ def create_mappings(rule:dict, from_column:int, to_column:int) -> None:
                 to = r[k][to_column].upper().replace("."," ", 1)
                 logging.info(frum + " : " + to)
                 if frum != to and to != "NOVERSE":
-                    versification["verseMappings"][frum] = to
+                    versification["mappedVerses"][frum] = to
             else:
                 logging.info("### Error: missing column in mapping")
 

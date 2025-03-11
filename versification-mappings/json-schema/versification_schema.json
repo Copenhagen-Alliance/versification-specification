@@ -69,11 +69,16 @@
             "additionalItems": false
         },
         "mappedVerses": {
+            "type": "object",
             "propertyNames": {
                 "$ref": "#/definitions/bcvRange"
             },
             "additionalProperties": {
-                "$ref": "#/definitions/bcvRange"
+                "type": "array",
+                "items": {
+                    "$ref": "#/definitions/bcvRange"
+                },
+                "additionalItems": false
             }
         },
         "mergedVerses": {
