@@ -567,3 +567,4 @@ if __name__ == '__main__':
 	sniffer_obj = Sniffer(books, outdir=args.outdir, vrs=args.vrs, mappings=args.mappings, rules=args.rules)
 	sniffer_obj.sniff(args.name)
  
+# update to create json using new format

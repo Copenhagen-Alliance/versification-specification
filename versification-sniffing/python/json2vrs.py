@@ -47,3 +47,5 @@ print("# Verse Mappings")
 for mapping in base["mappedVerses"]:
     for key, value in mapping.items():
         print(key + " = " + value)
+        
+#update this to accept new json format and transform to vrs properly
