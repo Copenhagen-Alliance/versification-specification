@@ -10,19 +10,25 @@ from inspect import currentframe
 import logging
 logging.basicConfig(filename='debug.log',level=logging.DEBUG, format='%(asctime)s\t%(message)s')
 
-ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
-ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
-ap.add_argument('-o', '--outdir', help="Directory for output", default='./output/')
-ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
-ap.add_argument('-usx', help="Directory containing USX 3.0 files", default="./usx/")
-ap.add_argument('-m', '--mappings', help="Directory containing versification mappings.", default='./mappings/')
-ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='./rules/merged_rules.json')
-args = ap.parse_args()
+#ap = argparse.ArgumentParser(description='Create Versification File from USX Files - See https://github.com/Copenhagen-Alliance/versification-specification/')
+#ap.add_argument('-n', '--name', help="Short name of the text, e.g. 'NRSVUK' or 'ESV'", required=True)
+#ap.add_argument('-o', '--outdir', help="Directory for output", default='./output/')
+#ap.add_argument('-v', '--vrs', help="Generate versification in addition to .json", default=False)
+#ap.add_argument('-usx', help="Directory containing USX 3.0 files", default="./usx/")
+#ap.add_argument('-m', '--mappings', help="Directory containing versification mappings.", default='./mappings/')
+#ap.add_argument('-r', '--rules', help="Merged rules file for mapping verses", default='./rules/merged_rules.json')
+#args = ap.parse_args()
+
+#python versification-sniffing/python/usx2versification.py 
+name = "BSB" 
+usx = "data/input/" 
+outdir = "data/output/" 
+rules =  "versification-sniffing/rules/merged_rules.json" 
 
 logging.info("------------------------------------------")
-logging.info("Directory: " + args.name)
+logging.info("Directory: " + name)
 
-outfile = args.outdir+args.name+".json"
+outfile = outdir+name+".json"
 
 books = {}
 versification = {}
@@ -367,7 +373,7 @@ def create_mappings(rule:dict, from_column:int, to_column:int) -> None:
                 to = r[k][to_column].upper().replace("."," ", 1)
                 logging.info(frum + " : " + to)
                 if frum != to and to != "NOVERSE":
-                    versification["verseMappings"][frum] = to
+                    versification["verseMappings"][frum] = [to]
             else:
                 logging.info("### Error: missing column in mapping")
 
@@ -381,7 +387,10 @@ def mapped_verses():
     careful handling.
     https://ubsicap.github.io/usx/vocabularies.html#usx-vocab-bookcode
     """
-    with open(args.rules) as r:
+    
+    rules =  "versification-sniffing/rules/merged_rules.json" 
+    
+    with open(rules) as r:
         rules = json.load(r)
         for rule in rules:
             logging.info("-------------------------")
@@ -394,9 +403,9 @@ def mapped_verses():
 
 
 
-versification["shortname"] = args.name
+versification["shortname"] = name
 
-parse_books(args.usx+args.name+"/")
+parse_books(usx+name+"/")
 max_verses()
 mapped_verses()
 

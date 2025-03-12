@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usx version="3.0">
+  <book code="2JN" style="id">- Berean Study Bible</book>
+  <para style="h">2 John</para>
+  <para style="toc2">2 John</para>
+  <para style="toc1">2 John</para>
+  <para style="mt1">2 John</para>
+  <chapter number="1" style="c" sid="2JN 1"/>
+  <para style="s1">A Greeting from the Elder</para>
+  <para style="r">(<ref loc="3JN 1:1-4">3 John 1:1–4</ref>)</para>
+  <para style="m">
+    <verse number="1" style="v" sid="2JN 1:1"/>The elder,</para>
+  <para style="b" vid="2JN 1:1"/>
+  <para style="m" vid="2JN 1:1">To the chosen lady and her children, whom I love in the truth—and not I alone, but also all who know the truth— <verse eid="2JN 1:1"/><verse number="2" style="v" sid="2JN 1:2"/>because of the truth that abides in us and will be with us forever:<verse eid="2JN 1:2"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="3" style="v" sid="2JN 1:3"/>Grace, mercy, and peace from God the Father and from Jesus Christ, the Son of the Father, will be with us in truth and love.<verse eid="2JN 1:3"/></para>
+  <para style="s1">Walking in the Truth</para>
+  <para style="r">(<ref loc="JHN 8:30-47">John 8:30–47</ref>)</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="4" style="v" sid="2JN 1:4"/>I was overjoyed to find some of your children walking in the truth, just as the Father has commanded us. <verse eid="2JN 1:4"/><verse number="5" style="v" sid="2JN 1:5"/>And now I urge you, dear lady—not as a new commandment to you, but one we have had from the beginning—that we love one another. <verse eid="2JN 1:5"/><verse number="6" style="v" sid="2JN 1:6"/>And this is love, that we walk according to His commandments. This is the very commandment you have heard from the beginning, that you must walk in love.<verse eid="2JN 1:6"/></para>
+  <para style="s1">Beware of Deceivers</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="7" style="v" sid="2JN 1:7"/>For many deceivers have gone out into the world, refusing to confess the coming of Jesus Christ in the flesh. Any such person is the deceiver and the antichrist. <verse eid="2JN 1:7"/><verse number="8" style="v" sid="2JN 1:8"/>Watch yourselves, so that you do not lose what we have worked for,<note caller="+" style="f"><char style="fr" closed="false">1:8 </char><char style="ft" closed="false">NE and WH what you have worked for</char></note> but that you may be fully rewarded. <verse eid="2JN 1:8"/><verse number="9" style="v" sid="2JN 1:9"/>Anyone who runs ahead without remaining in the teaching of Christ does not have God. Whoever remains in His teaching has both the Father and the Son.<verse eid="2JN 1:9"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="10" style="v" sid="2JN 1:10"/>If anyone comes to you but does not bring this teaching, do not receive him into your home or even greet him. <verse eid="2JN 1:10"/><verse number="11" style="v" sid="2JN 1:11"/>Whoever greets such a person shares in his evil deeds.<verse eid="2JN 1:11"/></para>
+  <para style="s1">Conclusion</para>
+  <para style="r">(<ref loc="3JN 1:13-14">3 John 1:13–14</ref>)</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="12" style="v" sid="2JN 1:12"/>I have many things to write to you, but I would prefer not to do so with paper and ink. Instead, I hope to come and speak with you face to face,<note caller="+" style="f"><char style="fr" closed="false">1:12 </char><char style="ft" closed="false">Literally mouth to mouth</char></note> so that our joy may be complete.<verse eid="2JN 1:12"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="13" style="v" sid="2JN 1:13"/>The children of your elect sister send you greetings.<note caller="+" style="f"><char style="fr" closed="false">1:13 </char><char style="ft" closed="false">BYZ and TR include Amen.</char></note><verse eid="2JN 1:13"/></para>
+  <chapter eid="2JN 1"/>
+</usx>
