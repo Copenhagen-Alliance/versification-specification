@@ -367,7 +367,7 @@ def create_mappings(rule:dict, from_column:int, to_column:int) -> None:
                 to = r[k][to_column].upper().replace("."," ", 1)
                 logging.info(frum + " : " + to)
                 if frum != to and to != "NOVERSE":
-                    versification["mappedVerses"][frum] = to
+                    versification["mappedVerses"][frum] = [to]
             else:
                 logging.info("### Error: missing column in mapping")
 
@@ -409,5 +409,3 @@ for key in versification["partialVerses"].keys():
 # print(json.dumps(versification, indent=4, ensure_ascii=False))
 with open(outfile, 'w') as otf:
     json.dump(versification, otf, indent=4, ensure_ascii=False)
-
-# update to create json using new format
