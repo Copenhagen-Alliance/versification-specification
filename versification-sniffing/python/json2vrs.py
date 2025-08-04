@@ -44,6 +44,7 @@ for key in base["partialVerses"].keys():
 	print("*"+",".join([key]+base["partialVerses"][key]))
 
 print("# Verse Mappings")
-for mapping in base["verseMappings"]:
-    for key, value in mapping.items():
+for key in base["verseMappings"].keys():
+    value_array = base["verseMappings"][key]
+    for value in value_array:
         print(key + " = " + value)
