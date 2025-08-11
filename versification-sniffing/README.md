@@ -8,11 +8,13 @@ The versification sniffer processes input files in various formats (`USX`, `USFM
 
 The program supports three main input formats:
 
-1. **USX**: 
+1. **USX**:
+
    - USX (Unified Standard XML) is a standardized XML format used to represent Bible texts.
    - The `USX_parser` class reads USX files and extracts verses from them, organizing the data into a structured dictionary for further processing.
 
 2. **USFM**:
+
    - USFM (Unified Standard Format Markers) is a plain text format with markup used to represent Bible texts.
    - The `USFM_parser` class converts USFM files into a structured dictionary by parsing them into JSON format using an external library (`usfm-grammar`).
 
@@ -23,6 +25,7 @@ The program supports three main input formats:
 ### Processing Flow
 
 1. **Input Parsing**:
+
    - The selected parser (`USX_parser`, `USFM_parser`, or `CSV_parser`) reads the input files from a specified directory, extracting the verses and organizing them into a dictionary with the structure:
      ```python
      books = {
@@ -35,6 +38,7 @@ The program supports three main input formats:
      ```
 
 2. **Versification Mapping**:
+
    - The `Sniffer` class processes the structured verse data, applying versification mappings and rules to create a custom versification file.
    - It handles tasks such as determining the maximum verse numbers for each chapter, identifying partial verses, and applying complex mappings defined in a rules file (`merged_rules.json`).
 

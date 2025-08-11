@@ -45712,7 +45712,7 @@
 2025-03-12 14:56:28,931	has_more_words()
 2025-03-12 14:56:28,931	{'book': 'NUM', 'chapter': 6, 'verse': 24}
 2025-03-12 14:56:28,931	{'book': 'NUM', 'chapter': 6, 'verse': 25}
-2025-03-12 14:56:28,931	‘May the LORD bless youand keep you;
+2025-03-12 14:56:28,931	ï¿½May the LORD bless youand keep you;
 2025-03-12 14:56:28,931	may the LORD cause His face to shine upon youand be gracious to you;
 2025-03-12 14:56:28,931	False
 2025-03-12 14:56:28,931	do_test() returns True
@@ -45728,7 +45728,7 @@
 2025-03-12 14:56:28,931	{'book': 'NUM', 'chapter': 10, 'verse': 34}
 2025-03-12 14:56:28,931	{'book': 'NUM', 'chapter': 10, 'verse': 35}
 2025-03-12 14:56:28,932	And the cloud of the LORD was over them by day when they set out from the camp.
-2025-03-12 14:56:28,932	Whenever the ark set out, Moses would say,“Rise up, O LORD!May Your enemies be scattered;may those who hate You flee before You.”
+2025-03-12 14:56:28,932	Whenever the ark set out, Moses would say,ï¿½Rise up, O LORD!May Your enemies be scattered;may those who hate You flee before You.ï¿½
 2025-03-12 14:56:28,932	False
 2025-03-12 14:56:28,932	do_test() returns True
 2025-03-12 14:56:28,932	-------------------------
@@ -45930,7 +45930,7 @@
 2025-03-12 14:56:28,937	{'book': 'JOS', 'chapter': 9, 'verse': 2}
 2025-03-12 14:56:28,937	{'book': 'JOS', 'chapter': 9, 'verse': 1}
 2025-03-12 14:56:28,937	they came together to wage war against Joshua and Israel.
-2025-03-12 14:56:28,937	Now when news of this reached all the kings west of the Jordan—those in the hill country, the foothills, and all along the coast of the Great Sea toward Lebanon (the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites)—
+2025-03-12 14:56:28,937	Now when news of this reached all the kings west of the Jordanï¿½those in the hill country, the foothills, and all along the coast of the Great Sea toward Lebanon (the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites)ï¿½
 2025-03-12 14:56:28,937	False
 2025-03-12 14:56:28,937	do_test()
 2025-03-12 14:56:28,937	{'book': 'JOS', 'chapter': 9, 'verse': 2, 'words': 1}
@@ -46121,8 +46121,8 @@
 2025-03-12 14:56:28,943	has_more_words()
 2025-03-12 14:56:28,943	{'book': '1KI', 'chapter': 2, 'verse': 35}
 2025-03-12 14:56:28,943	{'book': '1KI', 'chapter': 2, 'verse': 33}
-2025-03-12 14:56:28,943	And the king appointed Benaiah son of Jehoiada in Joab’s place over the army, and he appointed Zadok the priest in Abiathar’s place.
-2025-03-12 14:56:28,943	Their blood will come back upon the heads of Joab and his descendants forever; but for David, his descendants, his house, and his throne, there shall be peace from the LORD forever.”
+2025-03-12 14:56:28,943	And the king appointed Benaiah son of Jehoiada in Joabï¿½s place over the army, and he appointed Zadok the priest in Abiatharï¿½s place.
+2025-03-12 14:56:28,943	Their blood will come back upon the heads of Joab and his descendants forever; but for David, his descendants, his house, and his throne, there shall be peace from the LORD forever.ï¿½
 2025-03-12 14:56:28,943	False
 2025-03-12 14:56:28,943	do_test() returns True
 2025-03-12 14:56:28,943	create_mappings(), rule=1Ki.2:8-7:23
@@ -46179,7 +46179,7 @@
 2025-03-12 14:56:28,945	has_more_words()
 2025-03-12 14:56:28,945	{'book': '1KI', 'chapter': 6, 'verse': 1}
 2025-03-12 14:56:28,945	{'book': '1KI', 'chapter': 6, 'verse': 6, 'factor': 2}
-2025-03-12 14:56:28,945	In the four hundred and eightieth year after the Israelites had come out of the land of Egypt, in the month of Ziv, the second month of the fourth year of Solomon’s reign over Israel, he began to build the house of the LORD.
+2025-03-12 14:56:28,945	In the four hundred and eightieth year after the Israelites had come out of the land of Egypt, in the month of Ziv, the second month of the fourth year of Solomonï¿½s reign over Israel, he began to build the house of the LORD.
 2025-03-12 14:56:28,945	The bottom floor was five cubits wide, the middle floor six cubits, and the third floor seven cubits. He also placed offset ledges around the outside of the temple, so that nothing would be inserted into its walls.
 2025-03-12 14:56:28,945	True
 2025-03-12 14:56:28,945	do_test()
@@ -46237,7 +46237,7 @@
 2025-03-12 14:56:28,946	{'book': '1KI', 'chapter': 9, 'verse': 14}
 2025-03-12 14:56:28,946	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:56:28,946	And Hiram had sent the king 120 talents of gold.
-2025-03-12 14:56:28,946	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:56:28,946	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:56:28,946	False
 2025-03-12 14:56:28,946	do_test()
 2025-03-12 14:56:28,946	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
@@ -46247,8 +46247,8 @@
 2025-03-12 14:56:28,947	has_more_words()
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 10, 'verse': 22}
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
-2025-03-12 14:56:28,947	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
-2025-03-12 14:56:28,947	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:56:28,947	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:56:28,947	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
 2025-03-12 14:56:28,947	False
 2025-03-12 14:56:28,947	do_test()
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 10, 'verse': 22, 'words': 1}
@@ -46264,7 +46264,7 @@
 2025-03-12 14:56:28,947	has_more_words()
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 9, 'verse': 14}
-2025-03-12 14:56:28,947	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:56:28,947	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:56:28,947	And Hiram had sent the king 120 talents of gold.
 2025-03-12 14:56:28,947	True
 2025-03-12 14:56:28,947	do_test()
@@ -46275,8 +46275,8 @@
 2025-03-12 14:56:28,947	has_more_words()
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
 2025-03-12 14:56:28,947	{'book': '1KI', 'chapter': 10, 'verse': 22}
-2025-03-12 14:56:28,947	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
-2025-03-12 14:56:28,947	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:56:28,947	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:56:28,947	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
 2025-03-12 14:56:28,948	True
 2025-03-12 14:56:28,948	do_test() returns False
 2025-03-12 14:56:28,948	do_test()
@@ -46287,7 +46287,7 @@
 2025-03-12 14:56:28,948	has_more_words()
 2025-03-12 14:56:28,948	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:56:28,948	{'book': '1KI', 'chapter': 9, 'verse': 14}
-2025-03-12 14:56:28,948	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:56:28,948	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:56:28,948	And Hiram had sent the king 120 talents of gold.
 2025-03-12 14:56:28,948	True
 2025-03-12 14:56:28,948	do_test()
@@ -46298,8 +46298,8 @@
 2025-03-12 14:56:28,948	has_more_words()
 2025-03-12 14:56:28,948	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
 2025-03-12 14:56:28,948	{'book': '1KI', 'chapter': 10, 'verse': 22}
-2025-03-12 14:56:28,948	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
-2025-03-12 14:56:28,948	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:56:28,948	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:56:28,948	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
 2025-03-12 14:56:28,948	True
 2025-03-12 14:56:28,948	do_test() returns False
 2025-03-12 14:56:28,948	-------------------------
@@ -46338,8 +46338,8 @@
 2025-03-12 14:56:28,949	has_more_words()
 2025-03-12 14:56:28,949	{'book': '1KI', 'chapter': 12, 'verse': 21, 'factor': 2}
 2025-03-12 14:56:28,949	{'book': '1KI', 'chapter': 12, 'verse': 24}
-2025-03-12 14:56:28,949	And when Rehoboam arrived in Jerusalem, he mobilized the whole house of Judah and the tribe of Benjamin—180,000 chosen warriors—to fight against the house of Israel and restore the kingdom to Rehoboam son of Solomon.
-2025-03-12 14:56:28,949	that this is what the LORD says: ‘You are not to go up and fight against your brothers, the Israelites. Each of you must return home, for this word is from Me.’”So they listened to the word of the LORD and turned back according to the word of the LORD.
+2025-03-12 14:56:28,949	And when Rehoboam arrived in Jerusalem, he mobilized the whole house of Judah and the tribe of Benjaminï¿½180,000 chosen warriorsï¿½to fight against the house of Israel and restore the kingdom to Rehoboam son of Solomon.
+2025-03-12 14:56:28,949	that this is what the LORD says: ï¿½You are not to go up and fight against your brothers, the Israelites. Each of you must return home, for this word is from Me.ï¿½ï¿½So they listened to the word of the LORD and turned back according to the word of the LORD.
 2025-03-12 14:56:28,949	False
 2025-03-12 14:56:28,949	do_test() returns False
 2025-03-12 14:56:28,949	do_test()
@@ -46378,7 +46378,7 @@
 2025-03-12 14:56:28,950	{'book': '1KI', 'chapter': 16, 'verse': 28}
 2025-03-12 14:56:28,951	{'book': '1KI', 'chapter': 16, 'verse': 34}
 2025-03-12 14:56:28,951	And Omri rested with his fathers and was buried in Samaria, and his son Ahab reigned in his place.
-2025-03-12 14:56:28,951	In Ahab’s days, Hiel the Bethelite rebuilt Jericho. At the cost of Abiram his firstborn he laid its foundation, and at the cost of Segub his youngest he set up its gates, according to the word that the LORD had spoken through Joshua son of Nun.
+2025-03-12 14:56:28,951	In Ahabï¿½s days, Hiel the Bethelite rebuilt Jericho. At the cost of Abiram his firstborn he laid its foundation, and at the cost of Segub his youngest he set up its gates, according to the word that the LORD had spoken through Joshua son of Nun.
 2025-03-12 14:56:28,951	False
 2025-03-12 14:56:28,951	do_test() returns True
 2025-03-12 14:56:28,951	create_mappings(), rule=1Ki.16:28-22:41
@@ -46549,7 +46549,7 @@
 2025-03-12 14:56:28,955	has_more_words()
 2025-03-12 14:56:28,955	{'book': 'NEH', 'chapter': 4, 'verse': 3}
 2025-03-12 14:56:28,956	{'book': 'NEH', 'chapter': 4, 'verse': 6, 'factor': 2}
-2025-03-12 14:56:28,956	Then Tobiah the Ammonite, who was beside him, said, “If even a fox were to climb up on what they are building, it would break down their wall of stones!”
+2025-03-12 14:56:28,956	Then Tobiah the Ammonite, who was beside him, said, ï¿½If even a fox were to climb up on what they are building, it would break down their wall of stones!ï¿½
 2025-03-12 14:56:28,956	So we rebuilt the wall until all of it was joined together up to half its height, for the people had a mind to work.
 2025-03-12 14:56:28,956	True
 2025-03-12 14:56:28,956	do_test() returns True
@@ -46752,7 +46752,7 @@
 2025-03-12 14:56:28,961	{'book': 'EST', 'chapter': 3, 'verse': 12}
 2025-03-12 14:56:28,961	{'book': 'EST', 'chapter': 3, 'verse': 13}
 2025-03-12 14:56:28,961	On the thirteenth day of the first month, the royal scribes were summoned and the order was written exactly as Haman commanded the royal satraps, the governors of each province, and the officials of each people, in the script of each province and the language of every people. It was written in the name of King Xerxes and sealed with the royal signet ring.
-2025-03-12 14:56:28,961	And the letters were sent by couriers to each of the royal provinces with the order to destroy, kill, and annihilate all the Jews—young and old, women and children—and to plunder their possessions on a single day, the thirteenth day of Adar, the twelfth month.
+2025-03-12 14:56:28,961	And the letters were sent by couriers to each of the royal provinces with the order to destroy, kill, and annihilate all the Jewsï¿½young and old, women and childrenï¿½and to plunder their possessions on a single day, the thirteenth day of Adar, the twelfth month.
 2025-03-12 14:56:28,961	True
 2025-03-12 14:56:28,961	do_test()
 2025-03-12 14:56:28,961	{'book': 'EST', 'chapter': 13, 'verse': 1}
@@ -46834,7 +46834,7 @@
 2025-03-12 14:56:28,964	has_more_words()
 2025-03-12 14:56:28,964	{'book': 'EST', 'chapter': 4, 'verse': 16}
 2025-03-12 14:56:28,964	{'book': 'EST', 'chapter': 4, 'verse': 17}
-2025-03-12 14:56:28,964	“Go and assemble all the Jews who can be found in Susa, and fast for me. Do not eat or drink for three days, night or day, and I and my maidens will fast as you do. After that, I will go to the king, even though it is against the law. And if I perish, I perish!”
+2025-03-12 14:56:28,964	ï¿½Go and assemble all the Jews who can be found in Susa, and fast for me. Do not eat or drink for three days, night or day, and I and my maidens will fast as you do. After that, I will go to the king, even though it is against the law. And if I perish, I perish!ï¿½
 2025-03-12 14:56:28,964	So Mordecai went and did all that Esther had instructed him.
 2025-03-12 14:56:28,964	True
 2025-03-12 14:56:28,964	do_test()
@@ -46918,8 +46918,8 @@
 2025-03-12 14:56:28,966	has_more_words()
 2025-03-12 14:56:28,966	{'book': 'EST', 'chapter': 5, 'verse': 5, 'factor': 3}
 2025-03-12 14:56:28,966	{'book': 'EST', 'chapter': 5, 'verse': 1}
-2025-03-12 14:56:28,966	“Hurry,” commanded the king, “and bring Haman, so we can do as Esther has requested.”So the king and Haman went to the banquet that Esther had prepared.
-2025-03-12 14:56:28,966	On the third day, Esther put on her royal attire and stood in the inner court of the palace across from the king’s quarters. The king was sitting on his royal throne in the royal courtroom, facing the entrance.
+2025-03-12 14:56:28,966	ï¿½Hurry,ï¿½ commanded the king, ï¿½and bring Haman, so we can do as Esther has requested.ï¿½So the king and Haman went to the banquet that Esther had prepared.
+2025-03-12 14:56:28,966	On the third day, Esther put on her royal attire and stood in the inner court of the palace across from the kingï¿½s quarters. The king was sitting on his royal throne in the royal courtroom, facing the entrance.
 2025-03-12 14:56:28,966	False
 2025-03-12 14:56:28,966	do_test()
 2025-03-12 14:56:28,966	{'book': 'EST', 'chapter': 15, 'verse': 1}
@@ -47084,7 +47084,7 @@
 2025-03-12 14:56:28,971	has_more_words()
 2025-03-12 14:56:28,971	{'book': 'EST', 'chapter': 10, 'verse': 2, 'factor': 2}
 2025-03-12 14:56:28,971	{'book': 'EST', 'chapter': 10, 'verse': 3}
-2025-03-12 14:56:28,971	And all of Mordecai’s powerful and magnificent accomplishments, together with the full account of the greatness to which the king had raised him, are they not written in the Book of the Chronicles of the Kings of Media and Persia?
+2025-03-12 14:56:28,971	And all of Mordecaiï¿½s powerful and magnificent accomplishments, together with the full account of the greatness to which the king had raised him, are they not written in the Book of the Chronicles of the Kings of Media and Persia?
 2025-03-12 14:56:28,971	For Mordecai the Jew was second only to King Xerxes, preeminent among the Jews and highly favored by his many kinsmen, seeking the good of his people and speaking peace to all his countrymen.
 2025-03-12 14:56:28,971	True
 2025-03-12 14:56:28,971	do_test()
@@ -53694,8 +53694,8 @@
 2025-03-12 14:56:29,165	has_more_words()
 2025-03-12 14:56:29,165	{'book': 'JER', 'chapter': 36, 'verse': 28}
 2025-03-12 14:56:29,165	{'book': 'JER', 'chapter': 36, 'verse': 30}
-2025-03-12 14:56:29,165	“Take another scroll and rewrite on it the very words that were on the original scroll, which Jehoiakim king of Judah has burned.
-2025-03-12 14:56:29,165	Therefore this is what the LORD says about Jehoiakim king of Judah: He will have no one to sit on David’s throne, and his body will be thrown out and exposed to heat by day and frost by night.
+2025-03-12 14:56:29,165	ï¿½Take another scroll and rewrite on it the very words that were on the original scroll, which Jehoiakim king of Judah has burned.
+2025-03-12 14:56:29,165	Therefore this is what the LORD says about Jehoiakim king of Judah: He will have no one to sit on Davidï¿½s throne, and his body will be thrown out and exposed to heat by day and frost by night.
 2025-03-12 14:56:29,165	False
 2025-03-12 14:56:29,165	do_test() returns True
 2025-03-12 14:56:29,165	-------------------------
@@ -53886,8 +53886,8 @@
 2025-03-12 14:56:29,170	has_more_words()
 2025-03-12 14:56:29,170	{'book': 'EZK', 'chapter': 7, 'verse': 5}
 2025-03-12 14:56:29,170	{'book': 'EZK', 'chapter': 7, 'verse': 4}
-2025-03-12 14:56:29,170	This is what the Lord GOD says:‘Disaster! An unprecedented disaster —behold, it is coming!
-2025-03-12 14:56:29,170	I will not look on you with pity,nor will I spare you,but I will punish you for your waysand for the abominations among you.Then you will know that I am the LORD.’
+2025-03-12 14:56:29,170	This is what the Lord GOD says:ï¿½Disaster! An unprecedented disaster ï¿½behold, it is coming!
+2025-03-12 14:56:29,170	I will not look on you with pity,nor will I spare you,but I will punish you for your waysand for the abominations among you.Then you will know that I am the LORD.ï¿½
 2025-03-12 14:56:29,170	False
 2025-03-12 14:56:29,170	do_test() returns True
 2025-03-12 14:56:29,170	-------------------------
@@ -54204,7 +54204,7 @@
 2025-03-12 14:56:29,179	{'book': 'MAL', 'chapter': 4, 'verse': 5}
 2025-03-12 14:56:29,179	{'book': 'MAL', 'chapter': 4, 'verse': 6}
 2025-03-12 14:56:29,179	Behold, I will send you Elijah the prophet before the coming of the great and awesome Day of the LORD.
-2025-03-12 14:56:29,179	And he will turn the hearts of the fathers to their children, and the hearts of the children to their fathers. Otherwise, I will come and strike the land with a curse.”
+2025-03-12 14:56:29,179	And he will turn the hearts of the fathers to their children, and the hearts of the children to their fathers. Otherwise, I will come and strike the land with a curse.ï¿½
 2025-03-12 14:56:29,179	False
 2025-03-12 14:56:29,179	do_test() returns True
 2025-03-12 14:56:29,179	create_mappings(), rule=Mal.4:1-4:6
@@ -56497,7 +56497,7 @@
 2025-03-12 14:57:11,347	has_more_words()
 2025-03-12 14:57:11,347	{'book': 'NUM', 'chapter': 6, 'verse': 24}
 2025-03-12 14:57:11,347	{'book': 'NUM', 'chapter': 6, 'verse': 25}
-2025-03-12 14:57:11,347	‘May the LORD bless youand keep you;
+2025-03-12 14:57:11,347	ï¿½May the LORD bless youand keep you;
 2025-03-12 14:57:11,347	may the LORD cause His face to shine upon youand be gracious to you;
 2025-03-12 14:57:11,347	False
 2025-03-12 14:57:11,347	do_test() returns True
@@ -56513,7 +56513,7 @@
 2025-03-12 14:57:11,347	{'book': 'NUM', 'chapter': 10, 'verse': 34}
 2025-03-12 14:57:11,347	{'book': 'NUM', 'chapter': 10, 'verse': 35}
 2025-03-12 14:57:11,347	And the cloud of the LORD was over them by day when they set out from the camp.
-2025-03-12 14:57:11,347	Whenever the ark set out, Moses would say,“Rise up, O LORD!May Your enemies be scattered;may those who hate You flee before You.”
+2025-03-12 14:57:11,347	Whenever the ark set out, Moses would say,ï¿½Rise up, O LORD!May Your enemies be scattered;may those who hate You flee before You.ï¿½
 2025-03-12 14:57:11,347	False
 2025-03-12 14:57:11,347	do_test() returns True
 2025-03-12 14:57:11,347	-------------------------
@@ -56715,7 +56715,7 @@
 2025-03-12 14:57:11,353	{'book': 'JOS', 'chapter': 9, 'verse': 2}
 2025-03-12 14:57:11,353	{'book': 'JOS', 'chapter': 9, 'verse': 1}
 2025-03-12 14:57:11,353	they came together to wage war against Joshua and Israel.
-2025-03-12 14:57:11,353	Now when news of this reached all the kings west of the Jordan—those in the hill country, the foothills, and all along the coast of the Great Sea toward Lebanon (the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites)—
+2025-03-12 14:57:11,353	Now when news of this reached all the kings west of the Jordanï¿½those in the hill country, the foothills, and all along the coast of the Great Sea toward Lebanon (the Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites)ï¿½
 2025-03-12 14:57:11,353	False
 2025-03-12 14:57:11,353	do_test()
 2025-03-12 14:57:11,353	{'book': 'JOS', 'chapter': 9, 'verse': 2, 'words': 1}
@@ -56906,8 +56906,8 @@
 2025-03-12 14:57:11,358	has_more_words()
 2025-03-12 14:57:11,358	{'book': '1KI', 'chapter': 2, 'verse': 35}
 2025-03-12 14:57:11,358	{'book': '1KI', 'chapter': 2, 'verse': 33}
-2025-03-12 14:57:11,358	And the king appointed Benaiah son of Jehoiada in Joab’s place over the army, and he appointed Zadok the priest in Abiathar’s place.
-2025-03-12 14:57:11,358	Their blood will come back upon the heads of Joab and his descendants forever; but for David, his descendants, his house, and his throne, there shall be peace from the LORD forever.”
+2025-03-12 14:57:11,358	And the king appointed Benaiah son of Jehoiada in Joabï¿½s place over the army, and he appointed Zadok the priest in Abiatharï¿½s place.
+2025-03-12 14:57:11,358	Their blood will come back upon the heads of Joab and his descendants forever; but for David, his descendants, his house, and his throne, there shall be peace from the LORD forever.ï¿½
 2025-03-12 14:57:11,358	False
 2025-03-12 14:57:11,358	do_test() returns True
 2025-03-12 14:57:11,358	create_mappings(), rule=1Ki.2:8-7:23
@@ -56964,7 +56964,7 @@
 2025-03-12 14:57:11,360	has_more_words()
 2025-03-12 14:57:11,360	{'book': '1KI', 'chapter': 6, 'verse': 1}
 2025-03-12 14:57:11,360	{'book': '1KI', 'chapter': 6, 'verse': 6, 'factor': 2}
-2025-03-12 14:57:11,360	In the four hundred and eightieth year after the Israelites had come out of the land of Egypt, in the month of Ziv, the second month of the fourth year of Solomon’s reign over Israel, he began to build the house of the LORD.
+2025-03-12 14:57:11,360	In the four hundred and eightieth year after the Israelites had come out of the land of Egypt, in the month of Ziv, the second month of the fourth year of Solomonï¿½s reign over Israel, he began to build the house of the LORD.
 2025-03-12 14:57:11,360	The bottom floor was five cubits wide, the middle floor six cubits, and the third floor seven cubits. He also placed offset ledges around the outside of the temple, so that nothing would be inserted into its walls.
 2025-03-12 14:57:11,360	True
 2025-03-12 14:57:11,360	do_test()
@@ -57022,7 +57022,7 @@
 2025-03-12 14:57:11,361	{'book': '1KI', 'chapter': 9, 'verse': 14}
 2025-03-12 14:57:11,361	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:57:11,361	And Hiram had sent the king 120 talents of gold.
-2025-03-12 14:57:11,361	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:57:11,361	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:57:11,361	False
 2025-03-12 14:57:11,362	do_test()
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
@@ -57032,8 +57032,8 @@
 2025-03-12 14:57:11,362	has_more_words()
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 10, 'verse': 22}
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
-2025-03-12 14:57:11,362	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
-2025-03-12 14:57:11,362	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:57:11,362	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:57:11,362	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
 2025-03-12 14:57:11,362	False
 2025-03-12 14:57:11,362	do_test()
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 10, 'verse': 22, 'words': 1}
@@ -57049,7 +57049,7 @@
 2025-03-12 14:57:11,362	has_more_words()
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:57:11,362	{'book': '1KI', 'chapter': 9, 'verse': 14}
-2025-03-12 14:57:11,362	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:57:11,362	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:57:11,362	And Hiram had sent the king 120 talents of gold.
 2025-03-12 14:57:11,362	True
 2025-03-12 14:57:11,362	do_test()
@@ -57060,8 +57060,8 @@
 2025-03-12 14:57:11,362	has_more_words()
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 10, 'verse': 22}
-2025-03-12 14:57:11,363	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
-2025-03-12 14:57:11,363	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:57:11,363	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:57:11,363	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
 2025-03-12 14:57:11,363	True
 2025-03-12 14:57:11,363	do_test() returns False
 2025-03-12 14:57:11,363	do_test()
@@ -57072,7 +57072,7 @@
 2025-03-12 14:57:11,363	has_more_words()
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 9, 'verse': 23}
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 9, 'verse': 14}
-2025-03-12 14:57:11,363	They were also the chief officers over Solomon’s projects: 550 supervisors over the people who did the work.
+2025-03-12 14:57:11,363	They were also the chief officers over Solomonï¿½s projects: 550 supervisors over the people who did the work.
 2025-03-12 14:57:11,363	And Hiram had sent the king 120 talents of gold.
 2025-03-12 14:57:11,363	True
 2025-03-12 14:57:11,363	do_test()
@@ -57083,8 +57083,8 @@
 2025-03-12 14:57:11,363	has_more_words()
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 10, 'verse': 21, 'factor': 2}
 2025-03-12 14:57:11,363	{'book': '1KI', 'chapter': 10, 'verse': 22}
-2025-03-12 14:57:11,363	All King Solomon’s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
-2025-03-12 14:57:11,363	For the king had the ships of Tarshish at sea with Hiram’s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
+2025-03-12 14:57:11,363	All King Solomonï¿½s drinking cups were gold, and all the utensils of the House of the Forest of Lebanon were pure gold. There was no silver, because it was accounted as nothing in the days of Solomon.
+2025-03-12 14:57:11,363	For the king had the ships of Tarshish at sea with Hiramï¿½s fleet, and once every three years the ships of Tarshish would arrive bearing gold, silver, ivory, apes, and peacocks.
 2025-03-12 14:57:11,363	True
 2025-03-12 14:57:11,363	do_test() returns False
 2025-03-12 14:57:11,363	-------------------------
@@ -57123,8 +57123,8 @@
 2025-03-12 14:57:11,364	has_more_words()
 2025-03-12 14:57:11,364	{'book': '1KI', 'chapter': 12, 'verse': 21, 'factor': 2}
 2025-03-12 14:57:11,364	{'book': '1KI', 'chapter': 12, 'verse': 24}
-2025-03-12 14:57:11,364	And when Rehoboam arrived in Jerusalem, he mobilized the whole house of Judah and the tribe of Benjamin—180,000 chosen warriors—to fight against the house of Israel and restore the kingdom to Rehoboam son of Solomon.
-2025-03-12 14:57:11,364	that this is what the LORD says: ‘You are not to go up and fight against your brothers, the Israelites. Each of you must return home, for this word is from Me.’”So they listened to the word of the LORD and turned back according to the word of the LORD.
+2025-03-12 14:57:11,364	And when Rehoboam arrived in Jerusalem, he mobilized the whole house of Judah and the tribe of Benjaminï¿½180,000 chosen warriorsï¿½to fight against the house of Israel and restore the kingdom to Rehoboam son of Solomon.
+2025-03-12 14:57:11,364	that this is what the LORD says: ï¿½You are not to go up and fight against your brothers, the Israelites. Each of you must return home, for this word is from Me.ï¿½ï¿½So they listened to the word of the LORD and turned back according to the word of the LORD.
 2025-03-12 14:57:11,364	False
 2025-03-12 14:57:11,364	do_test() returns False
 2025-03-12 14:57:11,364	do_test()
@@ -57163,7 +57163,7 @@
 2025-03-12 14:57:11,365	{'book': '1KI', 'chapter': 16, 'verse': 28}
 2025-03-12 14:57:11,365	{'book': '1KI', 'chapter': 16, 'verse': 34}
 2025-03-12 14:57:11,365	And Omri rested with his fathers and was buried in Samaria, and his son Ahab reigned in his place.
-2025-03-12 14:57:11,365	In Ahab’s days, Hiel the Bethelite rebuilt Jericho. At the cost of Abiram his firstborn he laid its foundation, and at the cost of Segub his youngest he set up its gates, according to the word that the LORD had spoken through Joshua son of Nun.
+2025-03-12 14:57:11,365	In Ahabï¿½s days, Hiel the Bethelite rebuilt Jericho. At the cost of Abiram his firstborn he laid its foundation, and at the cost of Segub his youngest he set up its gates, according to the word that the LORD had spoken through Joshua son of Nun.
 2025-03-12 14:57:11,365	False
 2025-03-12 14:57:11,365	do_test() returns True
 2025-03-12 14:57:11,366	create_mappings(), rule=1Ki.16:28-22:41
@@ -57334,7 +57334,7 @@
 2025-03-12 14:57:11,370	has_more_words()
 2025-03-12 14:57:11,370	{'book': 'NEH', 'chapter': 4, 'verse': 3}
 2025-03-12 14:57:11,370	{'book': 'NEH', 'chapter': 4, 'verse': 6, 'factor': 2}
-2025-03-12 14:57:11,370	Then Tobiah the Ammonite, who was beside him, said, “If even a fox were to climb up on what they are building, it would break down their wall of stones!”
+2025-03-12 14:57:11,370	Then Tobiah the Ammonite, who was beside him, said, ï¿½If even a fox were to climb up on what they are building, it would break down their wall of stones!ï¿½
 2025-03-12 14:57:11,370	So we rebuilt the wall until all of it was joined together up to half its height, for the people had a mind to work.
 2025-03-12 14:57:11,370	True
 2025-03-12 14:57:11,370	do_test() returns True
@@ -57537,7 +57537,7 @@
 2025-03-12 14:57:11,376	{'book': 'EST', 'chapter': 3, 'verse': 12}
 2025-03-12 14:57:11,376	{'book': 'EST', 'chapter': 3, 'verse': 13}
 2025-03-12 14:57:11,376	On the thirteenth day of the first month, the royal scribes were summoned and the order was written exactly as Haman commanded the royal satraps, the governors of each province, and the officials of each people, in the script of each province and the language of every people. It was written in the name of King Xerxes and sealed with the royal signet ring.
-2025-03-12 14:57:11,376	And the letters were sent by couriers to each of the royal provinces with the order to destroy, kill, and annihilate all the Jews—young and old, women and children—and to plunder their possessions on a single day, the thirteenth day of Adar, the twelfth month.
+2025-03-12 14:57:11,376	And the letters were sent by couriers to each of the royal provinces with the order to destroy, kill, and annihilate all the Jewsï¿½young and old, women and childrenï¿½and to plunder their possessions on a single day, the thirteenth day of Adar, the twelfth month.
 2025-03-12 14:57:11,376	True
 2025-03-12 14:57:11,376	do_test()
 2025-03-12 14:57:11,376	{'book': 'EST', 'chapter': 13, 'verse': 1}
@@ -57619,7 +57619,7 @@
 2025-03-12 14:57:11,378	has_more_words()
 2025-03-12 14:57:11,378	{'book': 'EST', 'chapter': 4, 'verse': 16}
 2025-03-12 14:57:11,378	{'book': 'EST', 'chapter': 4, 'verse': 17}
-2025-03-12 14:57:11,378	“Go and assemble all the Jews who can be found in Susa, and fast for me. Do not eat or drink for three days, night or day, and I and my maidens will fast as you do. After that, I will go to the king, even though it is against the law. And if I perish, I perish!”
+2025-03-12 14:57:11,378	ï¿½Go and assemble all the Jews who can be found in Susa, and fast for me. Do not eat or drink for three days, night or day, and I and my maidens will fast as you do. After that, I will go to the king, even though it is against the law. And if I perish, I perish!ï¿½
 2025-03-12 14:57:11,378	So Mordecai went and did all that Esther had instructed him.
 2025-03-12 14:57:11,378	True
 2025-03-12 14:57:11,378	do_test()
@@ -57703,8 +57703,8 @@
 2025-03-12 14:57:11,381	has_more_words()
 2025-03-12 14:57:11,381	{'book': 'EST', 'chapter': 5, 'verse': 5, 'factor': 3}
 2025-03-12 14:57:11,381	{'book': 'EST', 'chapter': 5, 'verse': 1}
-2025-03-12 14:57:11,381	“Hurry,” commanded the king, “and bring Haman, so we can do as Esther has requested.”So the king and Haman went to the banquet that Esther had prepared.
-2025-03-12 14:57:11,381	On the third day, Esther put on her royal attire and stood in the inner court of the palace across from the king’s quarters. The king was sitting on his royal throne in the royal courtroom, facing the entrance.
+2025-03-12 14:57:11,381	ï¿½Hurry,ï¿½ commanded the king, ï¿½and bring Haman, so we can do as Esther has requested.ï¿½So the king and Haman went to the banquet that Esther had prepared.
+2025-03-12 14:57:11,381	On the third day, Esther put on her royal attire and stood in the inner court of the palace across from the kingï¿½s quarters. The king was sitting on his royal throne in the royal courtroom, facing the entrance.
 2025-03-12 14:57:11,381	False
 2025-03-12 14:57:11,381	do_test()
 2025-03-12 14:57:11,381	{'book': 'EST', 'chapter': 15, 'verse': 1}
@@ -57869,7 +57869,7 @@
 2025-03-12 14:57:11,386	has_more_words()
 2025-03-12 14:57:11,386	{'book': 'EST', 'chapter': 10, 'verse': 2, 'factor': 2}
 2025-03-12 14:57:11,386	{'book': 'EST', 'chapter': 10, 'verse': 3}
-2025-03-12 14:57:11,386	And all of Mordecai’s powerful and magnificent accomplishments, together with the full account of the greatness to which the king had raised him, are they not written in the Book of the Chronicles of the Kings of Media and Persia?
+2025-03-12 14:57:11,386	And all of Mordecaiï¿½s powerful and magnificent accomplishments, together with the full account of the greatness to which the king had raised him, are they not written in the Book of the Chronicles of the Kings of Media and Persia?
 2025-03-12 14:57:11,386	For Mordecai the Jew was second only to King Xerxes, preeminent among the Jews and highly favored by his many kinsmen, seeking the good of his people and speaking peace to all his countrymen.
 2025-03-12 14:57:11,386	True
 2025-03-12 14:57:11,386	do_test()
@@ -64479,8 +64479,8 @@
 2025-03-12 14:57:11,566	has_more_words()
 2025-03-12 14:57:11,566	{'book': 'JER', 'chapter': 36, 'verse': 28}
 2025-03-12 14:57:11,566	{'book': 'JER', 'chapter': 36, 'verse': 30}
-2025-03-12 14:57:11,566	“Take another scroll and rewrite on it the very words that were on the original scroll, which Jehoiakim king of Judah has burned.
-2025-03-12 14:57:11,566	Therefore this is what the LORD says about Jehoiakim king of Judah: He will have no one to sit on David’s throne, and his body will be thrown out and exposed to heat by day and frost by night.
+2025-03-12 14:57:11,566	ï¿½Take another scroll and rewrite on it the very words that were on the original scroll, which Jehoiakim king of Judah has burned.
+2025-03-12 14:57:11,566	Therefore this is what the LORD says about Jehoiakim king of Judah: He will have no one to sit on Davidï¿½s throne, and his body will be thrown out and exposed to heat by day and frost by night.
 2025-03-12 14:57:11,566	False
 2025-03-12 14:57:11,566	do_test() returns True
 2025-03-12 14:57:11,566	-------------------------
@@ -64671,8 +64671,8 @@
 2025-03-12 14:57:11,571	has_more_words()
 2025-03-12 14:57:11,571	{'book': 'EZK', 'chapter': 7, 'verse': 5}
 2025-03-12 14:57:11,571	{'book': 'EZK', 'chapter': 7, 'verse': 4}
-2025-03-12 14:57:11,571	This is what the Lord GOD says:‘Disaster! An unprecedented disaster —behold, it is coming!
-2025-03-12 14:57:11,571	I will not look on you with pity,nor will I spare you,but I will punish you for your waysand for the abominations among you.Then you will know that I am the LORD.’
+2025-03-12 14:57:11,571	This is what the Lord GOD says:ï¿½Disaster! An unprecedented disaster ï¿½behold, it is coming!
+2025-03-12 14:57:11,571	I will not look on you with pity,nor will I spare you,but I will punish you for your waysand for the abominations among you.Then you will know that I am the LORD.ï¿½
 2025-03-12 14:57:11,571	False
 2025-03-12 14:57:11,571	do_test() returns True
 2025-03-12 14:57:11,571	-------------------------
@@ -64989,7 +64989,7 @@
 2025-03-12 14:57:11,580	{'book': 'MAL', 'chapter': 4, 'verse': 5}
 2025-03-12 14:57:11,580	{'book': 'MAL', 'chapter': 4, 'verse': 6}
 2025-03-12 14:57:11,580	Behold, I will send you Elijah the prophet before the coming of the great and awesome Day of the LORD.
-2025-03-12 14:57:11,580	And he will turn the hearts of the fathers to their children, and the hearts of the children to their fathers. Otherwise, I will come and strike the land with a curse.”
+2025-03-12 14:57:11,580	And he will turn the hearts of the fathers to their children, and the hearts of the children to their fathers. Otherwise, I will come and strike the land with a curse.ï¿½
 2025-03-12 14:57:11,580	False
 2025-03-12 14:57:11,580	do_test() returns True
 2025-03-12 14:57:11,580	create_mappings(), rule=Mal.4:1-4:6
