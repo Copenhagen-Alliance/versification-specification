@@ -31,6 +31,7 @@ You certify that:
 ## 📝 Attribution Guidance
 
 Please include:
+
 - Your name or username in comments, commit messages, or documentation (if desired).
 - Source citations if you adapt content or data from another public domain or licensed work.
 
@@ -46,5 +47,3 @@ Before submitting a pull request, please ensure:
 ---
 
 We’re grateful for your participation in this project — your contribution helps improve open tools and data for everyone.
-
-
