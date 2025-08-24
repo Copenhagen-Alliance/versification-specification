@@ -36,8 +36,8 @@ for key in base["maxVerses"].keys():
 			print(str(i+1)+":"+str(chapter_lengths[i]))
 
 print("# Excluded Verses")
-for key in base["excludedVerses"].keys():
-	print("-"+key)
+for item in base["excludedVerses"]:
+	print("-"+item)
 
 print("# Verse Segments (aka Partial Verses)")
 for key in base["partialVerses"].keys():

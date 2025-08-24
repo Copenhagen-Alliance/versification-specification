@@ -57,8 +57,8 @@ class Sniffer(object):
 		self.versification["maxVerses"] = {}
 		self.versification["partialVerses"] = {}
 		self.versification["verseMappings"] = {}
-		self.versification["excludedVerses"] = {}
-		self.versification["unexcludedVerses"] = {}
+		self.versification["excludedVerses"] = []
+		self.versification["unexcludedVerses"] = []
 		for book in canons.book_ids:
 			if book in self.books:
 				max_verses = {}
