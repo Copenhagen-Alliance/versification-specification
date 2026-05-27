@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usx version="3.0">
+  <book code="HAB" style="id">- Berean Study Bible</book>
+  <para style="h">Habakkuk</para>
+  <para style="toc2">Habakkuk</para>
+  <para style="toc1">Habakkuk</para>
+  <para style="mt1">Habakkuk</para>
+  <chapter number="1" style="c" sid="HAB 1"/>
+  <para style="s1">Habakkuk’s First Complaint</para>
+  <para style="m">
+    <verse number="1" style="v" sid="HAB 1:1"/>This is the burden that Habakkuk the prophet received in a vision:<verse eid="HAB 1:1"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="2" style="v" sid="HAB 1:2"/>How long, O LORD, must I call for help</para>
+  <para style="q2" vid="HAB 1:2">but You do not hear,</para>
+  <para style="q1" vid="HAB 1:2">or cry out to You, “Violence!”</para>
+  <para style="q2" vid="HAB 1:2">but You do not save?<verse eid="HAB 1:2"/></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="HAB 1:3"/>Why do You make me see iniquity?</para>
+  <para style="q2" vid="HAB 1:3">Why do You tolerate wrongdoing?</para>
+  <para style="q1" vid="HAB 1:3">Destruction and violence are before me.</para>
+  <para style="q2" vid="HAB 1:3">Strife is ongoing, and conflict abounds.<verse eid="HAB 1:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="HAB 1:4"/>Therefore the law is paralyzed,</para>
+  <para style="q2" vid="HAB 1:4">and justice never goes forth.</para>
+  <para style="q1" vid="HAB 1:4">For the wicked hem in the righteous,</para>
+  <para style="q2" vid="HAB 1:4">so that justice is perverted.<verse eid="HAB 1:4"/></para>
+  <para style="s1">The LORD’s Answer</para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="5" style="v" sid="HAB 1:5"/>“Look at the nations and observe—</para>
+  <para style="q2" vid="HAB 1:5">be utterly astounded!<note caller="+" style="f"><char style="fr" closed="false">1:5 </char><char style="ft" closed="false">LXX Look, you scoffers, wonder and perish!</char></note></para>
+  <para style="q1" vid="HAB 1:5">For I am doing a work in your days</para>
+  <para style="q2" vid="HAB 1:5">that you would never believe</para>
+  <para style="q2" vid="HAB 1:5">even if someone told you.<note caller="+" style="f"><char style="fr" closed="false">1:5 </char><char style="ft" closed="false">Cited in Acts 13:41</char></note><verse eid="HAB 1:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="HAB 1:6"/>For behold, I am raising up the Chaldeans <note caller="+" style="f"><char style="fr" closed="false">1:6 </char><char style="ft" closed="false">That is, the Babylonians</char></note>—</para>
+  <para style="q2" vid="HAB 1:6">that ruthless and impetuous nation</para>
+  <para style="q1" vid="HAB 1:6">which marches through the breadth of the earth</para>
+  <para style="q2" vid="HAB 1:6">to seize dwellings not their own.<verse eid="HAB 1:6"/></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="HAB 1:7"/>They are dreaded and feared;</para>
+  <para style="q2" vid="HAB 1:7">from themselves they derive justice and sovereignty.<verse eid="HAB 1:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="HAB 1:8"/>Their horses are swifter than leopards,</para>
+  <para style="q2" vid="HAB 1:8">fiercer than wolves of the night.</para>
+  <para style="q1" vid="HAB 1:8">Their horsemen charge ahead,</para>
+  <para style="q2" vid="HAB 1:8">and their cavalry comes from afar.</para>
+  <para style="q1" vid="HAB 1:8">They fly like a vulture,</para>
+  <para style="q2" vid="HAB 1:8">swooping down to devour.<verse eid="HAB 1:8"/></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="HAB 1:9"/>All of them come bent on violence;</para>
+  <para style="q2" vid="HAB 1:9">their hordes advance like the east wind;</para>
+  <para style="q2" vid="HAB 1:9">they gather prisoners like sand.<verse eid="HAB 1:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="HAB 1:10"/>They scoff at kings</para>
+  <para style="q2" vid="HAB 1:10">and make rulers an object of scorn.</para>
+  <para style="q1" vid="HAB 1:10">They laugh at every fortress</para>
+  <para style="q2" vid="HAB 1:10">and build up siege ramps to seize it.<verse eid="HAB 1:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="HAB 1:11"/>Then they sweep by like the wind</para>
+  <para style="q2" vid="HAB 1:11">and pass on through.</para>
+  <para style="q1" vid="HAB 1:11">They are guilty;</para>
+  <para style="q2" vid="HAB 1:11">their own strength is their god.”<verse eid="HAB 1:11"/></para>
+  <para style="s1">Habakkuk’s Second Complaint</para>
+  <para style="r">(<ref loc="PSA 11:1-7">Psalms 11:1–7</ref>)</para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="12" style="v" sid="HAB 1:12"/>Are You not from everlasting,</para>
+  <para style="q2" vid="HAB 1:12">O LORD, my God, my Holy One?</para>
+  <para style="q2" vid="HAB 1:12">We will not die.</para>
+  <para style="q1" vid="HAB 1:12">O LORD, You have appointed them</para>
+  <para style="q2" vid="HAB 1:12">to execute judgment;</para>
+  <para style="q1" vid="HAB 1:12">O Rock, You have established them</para>
+  <para style="q2" vid="HAB 1:12">for correction.<verse eid="HAB 1:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="HAB 1:13"/>Your eyes are too pure to look upon evil,</para>
+  <para style="q2" vid="HAB 1:13">and You cannot tolerate wrongdoing.</para>
+  <para style="q1" vid="HAB 1:13">So why do You tolerate the faithless?</para>
+  <para style="q2" vid="HAB 1:13">Why are You silent</para>
+  <para style="q1" vid="HAB 1:13">while the wicked swallow up</para>
+  <para style="q2" vid="HAB 1:13">those more righteous than themselves?<verse eid="HAB 1:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="HAB 1:14"/>You have made men like the fish of the sea,</para>
+  <para style="q2" vid="HAB 1:14">like creeping things that have no ruler.<verse eid="HAB 1:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="HAB 1:15"/>The foe pulls all of them up <note caller="+" style="f"><char style="fr" closed="false">1:15 </char><char style="ft" closed="false">Literally He pulls all of them up</char></note> with a hook;</para>
+  <para style="q2" vid="HAB 1:15">he catches them in his dragnet,</para>
+  <para style="q1" vid="HAB 1:15">and gathers them in his fishing net;</para>
+  <para style="q2" vid="HAB 1:15">so he rejoices gladly.<verse eid="HAB 1:15"/></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="HAB 1:16"/>Therefore he sacrifices to his dragnet</para>
+  <para style="q2" vid="HAB 1:16">and burns incense to his fishing net,</para>
+  <para style="q1" vid="HAB 1:16">for by these things his portion is sumptuous</para>
+  <para style="q2" vid="HAB 1:16">and his food is rich.<verse eid="HAB 1:16"/></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="HAB 1:17"/>Will he, therefore, empty his net</para>
+  <para style="q2" vid="HAB 1:17">and continue to slay nations without mercy?<verse eid="HAB 1:17"/></para>
+  <chapter eid="HAB 1"/>
+  <chapter number="2" style="c" sid="HAB 2"/>
+  <para style="s1">The LORD Answers Again</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="HAB 2:1"/>I will stand at my guard post</para>
+  <para style="q2" vid="HAB 2:1">and station myself on the ramparts.</para>
+  <para style="q1" vid="HAB 2:1">I will watch to see what He will say to me,</para>
+  <para style="q2" vid="HAB 2:1">and how I should answer when corrected.<verse eid="HAB 2:1"/></para>
+  <para style="m">
+    <verse number="2" style="v" sid="HAB 2:2"/>Then the LORD answered me:</para>
+  <para style="b" vid="HAB 2:2"/>
+  <para style="q1" vid="HAB 2:2">“Write down this vision</para>
+  <para style="q2" vid="HAB 2:2">and clearly inscribe it on tablets,</para>
+  <para style="q2" vid="HAB 2:2">so that a herald may run with it.<verse eid="HAB 2:2"/></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="HAB 2:3"/>For the vision awaits an appointed time;</para>
+  <para style="q2" vid="HAB 2:3">it testifies of the end and does not lie.</para>
+  <para style="q1" vid="HAB 2:3">Though it lingers, wait for it,</para>
+  <para style="q2" vid="HAB 2:3">since it will surely come and will not delay.<note caller="+" style="f"><char style="fr" closed="false">2:3 </char><char style="ft" closed="false">Or Though He lingers, wait for Him, since He will surely come and will not delay; see also LXX; cited in Hebrews 10:37.</char></note><verse eid="HAB 2:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="HAB 2:4"/>Look at the proud one; his soul is not upright <note caller="+" style="f"><char style="fr" closed="false">2:4 </char><char style="ft" closed="false">LXX If he should draw back, My soul has no pleasure in him</char></note>—</para>
+  <para style="q2" vid="HAB 2:4">but the righteous will live by faith <note caller="+" style="f"><char style="fr" closed="false">2:4 </char><char style="ft" closed="false">Or faithfulness; cited in Romans 1:17, Galatians 3:11, and Hebrews 10:38</char></note>—<verse eid="HAB 2:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="HAB 2:5"/>and wealth <note caller="+" style="f"><char style="fr" closed="false">2:5 </char><char style="ft" closed="false">DSS; MT wine</char></note> indeed betrays him.</para>
+  <para style="q2" vid="HAB 2:5">He is an arrogant man never at rest.</para>
+  <para style="q1" vid="HAB 2:5">He enlarges his appetite like Sheol,</para>
+  <para style="q2" vid="HAB 2:5">and like Death, he is never satisfied.</para>
+  <para style="q1" vid="HAB 2:5">He gathers all the nations to himself</para>
+  <para style="q2" vid="HAB 2:5">and collects all the peoples as his own.<verse eid="HAB 2:5"/></para>
+  <para style="s1">Woe to the Chaldeans</para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="6" style="v" sid="HAB 2:6"/>Will not all of these take up a taunt against him,</para>
+  <para style="q2" vid="HAB 2:6">speaking with mockery and derision:</para>
+  <para style="b" vid="HAB 2:6"/>
+  <para style="q1" vid="HAB 2:6">‘Woe to him who amasses what is not his</para>
+  <para style="q2" vid="HAB 2:6">and makes himself rich with many loans!</para>
+  <para style="q2" vid="HAB 2:6">How long will this go on?’<verse eid="HAB 2:6"/></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="HAB 2:7"/>Will not your creditors suddenly arise</para>
+  <para style="q2" vid="HAB 2:7">and those who disturb you awaken?</para>
+  <para style="q2" vid="HAB 2:7">Then you will become their prey.<verse eid="HAB 2:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="HAB 2:8"/>Because you have plundered many nations,</para>
+  <para style="q2" vid="HAB 2:8">the remnant of the people will plunder you—</para>
+  <para style="q1" vid="HAB 2:8">because of your bloodshed against man</para>
+  <para style="q2" vid="HAB 2:8">and your violence against the land, the city,</para>
+  <para style="q2" vid="HAB 2:8">and all their dwellers.<verse eid="HAB 2:8"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="9" style="v" sid="HAB 2:9"/>Woe to him who builds his house</para>
+  <para style="q2" vid="HAB 2:9">by unjust gain,</para>
+  <para style="q1" vid="HAB 2:9">to place his nest on high</para>
+  <para style="q2" vid="HAB 2:9">and escape the hand of disaster!<verse eid="HAB 2:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="HAB 2:10"/>You have plotted shame for your house</para>
+  <para style="q2" vid="HAB 2:10">by cutting off many peoples</para>
+  <para style="q2" vid="HAB 2:10">and forfeiting your life.<note caller="+" style="f"><char style="fr" closed="false">2:10 </char><char style="ft" closed="false">Literally sinning against your soul</char></note><verse eid="HAB 2:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="HAB 2:11"/>For the stones will cry out from the wall,</para>
+  <para style="q2" vid="HAB 2:11">and the rafters will echo it from the woodwork.<verse eid="HAB 2:11"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="12" style="v" sid="HAB 2:12"/>Woe to him who builds a city with bloodshed</para>
+  <para style="q2" vid="HAB 2:12">and establishes a town by iniquity!<verse eid="HAB 2:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="HAB 2:13"/>Is it not indeed from the LORD of Hosts</para>
+  <para style="q2" vid="HAB 2:13">that the labor of the people only feeds the fire,</para>
+  <para style="q2" vid="HAB 2:13">and the nations weary themselves in vain?<verse eid="HAB 2:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="HAB 2:14"/>For the earth will be filled</para>
+  <para style="q2" vid="HAB 2:14">with the knowledge of the glory of the LORD</para>
+  <para style="q2" vid="HAB 2:14">as the waters cover the sea.<verse eid="HAB 2:14"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="15" style="v" sid="HAB 2:15"/>Woe to him who gives drink to his neighbors,</para>
+  <para style="q2" vid="HAB 2:15">pouring it from the wineskin until they are drunk,</para>
+  <para style="q2" vid="HAB 2:15">in order to gaze at their nakedness!<verse eid="HAB 2:15"/></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="HAB 2:16"/>You will be filled with shame instead of glory.</para>
+  <para style="q2" vid="HAB 2:16">You too must drink</para>
+  <para style="q2" vid="HAB 2:16">and expose your uncircumcision!<note caller="+" style="f"><char style="fr" closed="false">2:16 </char><char style="ft" closed="false">DSS, LXX, and Syriac and stagger</char></note></para>
+  <para style="q1" vid="HAB 2:16">The cup in the LORD’s right hand</para>
+  <para style="q2" vid="HAB 2:16">will come around to you,</para>
+  <para style="q2" vid="HAB 2:16">and utter disgrace will cover your glory.<verse eid="HAB 2:16"/></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="HAB 2:17"/>For your violence against Lebanon will overwhelm you,</para>
+  <para style="q2" vid="HAB 2:17">and the destruction of animals will terrify you,</para>
+  <para style="q1" vid="HAB 2:17">because of your bloodshed against men</para>
+  <para style="q2" vid="HAB 2:17">and your violence against the land, the city,</para>
+  <para style="q2" vid="HAB 2:17">and all their dwellers.<verse eid="HAB 2:17"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="18" style="v" sid="HAB 2:18"/>What use is an idol,</para>
+  <para style="q2" vid="HAB 2:18">that a craftsman should carve it—</para>
+  <para style="q1" vid="HAB 2:18">or an image,</para>
+  <para style="q2" vid="HAB 2:18">a teacher of lies?</para>
+  <para style="q1" vid="HAB 2:18">For its maker trusts in his own creation;</para>
+  <para style="q2" vid="HAB 2:18">he makes idols that cannot speak.<verse eid="HAB 2:18"/></para>
+  <para style="q1">
+    <verse number="19" style="v" sid="HAB 2:19"/>Woe to him who says to wood, ‘Awake!’</para>
+  <para style="q2" vid="HAB 2:19">or to silent stone, ‘Arise!’</para>
+  <para style="q2" vid="HAB 2:19">Can it give guidance?</para>
+  <para style="q1" vid="HAB 2:19">Behold, it is overlaid with gold and silver,</para>
+  <para style="q2" vid="HAB 2:19">yet there is no breath in it at all.”<verse eid="HAB 2:19"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="20" style="v" sid="HAB 2:20"/>But the LORD is in His holy temple;</para>
+  <para style="q2" vid="HAB 2:20">let all the earth be silent before Him.<verse eid="HAB 2:20"/></para>
+  <chapter eid="HAB 2"/>
+  <chapter number="3" style="c" sid="HAB 3"/>
+  <para style="s1">Habakkuk’s Prayer</para>
+  <para style="m">
+    <verse number="1" style="v" sid="HAB 3:1"/>This is a prayer of Habakkuk the prophet, according to Shigionoth:<note caller="+" style="f"><char style="fr" closed="false">3:1 </char><char style="ft" closed="false">Shigionoth is probably a musical term indicating the setting for the prayer.</char></note><verse eid="HAB 3:1"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="2" style="v" sid="HAB 3:2"/>O LORD, I have heard the report of You;</para>
+  <para style="q2" vid="HAB 3:2">I stand in awe, O LORD, of Your deeds.</para>
+  <para style="q1" vid="HAB 3:2">Revive them in these years;</para>
+  <para style="q2" vid="HAB 3:2">make them known in these years.</para>
+  <para style="q2" vid="HAB 3:2">In Your wrath, remember mercy!<verse eid="HAB 3:2"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="3" style="v" sid="HAB 3:3"/>God came from Teman,</para>
+  <para style="q2" vid="HAB 3:3">and the Holy One from Mount Paran.</para>
+  <para style="qr" vid="HAB 3:3">Selah <note caller="+" style="f"><char style="fr" closed="false">3:3 </char><char style="ft" closed="false">Selah or Interlude is probably a musical or literary term; also in verses 9 and 13.</char></note></para>
+  <para style="q1" vid="HAB 3:3">His glory covered the heavens,</para>
+  <para style="q2" vid="HAB 3:3">and His praise filled the earth.<verse eid="HAB 3:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="HAB 3:4"/>His radiance was like the sunlight;</para>
+  <para style="q2" vid="HAB 3:4">rays flashed from His hand,</para>
+  <para style="q2" vid="HAB 3:4">where His power is hidden.<verse eid="HAB 3:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="HAB 3:5"/>Plague went before Him,</para>
+  <para style="q2" vid="HAB 3:5">and fever followed in His steps.<verse eid="HAB 3:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="HAB 3:6"/>He stood and measured the earth;</para>
+  <para style="q2" vid="HAB 3:6">He looked and startled the nations;</para>
+  <para style="q1" vid="HAB 3:6">the ancient mountains crumbled;</para>
+  <para style="q2" vid="HAB 3:6">the perpetual hills collapsed.</para>
+  <para style="q2" vid="HAB 3:6">His ways are everlasting.<verse eid="HAB 3:6"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="7" style="v" sid="HAB 3:7"/>I saw the tents of Cushan in distress;</para>
+  <para style="q2" vid="HAB 3:7">the curtains of Midian were trembling.<verse eid="HAB 3:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="HAB 3:8"/>Were You angry at the rivers, O LORD?</para>
+  <para style="q2" vid="HAB 3:8">Was Your wrath against the streams?</para>
+  <para style="q1" vid="HAB 3:8">Did You rage against the sea</para>
+  <para style="q2" vid="HAB 3:8">when You rode on Your horses,</para>
+  <para style="q2" vid="HAB 3:8">on Your chariots of salvation?<verse eid="HAB 3:8"/></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="HAB 3:9"/>You brandished Your bow;</para>
+  <para style="q2" vid="HAB 3:9">You called for many arrows.</para>
+  <para style="qr" vid="HAB 3:9">Selah</para>
+  <para style="q2" vid="HAB 3:9">You split the earth with rivers.<verse eid="HAB 3:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="HAB 3:10"/>The mountains saw You and quaked;</para>
+  <para style="q2" vid="HAB 3:10">torrents of water swept by.</para>
+  <para style="q1" vid="HAB 3:10">The deep roared with its voice</para>
+  <para style="q2" vid="HAB 3:10">and lifted its hands on high.<verse eid="HAB 3:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="HAB 3:11"/>Sun and moon stood still</para>
+  <para style="q2" vid="HAB 3:11">in their places</para>
+  <para style="q1" vid="HAB 3:11">at the flash of Your flying arrows,</para>
+  <para style="q2" vid="HAB 3:11">at the brightness of Your shining spear.<verse eid="HAB 3:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="HAB 3:12"/>You marched across the earth with fury;</para>
+  <para style="q2" vid="HAB 3:12">You threshed the nations in wrath.<verse eid="HAB 3:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="HAB 3:13"/>You went forth for the salvation of Your people,</para>
+  <para style="q2" vid="HAB 3:13">to save Your anointed.</para>
+  <para style="q1" vid="HAB 3:13">You crushed the head of the house of the wicked</para>
+  <para style="q2" vid="HAB 3:13">and stripped him from head to toe.</para>
+  <para style="qr" vid="HAB 3:13">Selah<verse eid="HAB 3:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="HAB 3:14"/>With his own spear You pierced his head,</para>
+  <para style="q2" vid="HAB 3:14">when his warriors stormed out to scatter us,</para>
+  <para style="q1" vid="HAB 3:14">gloating as though ready</para>
+  <para style="q2" vid="HAB 3:14">to secretly devour the weak.<verse eid="HAB 3:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="HAB 3:15"/>You trampled the sea with Your horses,</para>
+  <para style="q2" vid="HAB 3:15">churning the great waters.<verse eid="HAB 3:15"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="16" style="v" sid="HAB 3:16"/>I heard and trembled within;</para>
+  <para style="q2" vid="HAB 3:16">my lips quivered at the sound.</para>
+  <para style="q1" vid="HAB 3:16">Decay entered my bones;</para>
+  <para style="q2" vid="HAB 3:16">I trembled where I stood.</para>
+  <para style="q1" vid="HAB 3:16">Yet I must wait patiently for the day of distress</para>
+  <para style="q2" vid="HAB 3:16">to come upon the people who invade us.<verse eid="HAB 3:16"/></para>
+  <para style="s1">Habakkuk Rejoices</para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="17" style="v" sid="HAB 3:17"/>Though the fig tree does not bud</para>
+  <para style="q2" vid="HAB 3:17">and no fruit is on the vines,</para>
+  <para style="q1" vid="HAB 3:17">though the olive crop fails</para>
+  <para style="q2" vid="HAB 3:17">and the fields produce no food,</para>
+  <para style="q1" vid="HAB 3:17">though the sheep are cut off from the fold</para>
+  <para style="q2" vid="HAB 3:17">and no cattle are in the stalls,<verse eid="HAB 3:17"/></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="HAB 3:18"/>yet I will exult in the LORD;</para>
+  <para style="q2" vid="HAB 3:18">I will rejoice in the God of my salvation!<verse eid="HAB 3:18"/></para>
+  <para style="q1">
+    <verse number="19" style="v" sid="HAB 3:19"/>GOD the Lord is my strength;</para>
+  <para style="q2" vid="HAB 3:19">He makes my feet like those of a deer;</para>
+  <para style="q2" vid="HAB 3:19">He makes me walk upon the heights!</para>
+  <para style="pc" vid="HAB 3:19">
+    <char style="it">For the choirmaster. With stringed instruments. </char><verse eid="HAB 3:19"/></para>
+  <chapter eid="HAB 3"/>
+</usx>

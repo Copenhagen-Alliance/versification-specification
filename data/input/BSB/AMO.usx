@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usx version="3.0">
+  <book code="AMO" style="id">- Berean Study Bible</book>
+  <para style="h">Amos</para>
+  <para style="toc2">Amos</para>
+  <para style="toc1">Amos</para>
+  <para style="mt1">Amos</para>
+  <chapter number="1" style="c" sid="AMO 1"/>
+  <para style="s1">Judgment on Israel’s Neighbors</para>
+  <para style="r">(<ref loc="JER 12:14-17">Jeremiah 12:14–17</ref>)</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 1:1"/>These are the words of Amos, who was among the sheepherders <note caller="+" style="f"><char style="fr" closed="false">1:1 </char><char style="ft" closed="false">Or sheep breeders</char></note> of Tekoa—what he saw concerning Israel two years <note caller="+" style="f"><char style="fr" closed="false">1:1 </char><char style="ft" closed="false">Or during the two years</char></note> before the earthquake, in the days when Uzziah was king of Judah and Jeroboam son of Jehoash <note caller="+" style="f"><char style="fr" closed="false">1:1 </char><char style="ft" closed="false">Hebrew Joash, a variant of Jehoash</char></note> was king of Israel. <verse eid="AMO 1:1"/><verse number="2" style="v" sid="AMO 1:2"/>He said:</para>
+  <para style="b" vid="AMO 1:2"/>
+  <para style="q1" vid="AMO 1:2">“The LORD roars from Zion</para>
+  <para style="q2" vid="AMO 1:2">and raises His voice from Jerusalem;</para>
+  <para style="q1" vid="AMO 1:2">the pastures of the shepherds mourn,</para>
+  <para style="q2" vid="AMO 1:2">and the summit of Carmel withers.”<verse eid="AMO 1:2"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="3" style="v" sid="AMO 1:3"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 1:3"/>
+  <para style="q1" vid="AMO 1:3">“For three transgressions of Damascus, even four,</para>
+  <para style="q2" vid="AMO 1:3">I will not revoke My judgment,<note caller="+" style="f"><char style="fr" closed="false">1:3 </char><char style="ft" closed="false">Or I will not revoke the punishment; Hebrew I will not revoke it; also in verses 6, 9, 11, and 13</char></note></para>
+  <para style="q1" vid="AMO 1:3">because they threshed Gilead</para>
+  <para style="q2" vid="AMO 1:3">with sledges of iron.<verse eid="AMO 1:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 1:4"/>So I will send fire upon the house of Hazael</para>
+  <para style="q2" vid="AMO 1:4">to consume the citadels of Ben-hadad.<verse eid="AMO 1:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 1:5"/>I will break down the gates of Damascus;</para>
+  <para style="q2" vid="AMO 1:5">I will cut off the ruler <note caller="+" style="f"><char style="fr" closed="false">1:5 </char><char style="ft" closed="false">Or the inhabitants</char></note> of the Valley of Aven <note caller="+" style="f"><char style="fr" closed="false">1:5 </char><char style="ft" closed="false">Aven means wickedness.</char></note></para>
+  <para style="q1" vid="AMO 1:5">and the one who wields the scepter in Beth-eden.</para>
+  <para style="q2" vid="AMO 1:5">The people of Aram will be exiled to Kir,”</para>
+  <para style="qr" vid="AMO 1:5">says the LORD.<verse eid="AMO 1:5"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="6" style="v" sid="AMO 1:6"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 1:6"/>
+  <para style="q1" vid="AMO 1:6">“For three transgressions of Gaza, even four,</para>
+  <para style="q2" vid="AMO 1:6">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 1:6">because they exiled a whole population,</para>
+  <para style="q2" vid="AMO 1:6">delivering them up to Edom.<verse eid="AMO 1:6"/></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 1:7"/>So I will send fire upon the walls of Gaza,</para>
+  <para style="q2" vid="AMO 1:7">to consume its citadels.<verse eid="AMO 1:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 1:8"/>I will cut off the ruler of Ashdod</para>
+  <para style="q2" vid="AMO 1:8">and the one who wields the scepter in Ashkelon.</para>
+  <para style="q1" vid="AMO 1:8">I will turn My hand against Ekron,</para>
+  <para style="q2" vid="AMO 1:8">and the remnant of the Philistines will perish,”</para>
+  <para style="qr" vid="AMO 1:8">says the Lord GOD.<verse eid="AMO 1:8"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="9" style="v" sid="AMO 1:9"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 1:9"/>
+  <para style="q1" vid="AMO 1:9">“For three transgressions of Tyre, even four,</para>
+  <para style="q2" vid="AMO 1:9">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 1:9">because they delivered up a whole congregation of exiles to Edom</para>
+  <para style="q2" vid="AMO 1:9">and broke a covenant of brotherhood.<verse eid="AMO 1:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 1:10"/>So I will send fire upon the walls of Tyre</para>
+  <para style="q2" vid="AMO 1:10">to consume its citadels.”<verse eid="AMO 1:10"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="11" style="v" sid="AMO 1:11"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 1:11"/>
+  <para style="q1" vid="AMO 1:11">“For three transgressions of Edom, even four,</para>
+  <para style="q2" vid="AMO 1:11">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 1:11">because he pursued his brother with the sword</para>
+  <para style="q2" vid="AMO 1:11">and stifled all compassion;</para>
+  <para style="q1" vid="AMO 1:11">his anger raged continually,</para>
+  <para style="q2" vid="AMO 1:11">and his fury flamed incessantly.<verse eid="AMO 1:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 1:12"/>So I will send fire upon Teman</para>
+  <para style="q2" vid="AMO 1:12">to consume the citadels of Bozrah.”<verse eid="AMO 1:12"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="13" style="v" sid="AMO 1:13"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 1:13"/>
+  <para style="q1" vid="AMO 1:13">“For three transgressions of the Ammonites, even four,</para>
+  <para style="q2" vid="AMO 1:13">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 1:13">because they ripped open the pregnant women of Gilead</para>
+  <para style="q2" vid="AMO 1:13">in order to enlarge their territory.<verse eid="AMO 1:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 1:14"/>So I will kindle a fire in the walls of Rabbah</para>
+  <para style="q2" vid="AMO 1:14">to consume its citadels</para>
+  <para style="q1" vid="AMO 1:14">amid war cries on the day of battle</para>
+  <para style="q2" vid="AMO 1:14">and a violent wind on the day of tempest.<verse eid="AMO 1:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="AMO 1:15"/>Their king will go into exile <note caller="+" style="f"><char style="fr" closed="false">1:15 </char><char style="ft" closed="false">Possibly Milcom will go into exile; Milcom, also called Molech, was god of the Ammonites; see Leviticus 18:21 and 1 Kings 11:7.</char></note>—</para>
+  <para style="q2" vid="AMO 1:15">he and his princes together,”</para>
+  <para style="qr" vid="AMO 1:15">says the LORD.<verse eid="AMO 1:15"/></para>
+  <chapter eid="AMO 1"/>
+  <chapter number="2" style="c" sid="AMO 2"/>
+  <para style="s1">Judgment on Moab, Judah, and Israel</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 2:1"/>This is what the LORD says:</para>
+  <para style="q1" vid="AMO 2:1">“For three transgressions of Moab, even four,</para>
+  <para style="q2" vid="AMO 2:1">I will not revoke My judgment,<note caller="+" style="f"><char style="fr" closed="false">2:1 </char><char style="ft" closed="false">Or I will not revoke the punishment; Hebrew I will not revoke it; also in verses 4 and 6</char></note></para>
+  <para style="q1" vid="AMO 2:1">because he burned to lime</para>
+  <para style="q2" vid="AMO 2:1">the bones of Edom’s king.<verse eid="AMO 2:1"/></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="AMO 2:2"/>So I will send fire against Moab</para>
+  <para style="q2" vid="AMO 2:2">to consume the citadels of Kerioth.</para>
+  <para style="q1" vid="AMO 2:2">Moab will die in tumult,</para>
+  <para style="q2" vid="AMO 2:2">amid war cries and the sound of the ram’s horn.<verse eid="AMO 2:2"/></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="AMO 2:3"/>I will cut off the ruler of Moab</para>
+  <para style="q2" vid="AMO 2:3">and kill all the officials with him,”</para>
+  <para style="qr" vid="AMO 2:3">says the LORD.<verse eid="AMO 2:3"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="4" style="v" sid="AMO 2:4"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 2:4"/>
+  <para style="q1" vid="AMO 2:4">“For three transgressions of Judah, even four,</para>
+  <para style="q2" vid="AMO 2:4">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 2:4">because they reject the Law of the LORD</para>
+  <para style="q2" vid="AMO 2:4">and fail to keep His statutes;</para>
+  <para style="q1" vid="AMO 2:4">they are led astray by the lies</para>
+  <para style="q2" vid="AMO 2:4">in which their fathers walked.<verse eid="AMO 2:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 2:5"/>So I will send fire upon Judah</para>
+  <para style="q2" vid="AMO 2:5">to consume the citadels of Jerusalem.”<verse eid="AMO 2:5"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="6" style="v" sid="AMO 2:6"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 2:6"/>
+  <para style="q1" vid="AMO 2:6">“For three transgressions of Israel, even four,</para>
+  <para style="q2" vid="AMO 2:6">I will not revoke My judgment,</para>
+  <para style="q1" vid="AMO 2:6">because they sell the righteous for silver</para>
+  <para style="q2" vid="AMO 2:6">and the needy for a pair of sandals.<verse eid="AMO 2:6"/></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 2:7"/>They trample on the heads of the poor</para>
+  <para style="q2" vid="AMO 2:7">as on the dust of the earth;</para>
+  <para style="q2" vid="AMO 2:7">they push the needy out of their way.</para>
+  <para style="q1" vid="AMO 2:7">A man and his father</para>
+  <para style="q2" vid="AMO 2:7">have relations with the same girl</para>
+  <para style="q2" vid="AMO 2:7">and so profane My holy name.<verse eid="AMO 2:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 2:8"/>They lie down beside every altar</para>
+  <para style="q2" vid="AMO 2:8">on garments taken in pledge.</para>
+  <para style="q1" vid="AMO 2:8">And in the house of their God,<note caller="+" style="f"><char style="fr" closed="false">2:8 </char><char style="ft" closed="false">Or of their gods</char></note></para>
+  <para style="q2" vid="AMO 2:8">they drink wine obtained through fines.<note caller="+" style="f"><char style="fr" closed="false">2:8 </char><char style="ft" closed="false">Or they drink the wine of those who have been fined</char></note><verse eid="AMO 2:8"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 2:9"/>Yet it was I who destroyed</para>
+  <para style="q2" vid="AMO 2:9">the Amorite before them,</para>
+  <para style="q1" vid="AMO 2:9">though his height was like that of the cedars,</para>
+  <para style="q2" vid="AMO 2:9">and he was as strong as the oaks.</para>
+  <para style="q1" vid="AMO 2:9">Yet I destroyed his fruit above</para>
+  <para style="q2" vid="AMO 2:9">and his roots below.<verse eid="AMO 2:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 2:10"/>And I brought you up from the land of Egypt</para>
+  <para style="q2" vid="AMO 2:10">and led you forty years in the wilderness,</para>
+  <para style="q1" vid="AMO 2:10">that you might take possession</para>
+  <para style="q2" vid="AMO 2:10">of the land of the Amorite.<verse eid="AMO 2:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="AMO 2:11"/>I raised up prophets from your sons</para>
+  <para style="q2" vid="AMO 2:11">and Nazirites from your young men.</para>
+  <para style="q1" vid="AMO 2:11">Is this not true,</para>
+  <para style="q2" vid="AMO 2:11">O children of Israel?”</para>
+  <para style="qr" vid="AMO 2:11">declares the LORD.<verse eid="AMO 2:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 2:12"/>“But you made the Nazirites drink wine</para>
+  <para style="q2" vid="AMO 2:12">and commanded the prophets not to prophesy.<verse eid="AMO 2:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 2:13"/>Behold, I am about to crush you in your place</para>
+  <para style="q2" vid="AMO 2:13">as with a cart full of grain.<verse eid="AMO 2:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 2:14"/>Escape will fail the swift,</para>
+  <para style="q2" vid="AMO 2:14">the strong will not prevail by his strength,</para>
+  <para style="q2" vid="AMO 2:14">and the mighty will not save his life.<verse eid="AMO 2:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="AMO 2:15"/>The archer will not stand his ground,</para>
+  <para style="q2" vid="AMO 2:15">the fleet of foot will not escape,</para>
+  <para style="q2" vid="AMO 2:15">and the horseman will not save his life.<verse eid="AMO 2:15"/></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="AMO 2:16"/>Even the bravest of mighty men</para>
+  <para style="q2" vid="AMO 2:16">will flee naked on that day,”</para>
+  <para style="qr" vid="AMO 2:16">declares the LORD.<verse eid="AMO 2:16"/></para>
+  <chapter eid="AMO 2"/>
+  <chapter number="3" style="c" sid="AMO 3"/>
+  <para style="s1">Witnesses against Israel</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 3:1"/>Hear this word that the LORD has spoken against you, O children of Israel, against the whole family that I brought up out of the land of Egypt:<verse eid="AMO 3:1"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="2" style="v" sid="AMO 3:2"/>“Only you have I known <note caller="+" style="f"><char style="fr" closed="false">3:2 </char><char style="ft" closed="false">Or chosen</char></note></para>
+  <para style="q2" vid="AMO 3:2">from all the families of the earth;</para>
+  <para style="q1" vid="AMO 3:2">therefore I will punish you</para>
+  <para style="q2" vid="AMO 3:2">for all your iniquities.”<verse eid="AMO 3:2"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="3" style="v" sid="AMO 3:3"/>Can two walk together</para>
+  <para style="q2" vid="AMO 3:3">without agreeing where to go?<note caller="+" style="f"><char style="fr" closed="false">3:3 </char><char style="ft" closed="false">Or without an appointment to meet</char></note><verse eid="AMO 3:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 3:4"/>Does a lion roar in the forest</para>
+  <para style="q2" vid="AMO 3:4">when he has no prey?</para>
+  <para style="q1" vid="AMO 3:4">Does a young lion growl in his den</para>
+  <para style="q2" vid="AMO 3:4">if he has caught nothing?<verse eid="AMO 3:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 3:5"/>Does a bird land in a snare</para>
+  <para style="q2" vid="AMO 3:5">where no bait has been set?</para>
+  <para style="q1" vid="AMO 3:5">Does a trap spring from the ground</para>
+  <para style="q2" vid="AMO 3:5">when it has nothing to catch?<verse eid="AMO 3:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 3:6"/>If a ram’s horn sounds in a city,</para>
+  <para style="q2" vid="AMO 3:6">do the people not tremble?</para>
+  <para style="q1" vid="AMO 3:6">If calamity comes to a city,</para>
+  <para style="q2" vid="AMO 3:6">has not the LORD caused it?<verse eid="AMO 3:6"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 3:7"/>Surely the Lord GOD does nothing</para>
+  <para style="q2" vid="AMO 3:7">without revealing His plan</para>
+  <para style="q2" vid="AMO 3:7">to His servants the prophets.<verse eid="AMO 3:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 3:8"/>The lion has roared—</para>
+  <para style="q2" vid="AMO 3:8">who will not fear?</para>
+  <para style="q1" vid="AMO 3:8">The Lord GOD has spoken—</para>
+  <para style="q2" vid="AMO 3:8">who will not prophesy?<verse eid="AMO 3:8"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 3:9"/>Proclaim to the citadels of Ashdod</para>
+  <para style="q2" vid="AMO 3:9">and to the citadels of Egypt:</para>
+  <para style="q1" vid="AMO 3:9">“Assemble on the mountains of Samaria;</para>
+  <para style="q2" vid="AMO 3:9">see the great unrest in the city</para>
+  <para style="q2" vid="AMO 3:9">and the acts of oppression in her midst.”<verse eid="AMO 3:9"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 3:10"/>“For they know not how to do right,”</para>
+  <para style="q2" vid="AMO 3:10">declares the LORD.</para>
+  <para style="q1" vid="AMO 3:10">“They store up violence and destruction</para>
+  <para style="q2" vid="AMO 3:10">in their citadels.”<verse eid="AMO 3:10"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="11" style="v" sid="AMO 3:11"/>Therefore this is what the Lord GOD says:</para>
+  <para style="b" vid="AMO 3:11"/>
+  <para style="q1" vid="AMO 3:11">“An enemy <note caller="+" style="f"><char style="fr" closed="false">3:11 </char><char style="ft" closed="false">Or An adversary</char></note> will surround the land;</para>
+  <para style="q2" vid="AMO 3:11">he will pull down your strongholds</para>
+  <para style="q2" vid="AMO 3:11">and plunder your citadels.”<verse eid="AMO 3:11"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="12" style="v" sid="AMO 3:12"/>This is what the LORD says:</para>
+  <para style="b" vid="AMO 3:12"/>
+  <para style="q1" vid="AMO 3:12">“As the shepherd snatches from the mouth of the lion</para>
+  <para style="q2" vid="AMO 3:12">two legs or a piece of an ear,</para>
+  <para style="q1" vid="AMO 3:12">so the Israelites dwelling in Samaria will be rescued</para>
+  <para style="q2" vid="AMO 3:12">having just the corner of a bed</para>
+  <para style="q2" vid="AMO 3:12">or the cushion of a couch.<note caller="+" style="f"><char style="fr" closed="false">3:12 </char><char style="ft" closed="false">Or so will the Israelites be snatched away, those who sit in Samaria on the edge of their beds and in Damascus on their couches</char></note><verse eid="AMO 3:12"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 3:13"/>Hear and testify against the house of Jacob,</para>
+  <para style="q2" vid="AMO 3:13">declares the Lord GOD, the God of Hosts.<verse eid="AMO 3:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 3:14"/>On the day I punish Israel for their transgressions,</para>
+  <para style="q2" vid="AMO 3:14">I will visit destruction on the altars of Bethel;</para>
+  <para style="q1" vid="AMO 3:14">the horns of the altar will be cut off,</para>
+  <para style="q2" vid="AMO 3:14">and they will fall to the ground.<verse eid="AMO 3:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="AMO 3:15"/>I will tear down the winter house</para>
+  <para style="q2" vid="AMO 3:15">along with the summer house;</para>
+  <para style="q1" vid="AMO 3:15">the houses of ivory will also perish,</para>
+  <para style="q2" vid="AMO 3:15">and the great houses will come to an end,”</para>
+  <para style="qr" vid="AMO 3:15">declares the LORD.<verse eid="AMO 3:15"/></para>
+  <chapter eid="AMO 3"/>
+  <chapter number="4" style="c" sid="AMO 4"/>
+  <para style="s1">Punishment Brings No Repentance</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="AMO 4:1"/>Hear this word,</para>
+  <para style="q2" vid="AMO 4:1">you cows of Bashan on Mount Samaria,</para>
+  <para style="q1" vid="AMO 4:1">you women who oppress the poor</para>
+  <para style="q2" vid="AMO 4:1">and crush the needy,</para>
+  <para style="q1" vid="AMO 4:1">who say to your husbands,</para>
+  <para style="q2" vid="AMO 4:1">“Bring us more to drink.”<verse eid="AMO 4:1"/></para>
+  <para style="m">
+    <verse number="2" style="v" sid="AMO 4:2"/>The Lord GOD has sworn by His holiness:</para>
+  <para style="b" vid="AMO 4:2"/>
+  <para style="q1" vid="AMO 4:2">“Behold, the days are coming</para>
+  <para style="q2" vid="AMO 4:2">when you will be taken away with hooks,</para>
+  <para style="q2" vid="AMO 4:2">and your posterity with fishhooks.<verse eid="AMO 4:2"/></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="AMO 4:3"/>You will go out through broken walls,</para>
+  <para style="q2" vid="AMO 4:3">each one straight ahead of her,</para>
+  <para style="q2" vid="AMO 4:3">and you will be cast out toward Harmon,<note caller="+" style="f"><char style="fr" closed="false">4:3 </char><char style="ft" closed="false">That is, possibly Mount Hermon</char></note>”</para>
+  <para style="qr" vid="AMO 4:3">declares the LORD.<verse eid="AMO 4:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 4:4"/>“Go to Bethel and transgress;</para>
+  <para style="q2" vid="AMO 4:4">rebel even more at Gilgal!</para>
+  <para style="q1" vid="AMO 4:4">Bring your sacrifices every morning,</para>
+  <para style="q2" vid="AMO 4:4">your tithes every three days.<note caller="+" style="f"><char style="fr" closed="false">4:4 </char><char style="ft" closed="false">Or years</char></note><verse eid="AMO 4:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 4:5"/>Offer leavened bread as a thank offering,</para>
+  <para style="q2" vid="AMO 4:5">and loudly proclaim your freewill offerings.</para>
+  <para style="q2" vid="AMO 4:5">For that is what you children of Israel love to do,”</para>
+  <para style="qr" vid="AMO 4:5">declares the Lord GOD.<verse eid="AMO 4:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 4:6"/>“I beset all your cities with cleanness of teeth <note caller="+" style="f"><char style="fr" closed="false">4:6 </char><char style="ft" closed="false">That is, with empty stomachs</char></note></para>
+  <para style="q2" vid="AMO 4:6">and all your towns with lack of bread,</para>
+  <para style="q2" vid="AMO 4:6">yet you did not return to Me,”</para>
+  <para style="qr" vid="AMO 4:6">declares the LORD.<verse eid="AMO 4:6"/></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 4:7"/>“I also withheld the rain from you</para>
+  <para style="q2" vid="AMO 4:7">when the harvest was three months away.</para>
+  <para style="q1" vid="AMO 4:7">I sent rain on one city</para>
+  <para style="q2" vid="AMO 4:7">but withheld it from another.</para>
+  <para style="q1" vid="AMO 4:7">One field received rain;</para>
+  <para style="q2" vid="AMO 4:7">another without rain withered.<verse eid="AMO 4:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 4:8"/>People staggered from city to city</para>
+  <para style="q2" vid="AMO 4:8">for water to drink,</para>
+  <para style="q1" vid="AMO 4:8">but they were not satisfied;</para>
+  <para style="q2" vid="AMO 4:8">yet you did not return to Me,”</para>
+  <para style="qr" vid="AMO 4:8">declares the LORD.<verse eid="AMO 4:8"/></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 4:9"/>“I struck you with blight and mildew</para>
+  <para style="q2" vid="AMO 4:9">in your growing gardens and vineyards;</para>
+  <para style="q1" vid="AMO 4:9">the locust devoured your fig and olive trees,</para>
+  <para style="q2" vid="AMO 4:9">yet you did not return to Me,”</para>
+  <para style="qr" vid="AMO 4:9">declares the LORD.<verse eid="AMO 4:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 4:10"/>“I sent plagues among you</para>
+  <para style="q2" vid="AMO 4:10">like those of Egypt;</para>
+  <para style="q1" vid="AMO 4:10">I killed your young men with the sword,</para>
+  <para style="q2" vid="AMO 4:10">along with your captured horses.</para>
+  <para style="q1" vid="AMO 4:10">I filled your nostrils with the stench of your camp,</para>
+  <para style="q2" vid="AMO 4:10">yet you did not return to Me,”</para>
+  <para style="qr" vid="AMO 4:10">declares the LORD.<verse eid="AMO 4:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="AMO 4:11"/>“Some of you I overthrew</para>
+  <para style="q2" vid="AMO 4:11">as I overthrew Sodom and Gomorrah,</para>
+  <para style="q1" vid="AMO 4:11">and you were like a firebrand <note caller="+" style="f"><char style="fr" closed="false">4:11 </char><char style="ft" closed="false">That is, a burning stick</char></note> snatched from a blaze,</para>
+  <para style="q2" vid="AMO 4:11">yet you did not return to Me,”</para>
+  <para style="qr" vid="AMO 4:11">declares the LORD.<verse eid="AMO 4:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 4:12"/>“Therefore, that is what I will do</para>
+  <para style="q2" vid="AMO 4:12">to you, O Israel,</para>
+  <para style="q1" vid="AMO 4:12">and since I will do this to you,</para>
+  <para style="q2" vid="AMO 4:12">prepare to meet your God, O Israel!<verse eid="AMO 4:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 4:13"/>For behold, He who forms the mountains,</para>
+  <para style="q2" vid="AMO 4:13">who creates the wind</para>
+  <para style="q2" vid="AMO 4:13">and reveals His thoughts to man,</para>
+  <para style="q1" vid="AMO 4:13">who turns the dawn to darkness</para>
+  <para style="q2" vid="AMO 4:13">and strides on the heights of the earth—</para>
+  <para style="q2" vid="AMO 4:13">the LORD, the God of Hosts, is His name.”<verse eid="AMO 4:13"/></para>
+  <chapter eid="AMO 4"/>
+  <chapter number="5" style="c" sid="AMO 5"/>
+  <para style="s1">A Lamentation against Israel</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 5:1"/>Hear this word, O house of Israel, this lamentation I take up against you:<verse eid="AMO 5:1"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="2" style="v" sid="AMO 5:2"/>“Fallen is Virgin Israel,</para>
+  <para style="q2" vid="AMO 5:2">never to rise again.</para>
+  <para style="q1" vid="AMO 5:2">She lies abandoned on her land,</para>
+  <para style="q2" vid="AMO 5:2">with no one to raise her up.”<verse eid="AMO 5:2"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="3" style="v" sid="AMO 5:3"/>This is what the Lord GOD says:</para>
+  <para style="b" vid="AMO 5:3"/>
+  <para style="q1" vid="AMO 5:3">“The city that marches out a thousand strong</para>
+  <para style="q2" vid="AMO 5:3">will only see a hundred return,</para>
+  <para style="q1" vid="AMO 5:3">and the one that marches out a hundred strong</para>
+  <para style="q2" vid="AMO 5:3">will have but ten left in the house of Israel.”<verse eid="AMO 5:3"/></para>
+  <para style="s1">A Call to Repentance</para>
+  <para style="r">(<ref loc="JOL 1:13-20">Joel 1:13–20</ref>; <ref loc="ZEP 2:1-3">Zephaniah 2:1–3</ref>; <ref loc="LUK 13:1-5">Luke 13:1–5</ref>)</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="4" style="v" sid="AMO 5:4"/>For this is what the LORD says to the house of Israel:</para>
+  <para style="b" vid="AMO 5:4"/>
+  <para style="q1" vid="AMO 5:4">“Seek Me and live!<verse eid="AMO 5:4"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 5:5"/>Do not seek Bethel or go to Gilgal;</para>
+  <para style="q2" vid="AMO 5:5">do not journey to Beersheba,</para>
+  <para style="q1" vid="AMO 5:5">for Gilgal will surely go into exile,</para>
+  <para style="q2" vid="AMO 5:5">and Bethel will come to nothing.<note caller="+" style="f"><char style="fr" closed="false">5:5 </char><char style="ft" closed="false">Hebrew to Aven, a reference to Beth-aven, a derogatory term for Bethel; see Hosea 4:15.</char></note><verse eid="AMO 5:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 5:6"/>Seek the LORD and live,</para>
+  <para style="q2" vid="AMO 5:6">or He will sweep like fire through the house of Joseph;</para>
+  <para style="q1" vid="AMO 5:6">it will devour everything,</para>
+  <para style="q2" vid="AMO 5:6">with no one at Bethel to extinguish it.<verse eid="AMO 5:6"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 5:7"/>There are those who turn justice into wormwood</para>
+  <para style="q2" vid="AMO 5:7">and cast righteousness to the ground.<verse eid="AMO 5:7"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 5:8"/>He who made the Pleiades and Orion,</para>
+  <para style="q2" vid="AMO 5:8">who turns darkness into dawn</para>
+  <para style="q2" vid="AMO 5:8">and darkens day into night,</para>
+  <para style="q1" vid="AMO 5:8">who summons the waters of the sea</para>
+  <para style="q2" vid="AMO 5:8">and pours them over the face of the earth—</para>
+  <para style="q2" vid="AMO 5:8">the LORD is His name—<verse eid="AMO 5:8"/></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 5:9"/>He flashes destruction on the strong,</para>
+  <para style="q2" vid="AMO 5:9">so that fury comes upon the stronghold.<verse eid="AMO 5:9"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 5:10"/>There are those who hate the one who reproves in the gate</para>
+  <para style="q2" vid="AMO 5:10">and despise him who speaks with integrity.<verse eid="AMO 5:10"/></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="AMO 5:11"/>Therefore, because you trample on the poor</para>
+  <para style="q2" vid="AMO 5:11">and exact from him a tax of grain,</para>
+  <para style="q1" vid="AMO 5:11">you will never live</para>
+  <para style="q2" vid="AMO 5:11">in the stone houses you have built;</para>
+  <para style="q1" vid="AMO 5:11">you will never drink the wine</para>
+  <para style="q2" vid="AMO 5:11">from the lush vineyards you have planted.<verse eid="AMO 5:11"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 5:12"/>For I know that your transgressions are many</para>
+  <para style="q2" vid="AMO 5:12">and your sins are numerous.</para>
+  <para style="q1" vid="AMO 5:12">You oppress the righteous by taking bribes;</para>
+  <para style="q2" vid="AMO 5:12">you deprive the poor of justice in the gate.<verse eid="AMO 5:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 5:13"/>Therefore, the prudent keep silent in such times,</para>
+  <para style="q2" vid="AMO 5:13">for the days are evil.<verse eid="AMO 5:13"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 5:14"/>Seek good, not evil,</para>
+  <para style="q2" vid="AMO 5:14">so that you may live.</para>
+  <para style="q1" vid="AMO 5:14">And the LORD, the God of Hosts,</para>
+  <para style="q2" vid="AMO 5:14">will be with you, as you have claimed.<verse eid="AMO 5:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="AMO 5:15"/>Hate evil and love good;</para>
+  <para style="q2" vid="AMO 5:15">establish justice in the gate.</para>
+  <para style="q1" vid="AMO 5:15">Perhaps the LORD, the God of Hosts,</para>
+  <para style="q2" vid="AMO 5:15">will be gracious to the remnant of Joseph.”<verse eid="AMO 5:15"/></para>
+  <para style="s1">Woe to Rebellious Israel</para>
+  <para style="r">(<ref loc="ACT 7:39-43">Acts 7:39–43</ref>)</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="16" style="v" sid="AMO 5:16"/>Therefore this is what the LORD, the God of Hosts, the Lord, says:</para>
+  <para style="b" vid="AMO 5:16"/>
+  <para style="q1" vid="AMO 5:16">“There will be wailing in all the public squares</para>
+  <para style="q2" vid="AMO 5:16">and cries of ‘Alas! Alas!’ in all the streets.</para>
+  <para style="q1" vid="AMO 5:16">The farmer will be summoned to mourn,</para>
+  <para style="q2" vid="AMO 5:16">and the mourners to wail.<verse eid="AMO 5:16"/></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="AMO 5:17"/>There will be wailing in all the vineyards,</para>
+  <para style="q2" vid="AMO 5:17">for I will pass through your midst,”</para>
+  <para style="qr" vid="AMO 5:17">says the LORD.<verse eid="AMO 5:17"/></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="AMO 5:18"/>Woe to you who long for the Day of the LORD!</para>
+  <para style="q2" vid="AMO 5:18">What will the Day of the LORD be for you?</para>
+  <para style="q2" vid="AMO 5:18">It will be darkness and not light.<verse eid="AMO 5:18"/></para>
+  <para style="q1">
+    <verse number="19" style="v" sid="AMO 5:19"/>It will be like a man who flees from a lion,</para>
+  <para style="q2" vid="AMO 5:19">only to encounter a bear,</para>
+  <para style="q1" vid="AMO 5:19">or who enters his house and rests his hand against the wall,</para>
+  <para style="q2" vid="AMO 5:19">only to be bitten by a snake.<verse eid="AMO 5:19"/></para>
+  <para style="q1">
+    <verse number="20" style="v" sid="AMO 5:20"/>Will not the Day of the LORD</para>
+  <para style="q2" vid="AMO 5:20">be darkness and not light,</para>
+  <para style="q2" vid="AMO 5:20">even gloom with no brightness in it?<verse eid="AMO 5:20"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="21" style="v" sid="AMO 5:21"/>“I hate, I despise your feasts!</para>
+  <para style="q2" vid="AMO 5:21">I cannot stand the stench of your solemn assemblies.<verse eid="AMO 5:21"/></para>
+  <para style="q1">
+    <verse number="22" style="v" sid="AMO 5:22"/>Even though you offer Me burnt offerings and grain offerings,</para>
+  <para style="q2" vid="AMO 5:22">I will not accept them;</para>
+  <para style="q1" vid="AMO 5:22">for your peace offerings of fattened cattle</para>
+  <para style="q2" vid="AMO 5:22">I will have no regard.<verse eid="AMO 5:22"/></para>
+  <para style="q1">
+    <verse number="23" style="v" sid="AMO 5:23"/>Take away from Me the noise of your songs!</para>
+  <para style="q2" vid="AMO 5:23">I will not listen to the music of your harps.<verse eid="AMO 5:23"/></para>
+  <para style="q1">
+    <verse number="24" style="v" sid="AMO 5:24"/>But let justice roll on like a river,</para>
+  <para style="q2" vid="AMO 5:24">and righteousness like an ever-flowing stream.<verse eid="AMO 5:24"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="25" style="v" sid="AMO 5:25"/>Did you bring Me sacrifices and offerings</para>
+  <para style="q2" vid="AMO 5:25">forty years in the wilderness, O house of Israel?<verse eid="AMO 5:25"/></para>
+  <para style="q1">
+    <verse number="26" style="v" sid="AMO 5:26"/>You have taken along Sakkuth your king</para>
+  <para style="q2" vid="AMO 5:26">and Kaiwan your star god,<note caller="+" style="f"><char style="fr" closed="false">5:26 </char><char style="ft" closed="false">LXX You have taken along the tabernacle of Molech and the star of your god Rephan</char></note></para>
+  <para style="q2" vid="AMO 5:26">the idols you made for yourselves.<verse eid="AMO 5:26"/></para>
+  <para style="q1">
+    <verse number="27" style="v" sid="AMO 5:27"/>Therefore I will send you into exile beyond Damascus,”<note caller="+" style="f"><char style="fr" closed="false">5:27 </char><char style="ft" closed="false">Cited in Acts 7:42–43</char></note></para>
+  <para style="q2" vid="AMO 5:27">says the LORD, whose name is the God of Hosts.<verse eid="AMO 5:27"/></para>
+  <chapter eid="AMO 5"/>
+  <chapter number="6" style="c" sid="AMO 6"/>
+  <para style="s1">Woe to Those at Ease in Zion</para>
+  <para style="r">(<ref loc="LUK 6:24-26">Luke 6:24–26</ref>)</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="AMO 6:1"/>Woe to those at ease in Zion</para>
+  <para style="q2" vid="AMO 6:1">and those secure on Mount Samaria,</para>
+  <para style="q1" vid="AMO 6:1">the distinguished ones of the foremost nation,</para>
+  <para style="q2" vid="AMO 6:1">to whom the house of Israel comes.<verse eid="AMO 6:1"/></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="AMO 6:2"/>Cross over to Calneh and see;</para>
+  <para style="q2" vid="AMO 6:2">go from there to the great Hamath;</para>
+  <para style="q2" vid="AMO 6:2">then go down to Gath of the Philistines.</para>
+  <para style="q1" vid="AMO 6:2">Are you better than these kingdoms?</para>
+  <para style="q2" vid="AMO 6:2">Is their territory larger than yours?<verse eid="AMO 6:2"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="3" style="v" sid="AMO 6:3"/>You dismiss the day of calamity</para>
+  <para style="q2" vid="AMO 6:3">and bring near a reign of violence.<verse eid="AMO 6:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 6:4"/>You lie on beds inlaid with ivory,</para>
+  <para style="q2" vid="AMO 6:4">and lounge upon your couches.</para>
+  <para style="q1" vid="AMO 6:4">You dine on lambs from the flock</para>
+  <para style="q2" vid="AMO 6:4">and calves from the stall.<verse eid="AMO 6:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 6:5"/>You improvise songs on the harp like David</para>
+  <para style="q2" vid="AMO 6:5">and invent your own musical instruments.<verse eid="AMO 6:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 6:6"/>You drink wine by the bowlful</para>
+  <para style="q2" vid="AMO 6:6">and anoint yourselves with the finest oils,</para>
+  <para style="q1" vid="AMO 6:6">but you fail to grieve</para>
+  <para style="q2" vid="AMO 6:6">over the ruin of Joseph.<verse eid="AMO 6:6"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 6:7"/>Therefore, you will now go into exile</para>
+  <para style="q2" vid="AMO 6:7">as the first of the captives,</para>
+  <para style="q1" vid="AMO 6:7">and your feasting and lounging</para>
+  <para style="q2" vid="AMO 6:7">will come to an end.<verse eid="AMO 6:7"/></para>
+  <para style="s1">The Pride of Israel</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="8" style="v" sid="AMO 6:8"/>The Lord GOD has sworn by Himself—the LORD, the God of Hosts, has declared:</para>
+  <para style="b" vid="AMO 6:8"/>
+  <para style="q1" vid="AMO 6:8">“I abhor Jacob’s pride</para>
+  <para style="q2" vid="AMO 6:8">and detest his citadels,</para>
+  <para style="q1" vid="AMO 6:8">so I will deliver up the city</para>
+  <para style="q2" vid="AMO 6:8">and everything in it.”<verse eid="AMO 6:8"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="9" style="v" sid="AMO 6:9"/>And if there are ten men left in one house, they too will die. <verse eid="AMO 6:9"/><verse number="10" style="v" sid="AMO 6:10"/>And when the relative who is to burn the bodies <note caller="+" style="f"><char style="fr" closed="false">6:10 </char><char style="ft" closed="false">Or to make a funeral fire to honor the dead</char></note> picks them up to remove them from the house, he will call to one inside, “Is anyone else with you?”</para>
+  <para style="b" vid="AMO 6:10"/>
+  <para style="m" vid="AMO 6:10">“None,” that person will answer.</para>
+  <para style="b" vid="AMO 6:10"/>
+  <para style="m" vid="AMO 6:10">“Silence,” the relative will retort, “for the name of the LORD must not be invoked.”<verse eid="AMO 6:10"/></para>
+  <para style="m">
+    <verse number="11" style="v" sid="AMO 6:11"/>For the LORD gives a command:</para>
+  <para style="b" vid="AMO 6:11"/>
+  <para style="q1" vid="AMO 6:11">“The great house will be smashed to pieces,</para>
+  <para style="q2" vid="AMO 6:11">and the small house to rubble.”<verse eid="AMO 6:11"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 6:12"/>“Do horses gallop on the cliffs?</para>
+  <para style="q2" vid="AMO 6:12">Does one plow the sea <note caller="+" style="f"><char style="fr" closed="false">6:12 </char><char style="ft" closed="false">Literally Does one plow (there)</char></note> with oxen?</para>
+  <para style="q1" vid="AMO 6:12">But you have turned justice into poison</para>
+  <para style="q2" vid="AMO 6:12">and the fruit of righteousness into wormwood—<verse eid="AMO 6:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 6:13"/>you who rejoice in Lo-debar <note caller="+" style="f"><char style="fr" closed="false">6:13 </char><char style="ft" closed="false">Lo-debar means nothing.</char></note> and say,</para>
+  <para style="q2" vid="AMO 6:13">‘Did we not take Karnaim <note caller="+" style="f"><char style="fr" closed="false">6:13 </char><char style="ft" closed="false">Karnaim means horn, a symbol of strength.</char></note> by our own strength?’<verse eid="AMO 6:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 6:14"/>For behold, I will raise up a nation</para>
+  <para style="q2" vid="AMO 6:14">against you, O house of Israel,”</para>
+  <para style="qr" vid="AMO 6:14">declares the LORD, the God of Hosts,</para>
+  <para style="q1" vid="AMO 6:14">“and they will oppress you</para>
+  <para style="q2" vid="AMO 6:14">from Lebo-hamath to the Brook of the Arabah.”<verse eid="AMO 6:14"/></para>
+  <chapter eid="AMO 6"/>
+  <chapter number="7" style="c" sid="AMO 7"/>
+  <para style="s1">The Locusts, Fire, and Plumb Line</para>
+  <para style="r">(<ref loc="JOL 2:1-11">Joel 2:1–11</ref>)</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 7:1"/>This is what the Lord GOD showed me: He was preparing swarms of locusts just after the king’s harvest, as the late spring crop was coming up.<note caller="+" style="f"><char style="fr" closed="false">7:1 </char><char style="ft" closed="false">LXX A swarm of locusts coming from the east; and, behold, one grasshopper, king Gog.</char></note> <verse eid="AMO 7:1"/><verse number="2" style="v" sid="AMO 7:2"/>And when the locusts had eaten every green plant in the land, I said, “Lord GOD, please forgive! How will Jacob survive, since he is so small?”<verse eid="AMO 7:2"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="3" style="v" sid="AMO 7:3"/>So the LORD relented from this plan. “It will not happen,” He said.<verse eid="AMO 7:3"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="4" style="v" sid="AMO 7:4"/>This is what the Lord GOD showed me: The Lord GOD was calling for judgment by fire. It consumed the great deep and devoured the land. <verse eid="AMO 7:4"/><verse number="5" style="v" sid="AMO 7:5"/>Then I said, “Lord GOD, please stop! How will Jacob survive, since he is so small?”<verse eid="AMO 7:5"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="6" style="v" sid="AMO 7:6"/>So the LORD relented from this plan. “It will not happen either,” said the Lord GOD.<verse eid="AMO 7:6"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="7" style="v" sid="AMO 7:7"/>This is what He showed me: Behold, the Lord was standing by a wall true to plumb, with a plumb line in His hand. <verse eid="AMO 7:7"/><verse number="8" style="v" sid="AMO 7:8"/>“Amos, what do you see?” asked the LORD.</para>
+  <para style="b" vid="AMO 7:8"/>
+  <para style="m" vid="AMO 7:8">“A plumb line,” I replied.</para>
+  <para style="b" vid="AMO 7:8"/>
+  <para style="m" vid="AMO 7:8">“Behold,” said the Lord, “I am setting a plumb line among My people Israel; I will no longer spare them:<verse eid="AMO 7:8"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 7:9"/>The high places of Isaac will be deserted,</para>
+  <para style="q2" vid="AMO 7:9">and the sanctuaries of Israel will be laid waste;</para>
+  <para style="q1" vid="AMO 7:9">and I will rise up against the house of Jeroboam</para>
+  <para style="q2" vid="AMO 7:9">with My sword.”<verse eid="AMO 7:9"/></para>
+  <para style="s1">Amaziah Accuses Amos</para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="10" style="v" sid="AMO 7:10"/>Then Amaziah the priest of Bethel sent word to Jeroboam king of Israel, saying, “Amos has conspired against you in the midst of the house of Israel. The land cannot bear all his words, <verse eid="AMO 7:10"/><verse number="11" style="v" sid="AMO 7:11"/>for this is what Amos has said:</para>
+  <para style="b" vid="AMO 7:11"/>
+  <para style="q1" vid="AMO 7:11">‘Jeroboam will die by the sword,</para>
+  <para style="q2" vid="AMO 7:11">and Israel will surely go into exile,</para>
+  <para style="q2" vid="AMO 7:11">away from their homeland.’”<verse eid="AMO 7:11"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="12" style="v" sid="AMO 7:12"/>And Amaziah said to Amos, “Go away, you seer! Flee to the land of Judah; earn your bread there and do your prophesying there. <verse eid="AMO 7:12"/><verse number="13" style="v" sid="AMO 7:13"/>But never prophesy at Bethel again, because it is the sanctuary of the king and the temple of the kingdom.”<verse eid="AMO 7:13"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="14" style="v" sid="AMO 7:14"/>“I was not <note caller="+" style="f"><char style="fr" closed="false">7:14 </char><char style="ft" closed="false">Or I am not</char></note> a prophet,” Amos replied, “nor was I the son <note caller="+" style="f"><char style="fr" closed="false">7:14 </char><char style="ft" closed="false">Or nor am I the son</char></note> of a prophet; rather, I was a herdsman and a tender of sycamore-fig trees. <verse eid="AMO 7:14"/><verse number="15" style="v" sid="AMO 7:15"/>But the LORD took me from following the flock and said to me, ‘Go, prophesy to My people Israel.’<verse eid="AMO 7:15"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="16" style="v" sid="AMO 7:16"/>Now, therefore, hear the word of the LORD. You say:</para>
+  <para style="b" vid="AMO 7:16"/>
+  <para style="q1" vid="AMO 7:16">‘Do not prophesy against Israel;</para>
+  <para style="q2" vid="AMO 7:16">do not preach against the house of Isaac.’<verse eid="AMO 7:16"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="17" style="v" sid="AMO 7:17"/>Therefore this is what the LORD says:</para>
+  <para style="b" vid="AMO 7:17"/>
+  <para style="q1" vid="AMO 7:17">‘Your wife will become a prostitute in the city,</para>
+  <para style="q2" vid="AMO 7:17">and your sons and daughters will fall by the sword.</para>
+  <para style="q1" vid="AMO 7:17">Your land will be divided by a measuring line,</para>
+  <para style="q2" vid="AMO 7:17">and you yourself will die on pagan <note caller="+" style="f"><char style="fr" closed="false">7:17 </char><char style="ft" closed="false">Hebrew unclean</char></note> soil.</para>
+  <para style="q1" vid="AMO 7:17">And Israel will surely go into exile,</para>
+  <para style="q2" vid="AMO 7:17">away from their homeland.’”<verse eid="AMO 7:17"/></para>
+  <chapter eid="AMO 7"/>
+  <chapter number="8" style="c" sid="AMO 8"/>
+  <para style="s1">The Basket of Summer Fruit</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 8:1"/>This is what the Lord GOD showed me: I saw a basket of summer fruit.<note caller="+" style="f"><char style="fr" closed="false">8:1 </char><char style="ft" closed="false">Or ripe fruit; also in verse 2</char></note><verse eid="AMO 8:1"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="2" style="v" sid="AMO 8:2"/>“Amos, what do you see?” He asked.</para>
+  <para style="b" vid="AMO 8:2"/>
+  <para style="m" vid="AMO 8:2">“A basket of summer fruit,” I replied.</para>
+  <para style="b" vid="AMO 8:2"/>
+  <para style="m" vid="AMO 8:2">So the LORD said to me, “The end has come for My people Israel; I will no longer spare them.”<verse eid="AMO 8:2"/></para>
+  <para style="b"/>
+  <para style="m">
+    <verse number="3" style="v" sid="AMO 8:3"/>“In that day,” declares the Lord GOD, “the songs <note caller="+" style="f"><char style="fr" closed="false">8:3 </char><char style="ft" closed="false">Or the singing women</char></note> of the temple <note caller="+" style="f"><char style="fr" closed="false">8:3 </char><char style="ft" closed="false">Or palace</char></note> will turn to wailing. Many will be the corpses, strewn in silence everywhere!”<verse eid="AMO 8:3"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 8:4"/>Hear this, you who trample the needy,</para>
+  <para style="q2" vid="AMO 8:4">who do away with the poor of the land,<verse eid="AMO 8:4"/></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 8:5"/>asking, “When will the New Moon be over,</para>
+  <para style="q2" vid="AMO 8:5">that we may sell grain?</para>
+  <para style="q1" vid="AMO 8:5">When will the Sabbath end,</para>
+  <para style="q2" vid="AMO 8:5">that we may market wheat?</para>
+  <para style="q1" vid="AMO 8:5">Let us reduce the ephah and increase the shekel;<note caller="+" style="f"><char style="fr" closed="false">8:5 </char><char style="ft" closed="false">Or Let us reduce the measure and increase the price</char></note></para>
+  <para style="q2" vid="AMO 8:5">let us cheat with dishonest scales.<verse eid="AMO 8:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 8:6"/>Let us buy the poor with silver</para>
+  <para style="q2" vid="AMO 8:6">and the needy for a pair of sandals,</para>
+  <para style="q2" vid="AMO 8:6">selling even the chaff with the wheat!”<verse eid="AMO 8:6"/></para>
+  <para style="m">
+    <verse number="7" style="v" sid="AMO 8:7"/>The LORD has sworn by the Pride of Jacob:</para>
+  <para style="b" vid="AMO 8:7"/>
+  <para style="q1" vid="AMO 8:7">“I will never forget any of their deeds.<verse eid="AMO 8:7"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 8:8"/>Will not the land quake for this,</para>
+  <para style="q2" vid="AMO 8:8">and all its dwellers mourn?</para>
+  <para style="q1" vid="AMO 8:8">All of it will swell like the Nile;</para>
+  <para style="q2" vid="AMO 8:8">it will surge and then subside</para>
+  <para style="q2" vid="AMO 8:8">like the Nile in Egypt.<verse eid="AMO 8:8"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 8:9"/>And in that day,</para>
+  <para style="q2" vid="AMO 8:9">declares the Lord GOD,</para>
+  <para style="q1" vid="AMO 8:9">I will make the sun go down at noon,</para>
+  <para style="q2" vid="AMO 8:9">and I will darken the earth in the daytime.<verse eid="AMO 8:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 8:10"/>I will turn your feasts into mourning</para>
+  <para style="q2" vid="AMO 8:10">and all your songs into lamentation.</para>
+  <para style="q1" vid="AMO 8:10">I will cause everyone to wear sackcloth</para>
+  <para style="q2" vid="AMO 8:10">and every head to be shaved.</para>
+  <para style="q1" vid="AMO 8:10">I will make it like a time of mourning for an only son,</para>
+  <para style="q2" vid="AMO 8:10">and its outcome like a bitter day.<verse eid="AMO 8:10"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="11" style="v" sid="AMO 8:11"/>Behold, the days are coming,</para>
+  <para style="q2" vid="AMO 8:11">declares the Lord GOD,</para>
+  <para style="q2" vid="AMO 8:11">when I will send a famine on the land—</para>
+  <para style="q1" vid="AMO 8:11">not a famine of bread or a thirst for water,</para>
+  <para style="q2" vid="AMO 8:11">but a famine of hearing the words of the LORD.<verse eid="AMO 8:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 8:12"/>People will stagger from sea to sea</para>
+  <para style="q2" vid="AMO 8:12">and roam from north to east,</para>
+  <para style="q1" vid="AMO 8:12">seeking the word of the LORD,</para>
+  <para style="q2" vid="AMO 8:12">but they will not find it.<verse eid="AMO 8:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 8:13"/>In that day the lovely young women—</para>
+  <para style="q2" vid="AMO 8:13">the young men as well—</para>
+  <para style="q2" vid="AMO 8:13">will faint from thirst.<verse eid="AMO 8:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 8:14"/>Those who swear by the guilt of Samaria</para>
+  <para style="q2" vid="AMO 8:14">and say, ‘As surely as your god lives, O Dan,’</para>
+  <para style="q1" vid="AMO 8:14">or, ‘As surely as the way <note caller="+" style="f"><char style="fr" closed="false">8:14 </char><char style="ft" closed="false">Or the god</char></note> of Beersheba lives’—</para>
+  <para style="q2" vid="AMO 8:14">they will fall, never to rise again.”<verse eid="AMO 8:14"/></para>
+  <chapter eid="AMO 8"/>
+  <chapter number="9" style="c" sid="AMO 9"/>
+  <para style="s1">The Destruction of Israel</para>
+  <para style="m">
+    <verse number="1" style="v" sid="AMO 9:1"/>I saw the Lord standing beside the altar, and He said:</para>
+  <para style="b" vid="AMO 9:1"/>
+  <para style="q1" vid="AMO 9:1">“Strike the tops of the pillars</para>
+  <para style="q2" vid="AMO 9:1">so that the thresholds shake.</para>
+  <para style="q1" vid="AMO 9:1">Topple them on the heads of all the people,</para>
+  <para style="q2" vid="AMO 9:1">and I will kill the rest with the sword.</para>
+  <para style="q1" vid="AMO 9:1">None of those who flee will get away;</para>
+  <para style="q2" vid="AMO 9:1">none of the fugitives will escape.<verse eid="AMO 9:1"/></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="AMO 9:2"/>Though they dig down to Sheol,</para>
+  <para style="q2" vid="AMO 9:2">from there My hand will take them;</para>
+  <para style="q1" vid="AMO 9:2">and though they climb up to heaven,</para>
+  <para style="q2" vid="AMO 9:2">from there I will pull them down.<verse eid="AMO 9:2"/></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="AMO 9:3"/>Though they hide themselves atop Carmel,</para>
+  <para style="q2" vid="AMO 9:3">there I will track them and seize them;</para>
+  <para style="q1" vid="AMO 9:3">and though they hide from Me at the bottom of the sea,</para>
+  <para style="q2" vid="AMO 9:3">there I will command the serpent <note caller="+" style="f"><char style="fr" closed="false">9:3 </char><char style="ft" closed="false">Hebrew nachash; translated in most cases as snake</char></note> to bite them.<verse eid="AMO 9:3"/></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="AMO 9:4"/>Though they are driven by their enemies into captivity,</para>
+  <para style="q2" vid="AMO 9:4">there I will command the sword to slay them.</para>
+  <para style="q1" vid="AMO 9:4">I will fix My eyes upon them</para>
+  <para style="q2" vid="AMO 9:4">for harm and not for good.”<verse eid="AMO 9:4"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="5" style="v" sid="AMO 9:5"/>The Lord GOD of Hosts,</para>
+  <para style="q2" vid="AMO 9:5">He who touches the earth and it melts,</para>
+  <para style="q2" vid="AMO 9:5">and all its dwellers mourn—</para>
+  <para style="q1" vid="AMO 9:5">all the land rises like the Nile,</para>
+  <para style="q2" vid="AMO 9:5">then sinks like the river of Egypt—<verse eid="AMO 9:5"/></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="AMO 9:6"/>He builds His upper rooms in the heavens</para>
+  <para style="q2" vid="AMO 9:6">and founds His vault upon the earth.</para>
+  <para style="q1" vid="AMO 9:6">He summons the waters of the sea</para>
+  <para style="q2" vid="AMO 9:6">and pours them over the face of the earth.</para>
+  <para style="q2" vid="AMO 9:6">The LORD is His name.<verse eid="AMO 9:6"/></para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="7" style="v" sid="AMO 9:7"/>“Are you not like the Cushites <note caller="+" style="f"><char style="fr" closed="false">9:7 </char><char style="ft" closed="false">That is, people from the upper Nile region</char></note> to Me,</para>
+  <para style="q2" vid="AMO 9:7">O children of Israel?”</para>
+  <para style="qr" vid="AMO 9:7">declares the LORD.</para>
+  <para style="q1" vid="AMO 9:7">“Did I not bring Israel</para>
+  <para style="q2" vid="AMO 9:7">up from the land of Egypt,</para>
+  <para style="q1" vid="AMO 9:7">the Philistines from Caphtor,<note caller="+" style="f"><char style="fr" closed="false">9:7 </char><char style="ft" closed="false">That is, Crete</char></note></para>
+  <para style="q2" vid="AMO 9:7">and the Arameans from Kir?<verse eid="AMO 9:7"/></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="AMO 9:8"/>Surely the eyes of the Lord GOD</para>
+  <para style="q2" vid="AMO 9:8">are on the sinful kingdom,</para>
+  <para style="q1" vid="AMO 9:8">and I will destroy it from the face of the earth.</para>
+  <para style="q2" vid="AMO 9:8">Yet I will not utterly destroy the house of Jacob,”</para>
+  <para style="qr" vid="AMO 9:8">declares the LORD.<verse eid="AMO 9:8"/></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="AMO 9:9"/>“For surely I will give the command,</para>
+  <para style="q2" vid="AMO 9:9">and I will shake the house of Israel</para>
+  <para style="q1" vid="AMO 9:9">among all the nations</para>
+  <para style="q2" vid="AMO 9:9">as grain is sifted in a sieve;</para>
+  <para style="q2" vid="AMO 9:9">but not a pebble will reach the ground.<verse eid="AMO 9:9"/></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="AMO 9:10"/>All the sinners among My people</para>
+  <para style="q2" vid="AMO 9:10">will die by the sword—</para>
+  <para style="q1" vid="AMO 9:10">all those who say,</para>
+  <para style="q2" vid="AMO 9:10">‘Disaster will never draw near or confront us.’”<verse eid="AMO 9:10"/></para>
+  <para style="s1">A Promise of Restoration</para>
+  <para style="r">(<ref loc="ACT 15:5-21">Acts 15:5–21</ref>)</para>
+  <para style="b"/>
+  <para style="q1">
+    <verse number="11" style="v" sid="AMO 9:11"/>“In that day I will restore</para>
+  <para style="q2" vid="AMO 9:11">the fallen tent of David.</para>
+  <para style="q1" vid="AMO 9:11">I will repair its gaps, restore its ruins,</para>
+  <para style="q2" vid="AMO 9:11">and rebuild it as in the days of old,<verse eid="AMO 9:11"/></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="AMO 9:12"/>that they may possess the remnant of Edom</para>
+  <para style="q2" vid="AMO 9:12">and all the nations that bear My name,”<note caller="+" style="f"><char style="fr" closed="false">9:12 </char><char style="ft" closed="false">Hebrew; LXX that the remnant of men, and all the nations that bear My name, may earnestly seek Me; cited in Acts 15:16–18</char></note></para>
+  <para style="qr" vid="AMO 9:12">declares the LORD, who will do this.<verse eid="AMO 9:12"/></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="AMO 9:13"/>“Behold, the days are coming,”</para>
+  <para style="q2" vid="AMO 9:13">declares the LORD,</para>
+  <para style="q1" vid="AMO 9:13">“when the plowman will overtake the reaper</para>
+  <para style="q2" vid="AMO 9:13">and the treader of grapes, the sower of seed.</para>
+  <para style="q1" vid="AMO 9:13">The mountains will drip with sweet wine,</para>
+  <para style="q2" vid="AMO 9:13">with which all the hills will flow.<verse eid="AMO 9:13"/></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="AMO 9:14"/>I will restore My people Israel from captivity;<note caller="+" style="f"><char style="fr" closed="false">9:14 </char><char style="ft" closed="false">Or restore the fortunes of My people Israel</char></note></para>
+  <para style="q2" vid="AMO 9:14">they will rebuild and inhabit the ruined cities.</para>
+  <para style="q1" vid="AMO 9:14">They will plant vineyards and drink their wine;</para>
+  <para style="q2" vid="AMO 9:14">they will make gardens and eat their fruit.<verse eid="AMO 9:14"/></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="AMO 9:15"/>I will firmly plant them in their own land,</para>
+  <para style="q2" vid="AMO 9:15">never again to be uprooted</para>
+  <para style="q2" vid="AMO 9:15">from the land that I have given them,”</para>
+  <para style="qr" vid="AMO 9:15">says the LORD your God.<verse eid="AMO 9:15"/></para>
+  <chapter eid="AMO 9"/>
+</usx>
