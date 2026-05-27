@@ -445,7 +445,7 @@ class USFM_parser(InputParser):
 			input_path += "/"
 		self.input_path = input_path
 		for file in sorted(os.listdir(input_path)):
-			if file.endswith(".usfm"):
+			if file.endswith(".SFM"):
 				process = subprocess.Popen(['/usr/bin/usfm-grammar --level=relaxed --filter=scripture '+input_path+file],
 									 stdout=subprocess.PIPE,
 									 stderr=subprocess.PIPE,
@@ -560,7 +560,7 @@ if __name__ == '__main__':
     #python script_name.py -n "ESV" -f "usx" -i "../../data/input/" -o "../../data/output/" -m "../../versification-mappings/standard-mappings" -r "../rules/merged_rules.json" -v True
  
 	name = "BSB"
-	format = "tsv"
+	format = "usfm"
 	indir = "data/input/"
 	outdir = "data/output/"
 	mappings = "versification-mappings/standard-mappings/"
